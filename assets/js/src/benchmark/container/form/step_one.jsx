@@ -44,7 +44,7 @@ export default class StepOne extends React.Component {
               Adobe, Symantec y SAP.
             </li>
           </ul>
-          <button className="btn btn-primary">Iniciar Evaluación</button>
+          <button onClick={() => this.props.onSubmit()} className="btn btn-primary">Iniciar Evaluación</button>
       </div>
     )
   }

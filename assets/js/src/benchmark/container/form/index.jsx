@@ -10,7 +10,7 @@ export default class Form extends React.Component {
     this.previousPage = this.previousPage.bind(this)
 
     this.state = {
-      page: 1
+      page: 3
     }
   }
   nextPage() {
@@ -19,6 +19,10 @@ export default class Form extends React.Component {
 
   previousPage() {
     this.setState({ page: this.state.page - 1 })
+  }
+
+  handleSubmit(values){
+    console.log(values)
   }
 
   render(){
@@ -30,8 +34,8 @@ export default class Form extends React.Component {
           Benckmark financiero para la Industria de Software - Modelo Internacional
         </h3>
         {page === 1 && <StepOne onSubmit={this.nextPage}/>}
-        {page === 2 && <StepTwo onSubmit={this.nextPage}/>}
-        {page === 3 && <StepThree onSubmit={this.nextPage}/>}
+        {page === 2 && <StepTwo onSubmit={this.nextPage} previousPage={this.previousPage}/>}
+        {page === 3 && <StepThree onSubmit={this.handleSubmit} previousPage={this.previousPage}/>}
       </div>
     )
   }

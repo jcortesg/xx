@@ -16,7 +16,9 @@
     "react": "^15.6.1",
     "react-redux": "^5.0.6",
     "react-vis": "^1.7.7",
-    "redux": "^3.7.2"
+    "redux": "^3.7.2",
+    "redux-form": "^7.0.4",
+    "redux-thunk": "^2.2.0"
   },
   "devDependencies": {
     "babel-brunch": "6.1.1",
