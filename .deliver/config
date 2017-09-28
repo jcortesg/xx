@@ -1,0 +1,41 @@
+APP="Obsevatorio" # name of your release
+
+BUILD_HOST="138.197.82.101" # host where to build the release
+BUILD_USER="root" # local user at build host
+BUILD_AT="/git/obs/builds" # build directory on build host
+RELEASE_DIR="/git/obs/builds/rel/alfred"
+RELEASE_VERSION=0.0.1
+
+STAGING_HOSTS="138.197.82.101" # staging / test hosts separated by space
+STAGING_USER="root" # local user at staging hosts
+TEST_AT="/test/obs" # deploy directory on staging hosts. default is DELIVER_TO
+
+PRODUCTION_HOSTS="138.197.82.101" # deploy / production hosts separated by space
+PRODUCTION_USER="root" # local user at deploy hosts
+DELIVER_TO="/opt/obs" # deploy directory on production hosts
+
+
+pre_erlang_clean_compile() {
+  status "Preparing assets with: brunch build and phoenix.digest"
+  __sync_remote "
+  # runs the commands on the build host
+  [ -f ~/.profile ] && source ~/.profile # load profile (optional)
+
+  # fail if any command fails (recommended)
+  set -e
+
+  # enter the build directory on the build host (required)
+  cd '/git/alfred/builds'
+
+  mkdir -p priv/static # required by the phoenix.digest task
+
+  # installing npm dependencies
+  npm install
+
+  # building brunch
+  brunch build --production
+
+  # run your custom task
+  APP='$APP' MIX_ENV='$TARGET_MIX_ENV' $MIX_CMD phoenix.digest $SILENCE
+  "
+}
