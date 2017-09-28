@@ -12,7 +12,7 @@
     position: relative;
     overflow: hidden;
     height: 70vh;
-    background-color: #d7e6ef;
+    background-color: #EDF7FD;
     .d-flex{
       height: 100%;;
     }
@@ -76,18 +76,32 @@
 }
 
 .monitoring{
-  background-color: #d7e6ef; 
-  background-image: url("../images/bg_1.png")
+  background-color: #EDF7FC;
 }
 .studies{
-  background-color: #edf3fc; 
+  background-color: #d7e6ef; 
+  background-image: url("../images/bg_1.png");
 }
 
 .about{
   background-color: #26295D;
+  background-image: url("../images/bg_about.png");
   color: #f7f7fd;
+  position: relative;
   h3{
-    color: #f9AA00
+    color: #f9AA00;
+  }
+  &--img{
+    background-image: url("../images/about.png");    
+    height: 100%;
+    width: 100%;
+    max-width: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
 .tools{
@@ -113,15 +127,17 @@
 }
 .blog{
   &--item{
+    padding-top: 20px ;
     img{
       width: 100%;
       max-height: 300px;
     }
 
     h4{
+      font-size: 20px;
       text-align: center;
       color: #fff;
-      background-color: rgba(75, 19, 87, 0.8);
+      background: rgba(249, 170, 0, 0.8);
       position: absolute;
       bottom: 0;
       right: 0;
@@ -132,8 +148,9 @@
   }
 }
 footer{
-  padding: 30px 0px 10px;
-  background: #262c56;
+  padding: 70px 0px 10px;
+  background-image: url("../images/bg_footer.png");
+  background-color: #d7e6ef;
   color: #fff;
 
   .logos{
