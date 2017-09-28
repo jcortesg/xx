@@ -4,7 +4,7 @@ export default class StepOne extends React.Component {
   render(){
     return(
       <div>
-        <h4>Sectores</h4>
+        <h5>Sectores</h5>
         <p>
           Esta herramienta de competitividad ha sido creada para ayudar a
           las empresas de Software en Colombia, a comparar sus resutados
@@ -44,7 +44,57 @@ export default class StepOne extends React.Component {
               Adobe, Symantec y SAP.
             </li>
           </ul>
-          <button onClick={() => this.props.onSubmit()} className="btn btn-primary">Iniciar Evaluación</button>
+
+          <h5>Tasas</h5>
+          <p>
+            La siguiente información es una descripción de los datos que incluye esta herramienta
+            y como están siendo calculados dentros de la misma. Cada una de las tasas e
+            indicadores han sido calculados para comparar los resultados de su empresa con
+            los de la industria en general. Como resultado, usted encontrará un valor que le
+            muestra el percentil de su posición en la industria. Este número muestra el
+            porcentaje de empresas que cuentan con resultados menores al de su empresa.
+          </p>
+          <ul>
+            <li>
+              <strong>Ingresos: </strong>
+              Esta estadística muestra el rango en el que su empresa se encuentra en
+              tamaño de ventas comparado con las empresas en el estudio.
+            </li>
+            <li>
+              <strong>Ingresos Netos: </strong>
+              Esta estadística muestra el rango en el que su empresa se encuentra
+              en ingresos netos comparado con las empresas en el estudio.
+            </li>
+            <li>
+              <strong>Crecimiento en Ingresos: </strong>
+              El crecimiento en ingresos es el cambio en ingresos del año anterior
+              al año presente como un porcentaje del ingreso de este año.
+            </li>
+            <li>
+              <strong>Crecimiento en Ingresos Netos: </strong>
+              El crecimiento en ingresos netos es calculado como el cambio en los Ingresos Netos
+              del año anterior al año presente como un porcentaje del Ingreso Neto de este año.
+            </li>
+            <li>
+              <strong>Ingresos Netos como porcentaje de los ingresos : </strong>
+              Ingresos netos divididos por los ingresos.
+            </li>
+            <li>
+              <strong>Ingresos Operacionales como porcentaje de los Ingresos: </strong>
+              Los Ingresos Operacionales son calculados como Ingresos Netos + Otros Gastosi
+              y el resultado es el ratio expresado como porcentaje de los ingresos.
+            </li>
+            <li>
+              <strong>Activo como porcentaje de los Ingresos: </strong>
+              Se calcula como Activos Totales como porcentaje de los Ingresos.
+              Esta métrica se utiliza para identificar el valor de los activos requeridos para soportar los ingresos de una empresa.
+            </li>
+          </ul>
+          <div className="actions">
+            <button onClick={() => this.props.onSubmit()} className="btn btn-primary btn-block">
+              Iniciar Evaluación
+            </button>
+          </div>
       </div>
     )
   }

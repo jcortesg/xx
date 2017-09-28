@@ -1,94 +1,23 @@
 <div class="home">
-  <div class="header">
-    <div class="overlaw">
+  <div class="hero">
+    <img  class="overlay" src="https://bootstrap-themes.github.io/marketing/assets/img/startup-0.svg">
+    <div class="d-flex align-items-center">
       <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <p>
-              <h1 class="text-center title">Obserbatorio TI</h1>
-              El Observatorio de la Industria TI es una iniciativa del
-              Ministerio de Tecnologías de la Información y las
-              Comunicaciones en Alianza con FEDESOFT. En este,
-              se consolida la información más importante sobre la industria TI
-              del País, relacionada con el desempeño del ecosistema.
-              En este se encuentran estudios de interés para la industria,
-              indicadores desempeño y reportes sobre la industria y sus principales retos.
-            </p>
-          </div>
-          <div class="col-md-6"></div>
+        <div class="col-md-8">
+          <h1>
+            Observatorio TI
+          </h1>
+          <p>
+            Una iniciativa del Ministerio de Tecnologías de la Información y
+            las Comunicaciones en Alianza con FEDESOFT.
+          </p>
         </div>
       </div>
     </div>
   </div>
-  </section>
-  <section class="container">
-    <h2 class="title">Indicadores</h2>
-    <p class="text-center">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-      sed do eiusmod tempor incididunt ut labore et dolore magna
-      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-      ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      <br/>
-    </p>
-    <div class="row">
-      <div class="col-md-6">
-        <ul>
-          <li>Déficit de profesionales en el sector TI proyectado a 10 años</li>
-          <li>Percepción de las empresas de TI sobre Modelos Asociativos</li>
-          <li>Percepción sobre la importancia de adoptar modelos de calidad en las empresas de TI</li>
-        </ul>
-      </div>
-      <div class="col-md-6">
-        <ul>
-          <li>Porcentaje de programas relacionados con el sector TI por tipo de registro</li>
-          <li>Percepción sobre el nivel de innovación en las empresas de TI</li>
-          <li>Percepción sobre la situación económica del Sector TI respecto al 2014</li>
-        </ul>
-      </div>
-    </div>
-    <a href="" class="text-center">Ver Todos los Indicadoder</a>
-  </section>
-  <section class="container">
-    <h3 class="title">Herramienta de monitoreo y demanda TI</h3>
-    <div class="row">
-      <div class="col-md-6"></div>
-      <div class="col-md-6">
-        <p>
-          <br/>
-          El Observatorio de la Industria TI es una iniciativa del
-          Ministerio de Tecnologías de la Información y las
-          Comunicaciones en Alianza con FEDESOFT. En este,
-          se consolida la información más importante sobre la industria TI
-          del País, relacionada con el desempeño del ecosistema.
-          En este se encuentran estudios de interés para la industria,
-          indicadores desempeño y reportes sobre la industria y sus principales retos.
-        </p>
-        <a href="http://159.203.77.85/" class="btn btn-primary">
-          Herramienta de monitorero de la demanda de talento TI
-        </a>
-      </div>
-  </section>
-  <section class="container">
-    <h3 class="title">Estudios</h3>
-    <br/>
-    <div class="row">
-      <div class="col-md-3">
-        <img class="img-responsive" src="http://lorempixel.com/200/200/sports">
-        <h4>Titulo</h4>
-      </div>
-      <div class="col-md-3">
-        <img class="img-responsive" src="http://lorempixel.com/200/200/">
-        <h4>Titulo</h4>
-      </div>
-      <div class="col-md-3">
-        <img src="http://lorempixel.com/200/200/sports">
-        <h4>Titulo</h4>
-      </div>
-      <div class="col-md-3">
-        <img src="http://lorempixel.com/200/200/">
-        <h4>Titulo</h4>
-      </div>
-    </div>
-  </section>
+  <%= render "_monitoring.html"  %>
+  <%= render "_about.html"  %>
+  <%= render"_indicators.html" %>
+  <%= render "_studies.html" %>
 </div>
 

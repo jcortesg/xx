@@ -1,0 +1,86 @@
+  <section class="container">
+    <header>
+      <h3 class="title">Listado de indicadores</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+    </header>
+    <div class="row">
+      <div class="col-md-4 indicators--category">
+        <i class="icon fa fa-users" aria-hidden="true"></i>
+        <h5>Asociatividad</h5>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit,i
+          sed do eiusmod tempor incididunt.
+        </p>
+      </div>
+      <div class="col-md-4 indicators--category">
+        <i class="icon fa fa-check-square-o" aria-hidden="true"></i>
+        <h5>Calidad</h5>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit,i
+          sed do eiusmod tempor incididunt.
+        </p>
+      </div>
+      <div class="col-md-4 indicators--category">
+        <i class="icon fa fa-pie-chart" aria-hidden="true"></i>
+        <h5>Gestión empresarial</h5>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit,i
+          sed do eiusmod tempor incididunt.
+        </p>
+      </div>
+      <div class="w-100"></div>
+      <div class="col-md-4 indicators--category">
+        <i class="icon fa fa-microchip" aria-hidden="true"></i>
+        <h5>I+D+I</h5>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit,i
+          sed do eiusmod tempor incididunt.
+        </p>
+      </div>
+      <div class="col-md-4 indicators--category">
+        <i class="icon fa fa-building " aria-hidden="true"></i>
+        <h5>Infraestructura</h5>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit,i
+          sed do eiusmod tempor incididunt.
+        </p>
+      </div>
+      <div class="col-md-4 indicators--category">
+        <i class="icon fa fa-bar-chart" aria-hidden="true"></i>
+        <h5>Ratios financieros</h5>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit,i
+          sed do eiusmod tempor incididunt.
+        </p>
+      </div>
+      <div class="w-100"></div>
+      <div class="col-md-4 indicators--category">
+        <i class="icon fa fa-book" aria-hidden="true"></i>
+        <h5>Normatividad</h5>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit,i
+          sed do eiusmod tempor incididunt.
+        </p>
+      </div>
+      <div class="col-md-4 indicators--category">
+        <i class="icon fa fa-id-card-o" aria-hidden="true"></i>
+        <h5>T.H</h5>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit,i
+          sed do eiusmod tempor incididunt.
+        </p>
+      </div>
+      <div class="col-md-4 indicators--category">
+        <i class="icon fa fa-globe" aria-hidden="true"></i>
+        <h5>Generalidades de sector</h5>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit,i
+          sed do eiusmod tempor incididunt.
+        </p>
+      </div>
+    </div>
+  </section>

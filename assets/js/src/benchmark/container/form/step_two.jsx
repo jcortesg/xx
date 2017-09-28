@@ -8,10 +8,8 @@ class StepTwo extends React.Component {
     return(
       <div>
         <p>
-          Complete la información de los espacioes en amarillo, información soportada en los estados financieros de la empresa.
+          Complete la información de los espacios, información soportada en los estados financieros de la empresa.
           Los valores en los otros espacios en blanco serán calculados automáticamente.
-          <br/>
-          Cuando termine de ingresar la información puede ingresar a la hoja "Todos los Benchamarks" para observar la comparación.
         </p>
         <form onSubmit={handleSubmit} className="form-horizontal">
           <legend>Datos Basicos</legend>
@@ -33,6 +31,7 @@ class StepTwo extends React.Component {
               />
             </div>
           </div>
+          <br/>
           <legend>Estado de Resultado</legend>
           <div className="row">
             <div className="col-md-6">
@@ -90,13 +89,15 @@ class StepTwo extends React.Component {
 
             </div>
           </div>
-          <button type="button" className="previous" onClick={this.props.previousPage}>
-            Previous
-          </button>
+          <div className="actions">
+            <button type="button" className="btn btn-default" onClick={this.props.previousPage}>
+              Atrás
+            </button>
 
-          <button type="submit" className="next">
-            Next
-          </button>
+            <button type="submit" className="btn btn-success pull-right">
+              Continuar
+            </button>
+          </div>
         </form>
         <br/>
         <br/>

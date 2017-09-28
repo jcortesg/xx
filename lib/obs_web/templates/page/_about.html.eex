@@ -1,0 +1,20 @@
+  <section class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h3 class="text-center">
+          ¿Qué Es El Observatorio TI?
+        </h3>
+        <br/>
+        <p>
+          El Observatorio de la Industria TI es una iniciativa del Ministerio de
+          Tecnologías de la Información y las Comunicaciones en Alianza con
+          FEDESOFT. En este, se consolida la información más importante sobre
+          la industria TI del País, relacionada con el desempeño del ecosistema.
+          En este se encuentran estudios de interés para la industria, indicadores
+          desempeño y reportes sobre la industria y sus principales retos.
+        </p>
+      </div>
+      <div class="col-md-6">
+      </div>
+    </div>
+  </section>

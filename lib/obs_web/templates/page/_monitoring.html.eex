@@ -1,0 +1,50 @@
+  <section class="container">
+    <header>
+      <h3 class="title">Herramienta observatorio TI</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+    </header>
+    <div class="row">
+      <div class="col-md-6">
+        imagen
+      </div>
+      <div class="col-md-6">
+        <ul class="list-unstyled feature-list">
+          <li>
+            <a>
+              <i class="icon fa fa-desktop" aria-hidden="true"></i>
+              <h5> Obsevatorio de empleo</h5>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt, ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam
+              </p>
+            </a>
+          </li>
+          <li>
+            <a href="benchmark">
+              <i class="icon fa fa-check-square-o" aria-hidden="true"></i>
+              <h5>Benchmark</h5>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt
+              </p>
+            </a>
+          </li>
+          <li>
+            <a>
+              <i class="icon fa fa-area-chart" aria-hidden="true"></i>
+              <h5>Analitics de empresas</h5>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>

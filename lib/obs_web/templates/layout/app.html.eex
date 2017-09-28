@@ -12,18 +12,35 @@
   </head>
 
   <body>
-      <header class="header">
-      </header>
-      <main role="main">
-        <%= render @view_module, @view_template, assigns %>
-      </main>
-      <footer class="container-fluid">
-        <div class="row">
-          <div class="col-md-4">SÍGANOS EN:</div>
-          <div class="col-md-4">INFORMACIÓN:</div>
-          <div class="col-md-4"></div>
+    <header class="header">
+      <%= render "_navbar.html" %>
+    </header>
+    <main role="main">
+      <%= render @view_module, @view_template, assigns %>
+    </main>
+    <footer class="container-fluid">
+      <div class="row">
+        <div class="col-md-4">SÍGANOS EN:</div>
+        <div class="col-md-4">INFORMACIÓN:</div>
+        <div class="col-md-4">
+          <address>
+            <h5>Mayor Información:</h5>
+            <br/>
+            Email: observatorioti@fedesoft.org
+            <br/>
+            Teléfono: (1) 604 0818 - 317 56
+          </address>
         </div>
-      </footer>
-      <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
+      </div>
+      <ul class="logos">
+        <li>
+         <div class="logo logo-fedesoft"></div>
+        </li>
+        <li>
+         <div class="logo logo-col"></div>
+        </li>
+      </ul>
+    </footer>
+    <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
   </body>
 </html>

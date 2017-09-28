@@ -1,0 +1,28 @@
+  <section class="container">
+    <header>
+      <h3 class="title">ESTUDIOS DEL SECTOR TI</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+    </header>
+    <div class="row blog">
+      <div class="col-md-3 blog--item">
+        <h4>Indicadores junio 2017 Observatorio TI</h4>
+        <img class="img-responsive" src="http://lorempixel.com/200/200/sports">
+      </div>
+      <div class="col-md-3 blog--item">
+        <h4>Exportaciones e importaciones TI</h4>
+        <img class="img-responsive" src="http://lorempixel.com/200/200/">
+      </div>
+      <div class="col-md-3 blog--item">
+        <h4>Estado de tendencias TI</h4>
+        <img src="http://lorempixel.com/200/200/sports">
+      </div>
+      <div class="col-md-3 blog--item">
+        <h4>Informe Egresados carreras TI</h4>
+        <img src="http://lorempixel.com/200/200/">
+      </div>
+    </div>
+  </section>

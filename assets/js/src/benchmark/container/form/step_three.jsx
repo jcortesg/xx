@@ -9,6 +9,10 @@ class StepThree extends React.Component {
 
     return(
       <form onSubmit={handleSubmit} className="form-horizontal">
+        <p>
+          Complete la información de los espacios, información soportada en los estados financieros de la empresa.
+          Los valores en los otros espacios en blanco serán calculados automáticamente.
+        </p>
         <legend>Balance General</legend>
           <div className="row">
             <div className="col-md-6">
@@ -52,12 +56,15 @@ class StepThree extends React.Component {
               />
             </div>
           </div>
-        <button type="button" className="previous" onClick={previousPage}>
-          Previous
-        </button>
-        <button type="submit" disabled={submitting}>
-          Submit
-        </button>
+          <div className="actions">
+            <button type="button" className="btn btn-default" onClick={previousPage}>
+              Atrás
+            </button>
+
+            <button type="submit" className="btn btn-success pull-right" disabled={submitting}>
+              Guardar
+            </button>
+          </div>
       </form>
     )
   }

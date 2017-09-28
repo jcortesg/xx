@@ -1,31 +1,18 @@
-.home{
-  .header{
-    color: #fff;
-    background-color: #333;
-    background-image: url("http://observatorioti.co/wp-content/uploads/2016/01/pexels-photo-106344.jpg");
-    min-height: 400px;
-    .overlaw{
-      background-color:rgba(0, 0, 0, 0.5);
-      min-height: 400px;
-    }
-    p{
-      padding: 50px 0px;
-    }
-  }
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600');
 
-  section{
-    padding: 30px 0px;
-    min-height: 400px;
-    border-bottom: 1px solid #dfdfdf;
+$font-family-sans-serif:  'Work Sans', sans-serif !default;
+$font-family-base: $font-family-sans-serif !default;
+$font-weight-light: 300 !default;
+$font-weight-base: $font-weight-light !default;
+$font-weight-normal: $font-weight-light !default;
 
-    .title{
-      text-align: center;
-    }
-  }
-}
+$navbar-padding-y: 0.8rem;
 
-footer{
-  padding: 20px 0px;
-  background: #262c56;
-  color: #fff;
-}
+$gray-700: #4D4F53 !default;
+$blue-700: #2A2C5B !default;
+
+$body-color: #6B7C96 !default;
+
+$navbar-light-color:                rgba($gray-700,.9) !default;
+$navbar-light-hover-color:          rgba($blue-700,.9) !default;
+$navbar-light-active-color:         rgba($blue-700,.9) !default;
