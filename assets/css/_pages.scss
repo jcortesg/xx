@@ -1,16 +1,18 @@
 .home{
   .hero{
-    background-image: url("https://bootstrap-themes.github.io/marketing/assets/img/startup-1.jpg");
+    margin-top: -80px;
+    background-image: url("../images/hero.png");
     display: table;
     width: 100%;
     color: #fff;
-    background-color: #000;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     padding: 100px 1rem 5px;
     position: relative;
     overflow: hidden;
+    height: 70vh;
+    background-color: #d7e6ef;
     .d-flex{
       height: 100%;;
     }
@@ -21,12 +23,14 @@
       width: 100%;
       bottom: 0
     }
+    h1{
+      color:#fff;
+    }
   }
 
   section{
     padding: 80px 0px;
     min-height: 400px;
-    border-bottom: 1px solid #dfdfdf;
 
     header{
       text-align: center;
@@ -68,6 +72,29 @@
 
   .actions{
     padding: 30px 5px;
+  }
+}
+
+.monitoring{
+  background-color: #d7e6ef; 
+  background-image: url("../images/bg_1.png")
+}
+.studies{
+  background-color: #edf3fc; 
+}
+
+.about{
+  background-color: #26295D;
+  color: #f7f7fd;
+  h3{
+    color: #f9AA00
+  }
+}
+.tools{
+  text-align: center;
+  img{
+    max-width: 400px;
+    width: 100%;
   }
 }
 

@@ -1,4 +1,5 @@
-  <section class="container">
+  <section class="studies">
+<div class="container">
     <header>
       <h3 class="title">ESTUDIOS DEL SECTOR TI</h3>
       <p>
@@ -24,5 +25,6 @@
         <h4>Informe Egresados carreras TI</h4>
         <img src="http://lorempixel.com/200/200/">
       </div>
+    </div>
     </div>
   </section>
