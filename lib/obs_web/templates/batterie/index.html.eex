@@ -1,5 +1,7 @@
 <section>
   <div class="container">
-    Inidicadores
+    <div id="indicators"></div>
   </div>
 </section>
+<script src="<%= static_path(@conn, "/js/app.js") %>"></script>
+<script>require("js/app").Indicators.run()</script>

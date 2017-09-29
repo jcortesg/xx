@@ -21,6 +21,22 @@ import "phoenix_html"
 // import socket from "./socket"
 import React from "react";
 import ReactDOM from "react-dom";
-import Application from "./src/application.jsx";
+import BenchmarkModule from "./src/benchmark/application.jsx";
+import IndicatorModule from "./src/indicators/module.jsx";
 
-ReactDOM.render(<Application></Application>, document.getElementById("benchmark"));
+var Benchmark = {
+  run: function run() {
+    ReactDOM.render(<BenchmarkModule/>, document.getElementById("benchmark"))
+  }
+};
+
+var Indicators = {
+  run: function run() {
+    ReactDOM.render(<IndicatorModule/>, document.getElementById("indicators"))
+  }
+};
+
+module.exports = {
+  Benchmark,
+  Indicators
+};

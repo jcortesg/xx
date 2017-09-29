@@ -17,19 +17,19 @@ class StepThree extends React.Component {
           <div className="row">
             <div className="col-md-6">
               <Field
-                name="last"
+                name="last5"
                 type="text"
                 component={renderField}
                 label="Efectivo e Inversiones"
               />
               <Field
-                name="last"
+                name="last6"
                 type="text"
                 component={renderField}
                 label="Activos Corrientes"
               />
               <Field
-                name="last"
+                name="last7"
                 type="text"
                 component={renderField}
                 label="Activos Totales"
@@ -37,19 +37,19 @@ class StepThree extends React.Component {
             </div>
             <div className="col-md-6">
               <Field
-                name="last"
+                name="last8"
                 type="text"
                 component={renderField}
                 label="Pasivo Corriente"
               />
               <Field
-                name="last"
+                name="last9"
                 type="text"
                 component={renderField}
                 label="Pasivo no Corriente"
               />
               <Field
-                name="last"
+                name="last10"
                 type="text"
                 component={renderField}
                 label="Utilidades Acumuladas"

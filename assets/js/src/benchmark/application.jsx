@@ -1,7 +1,8 @@
 import React from "react";
-import Form  from './benchmark/container/form/index.jsx';
+import Form  from './container/form/index.jsx';
 import { Provider } from 'react-redux';
 import store from './store.js';
+import ReactDOM from "react-dom";
 
 export default class Application extends React.Component {
   render() {

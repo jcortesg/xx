@@ -16,7 +16,7 @@ class StepTwo extends React.Component {
           <div className="row">
             <div className="col-md-8">
               <Field
-                name="Name"
+                name="Company"
                 type="text"
                 component={renderField}
                 label="Nombre de la compañia"
@@ -24,7 +24,7 @@ class StepTwo extends React.Component {
             </div>
             <div className="col-md-4">
               <Field
-                name="lastName"
+                name="Nit"
                 type="text"
                 component={renderField}
                 label="NIT"
@@ -36,37 +36,37 @@ class StepTwo extends React.Component {
           <div className="row">
             <div className="col-md-6">
               <Field
-                name="last"
+                name="revenue"
                 type="text"
                 component={renderField}
                 label="Ingresos"
               />
               <Field
-                name="last"
+                name="cost"
                 type="text"
                 component={renderField}
                 label="Costo de los bienes vendidos "
               />
               <Field
-                name="last"
+                name="expenses"
                 type="text"
                 component={renderField}
                 label="Otros Gastos Operativos"
               />
               <Field
-                name="last"
+                name="last1"
                 type="text"
                 component={renderField}
-                label="Otros Gastos Operativos"
+                label="Gastos Generales y Administrativos"
               />
               <Field
-                name="last"
+                name="last11"
                 type="text"
                 component={renderField}
                 label="Investigación y Mercadeo"
               />
               <Field
-                name="last"
+                name="last2"
                 type="text"
                 component={renderField}
                 label="Ingresos Netos"
@@ -74,14 +74,14 @@ class StepTwo extends React.Component {
             </div>
             <div className="col-md-6">
               <Field
-                name="last"
+                name="last3"
                 type="text"
                 component={renderField}
                 label="Ingresos del Año Anterior"
               />
 
               <Field
-                name="last"
+                name="last4"
                 type="text"
                 component={renderField}
                 label="Ingresos Netos del Año Anterior"
