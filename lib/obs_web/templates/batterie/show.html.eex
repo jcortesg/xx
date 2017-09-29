@@ -1,0 +1,23 @@
+<h2>Show Batterie</h2>
+
+<ul>
+
+  <li>
+    <strong>Title:</strong>
+    <%= @batterie.title %>
+  </li>
+
+  <li>
+    <strong>Description:</strong>
+    <%= @batterie.description %>
+  </li>
+
+  <li>
+    <strong>Sources:</strong>
+    <%= @batterie.sources %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: batterie_path(@conn, :edit, @batterie) %></span>
+<span><%= link "Back", to: batterie_path(@conn, :index) %></span>

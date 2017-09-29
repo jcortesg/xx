@@ -18,6 +18,7 @@ defmodule ObsWeb.Router do
 
     get "/", PageController, :index
     get "/benchmark", BenchmarkController, :index
+    resources "/batteries", BatterieController
   end
 
   # Other scopes may use custom stacks.
