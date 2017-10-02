@@ -1,5 +1,5 @@
-<h2>Edit Batterie</h2>
+<h2>Edit Battery</h2>
 
-<%= render "form.html", Map.put(assigns, :action, batterie_path(@conn, :update, @batterie)) %>
+<%= render "form.html", Map.put(assigns, :action, battery_path(@conn, :update, @battery)) %>
 
-<span><%= link "Back", to: batterie_path(@conn, :index) %></span>
+<span><%= link "Back", to: battery_path(@conn, :index) %></span>

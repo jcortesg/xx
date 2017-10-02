@@ -1,5 +1,5 @@
-<h2>New Batterie</h2>
+<h2>New Battery</h2>
 
-<%= render "form.html", Map.put(assigns, :action, batterie_path(@conn, :create)) %>
+<%= render "form.html", Map.put(assigns, :action, battery_path(@conn, :create)) %>
 
-<span><%= link "Back", to: batterie_path(@conn, :index) %></span>
+<span><%= link "Back", to: battery_path(@conn, :index) %></span>

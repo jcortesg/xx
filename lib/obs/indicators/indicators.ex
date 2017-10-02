@@ -6,7 +6,7 @@ defmodule Obs.Indicators do
   import Ecto.Query, warn: false
   alias Obs.Repo
 
-  alias Obs.Indicators.Batterie
+  alias Obs.Indicators.Battery
 
   @doc """
   Returns the list of batteries.
@@ -18,7 +18,7 @@ defmodule Obs.Indicators do
 
   """
   def list_batteries do
-    Repo.all(Batterie)
+    Repo.all(Battery)
   end
 
   @doc """
@@ -35,7 +35,7 @@ defmodule Obs.Indicators do
       ** (Ecto.NoResultsError)
 
   """
-  def get_batterie!(id), do: Repo.get!(Batterie, id)
+  def get_battery!(id), do: Repo.get!(Battery, id)
 
   @doc """
   Creates a batterie.
@@ -49,8 +49,8 @@ defmodule Obs.Indicators do
       {:error, %Ecto.Changeset{}}
 
   """
-  def create_batterie(attrs \\ %{}) do
-    %Batterie{}
+  def create_battery(attrs \\ %{}) do
+    %Battery{}
     |> Batterie.changeset(attrs)
     |> Repo.insert()
   end
@@ -67,9 +67,9 @@ defmodule Obs.Indicators do
       {:error, %Ecto.Changeset{}}
 
   """
-  def update_batterie(%Batterie{} = batterie, attrs) do
-    batterie
-    |> Batterie.changeset(attrs)
+  def update_battery(%Battery{} = battery, attrs) do
+    battery
+    |> Battery.changeset(attrs)
     |> Repo.update()
   end
 
@@ -85,8 +85,8 @@ defmodule Obs.Indicators do
       {:error, %Ecto.Changeset{}}
 
   """
-  def delete_batterie(%Batterie{} = batterie) do
-    Repo.delete(batterie)
+  def delete_battery(%Battery{} = battery) do
+    Repo.delete(battery)
   end
 
   @doc """
@@ -98,8 +98,8 @@ defmodule Obs.Indicators do
       %Ecto.Changeset{source: %Batterie{}}
 
   """
-  def change_batterie(%Batterie{} = batterie) do
-    Batterie.changeset(batterie, %{})
+  def change_battery(%Battery{} = battery) do
+    Battery.changeset(battery, %{})
   end
 
   alias Obs.Indicators.Dataset

@@ -54,6 +54,6 @@ config :obs, Obs.Repo,
   username: "postgres",
   #password: "password",
   password: "postgres",
-  database: "obs_dev",
+  database: "observatorio_dev",
   hostname: "localhost",
   pool_size: 10

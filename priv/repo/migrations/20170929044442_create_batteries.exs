@@ -6,6 +6,7 @@ defmodule Obs.Repo.Migrations.CreateBatteries do
       add :title, :string
       add :description, :text
       add :sources, :string
+      add :observation, :string
 
       timestamps()
     end

@@ -1,7 +1,7 @@
-defmodule Obs.Indicators.Batterie do
+defmodule Obs.Indicators.Battery do
   use Ecto.Schema
   import Ecto.Changeset
-  alias Obs.Indicators.Batterie
+  alias Obs.Indicators.Battery
 
 
   schema "batteries" do
@@ -13,8 +13,8 @@ defmodule Obs.Indicators.Batterie do
   end
 
   @doc false
-  def changeset(%Batterie{} = batterie, attrs) do
-    batterie
+  def changeset(%Battery{} = battery, attrs) do
+    battery
     |> cast(attrs, [:title, :description, :sources])
     |> validate_required([:title, :description, :sources])
   end
