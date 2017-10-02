@@ -20,8 +20,9 @@
     "react-vis": "^1.7.7",
     "redux": "^3.7.2",
     "redux-form": "^7.0.4",
-    "redux-thunk": "^2.2.0"
-  },
+    "redux-thunk": "^2.2.0",
+    "react-router": "^4.1.1"
+},
   "devDependencies": {
     "babel-brunch": "6.1.1",
     "babel-preset-env": "^1.6.0",

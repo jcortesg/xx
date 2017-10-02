@@ -18,8 +18,13 @@ defmodule ObsWeb.Router do
 
     get "/", PageController, :index
     get "/benchmark", BenchmarkController, :index
-    resources "/batteries", BatteryController
-  end
+end
+
+  scope "/batteries", ObsWeb do
+    pipe_through :browser # Use the default browser stack
+    get "/", BatteryController, :index
+    get "/*path", BatteryController, :index
+end
 
   scope "/api", ObsWeb.Api do
     pipe_through :api

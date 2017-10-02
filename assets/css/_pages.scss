@@ -181,3 +181,13 @@ footer{
     }
   }
 }
+
+.indicators{
+  &__list{
+    list-style: none;
+    &__item{
+      border-top: 1px solid #dfdfdf;
+      padding: 20px 10px 10px; 
+    }
+  }
+}

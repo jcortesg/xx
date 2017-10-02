@@ -1,3 +1,3 @@
-defmodule ObsWeb.BatterieView do
+defmodule ObsWeb.BatteryView do
   use ObsWeb, :view
 end
