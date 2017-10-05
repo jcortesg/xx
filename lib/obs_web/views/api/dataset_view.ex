@@ -14,6 +14,20 @@ defmodule ObsWeb.Api.DatasetView do
     %{id: dataset.id,
       title: dataset.title,
       source: dataset.source,
-      data: dataset.data}
+      description: dataset.description,
+      type: dataset.type,
+      x_type: dataset.x_type,
+      measurement_unit: dataset.measurement_unit,
+      series: render_many(dataset.series, DatasetView, "serie.json")
+    }
+  end
+  def render("serie.json", %{dataset: serie}) do
+    %{
+      id: serie.id,
+      name: serie.name,
+      source: serie.source,
+      type: serie.type,
+      data: serie.data
+    }
   end
 end

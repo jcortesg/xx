@@ -35,7 +35,14 @@ defmodule Obs.Indicators do
       ** (Ecto.NoResultsError)
 
   """
-  def get_battery!(id), do: Repo.get!(Battery, id)
+  def get_battery!(id) do
+    Battery
+    |> where([battery], battery.id == ^id)
+    |> join(:left, [battery], datasets in assoc(battery, :datasets))
+    |> join(:left, [battery, datasets], series in assoc(datasets, :series))
+    |> preload([battery, datasets, series], [datasets: {datasets, series: series}])
+    |> Repo.one
+  end
 
   @doc """
   Creates a batterie.
@@ -51,7 +58,7 @@ defmodule Obs.Indicators do
   """
   def create_battery(attrs \\ %{}) do
     %Battery{}
-    |> Batterie.changeset(attrs)
+    |> Battery.changeset(attrs)
     |> Repo.insert()
   end
 

@@ -9,6 +9,7 @@ defmodule Obs.Indicators.Battery do
     field :sources, :string
     field :title, :string
 
+    has_many :datasets, Obs.Indicators.Dataset
     timestamps()
   end
 

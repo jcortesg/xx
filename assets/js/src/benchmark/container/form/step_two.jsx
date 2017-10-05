@@ -12,7 +12,7 @@ class StepTwo extends React.Component {
           Los valores en los otros espacios en blanco serán calculados automáticamente.
         </p>
         <form onSubmit={handleSubmit} className="form-horizontal">
-          <legend>Datos Basicos</legend>
+          <legend>Datos Básicos</legend>
           <div className="row">
             <div className="col-md-8">
               <Field

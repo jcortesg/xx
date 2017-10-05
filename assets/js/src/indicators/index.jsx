@@ -19,7 +19,7 @@ class Index extends React.Component {
     if(!loading){
       items = batteries.map((item, index)=>(
         <li key={index} className="indicators__list__item">
-          <Link to="/batteries/1">
+          <Link to={"/batteries/"+item.id}>
             <h4>{item.title}</h4>
           </Link>
           <p>{item.description}</p>

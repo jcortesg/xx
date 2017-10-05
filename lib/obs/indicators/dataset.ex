@@ -12,16 +12,16 @@ defmodule Obs.Indicators.Dataset do
     field :periodicity, :string
     field :measurement_unit, :string
     field :x_type, :string
-    field :series_type, :string
-    field :batterie_id, :id
 
+    has_many :series, Obs.Indicators.Serie
+    belongs_to :battery, Obs.Indicators.Battery
     timestamps()
   end
 
   @doc false
   def changeset(%Dataset{} = dataset, attrs) do
     dataset
-    |> cast(attrs, [:title, :source, :data, :description, :type, :periodicity, :measurement_unit, :x_type, :serie_type ])
-    |> validate_required([:title, :source, :data, :type])
+    |> cast(attrs, [:title, :source, :description, :type, :periodicity, :measurement_unit, :x_type])
+    |> validate_required([:title, :source, :type])
   end
 end

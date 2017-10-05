@@ -5,13 +5,13 @@ defmodule Obs.Indicators.Serie do
 
 
   schema "indicators_series" do
-    field :data, :string
+    field :data, {:array, :map}
     field :description, :string
     field :name, :string
     field :source, :string
     field :type, :string
-    field :dataset_id, :id
 
+    belongs_to :dataset, Obs.Indicators.Dataset
     timestamps()
   end
 

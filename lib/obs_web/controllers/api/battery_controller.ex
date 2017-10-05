@@ -10,4 +10,18 @@ defmodule ObsWeb.Api.BatteryController do
     batteries = Indicators.list_batteries()
     render(conn, "index.json", batteries: batteries)
   end
+
+  def show(conn, %{"id" => id}) do
+    battery = Indicators.get_battery!(id)
+    render(conn, "show.json", battery: battery)
+  end
+
+  def create(conn, %{"battery" => battery_params}) do
+    with {:ok, %Battery{} = battery} <- Indicators.create_battery(battery_params) do
+      battery = Indicators.get_battery!(battery.id)
+      conn
+      |> put_status(:created)
+      |> render("show.json", battery: battery)
+    end
+  end
 end

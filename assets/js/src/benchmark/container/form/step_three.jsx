@@ -4,7 +4,6 @@ import renderField from '../../../components/renderField.jsx';
 
 class StepThree extends React.Component {
   render(){
-    console.log(this.props)
     const { handleSubmit, pristine, previousPage, submitting } = this.props
 
     return(

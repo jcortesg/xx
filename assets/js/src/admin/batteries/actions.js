@@ -1,4 +1,4 @@
-import api from '../../src/utils/request.js'
+import api from '../../utils/request.js';
 
 export function loadBatteries() {
   return (dispatch) => api.fetch(`/batteries/`)
@@ -13,3 +13,11 @@ export function loadBattery(id){
       dispatch({type: 'LOAD_BATTERY', playload: res.data})
     })
 }
+
+export function saveBattery(values){
+  return (dispatch) => api.post(`/batteries/`, { battery: values })
+    .then((res) => {
+      window.location.replace(`/admin/batteries/${res.data.id}`)
+    })
+}
+

@@ -11,11 +11,11 @@ defmodule Obs.Repo.Migrations.CreateDatasets do
       add :measurement_unit, :string
       add :x_type, :string
       add :serie_type, :string
-      add :batterie_id, references(:batteries, on_delete: :nothing)
+      add :battery_id, references(:batteries, on_delete: :nothing)
 
       timestamps()
     end
 
-    create index(:datasets, [:batterie_id])
+    create index(:datasets, [:battery_id])
   end
 end
