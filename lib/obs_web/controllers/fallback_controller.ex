@@ -18,4 +18,8 @@ defmodule ObsWeb.FallbackController do
     |> put_status(:not_found)
     |> render(ObsWeb.ErrorView, :"404")
   end
+
+  def call(conn, params) do
+    IO.inspect params
+  end
 end

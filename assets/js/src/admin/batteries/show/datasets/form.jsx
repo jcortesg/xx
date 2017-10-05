@@ -6,7 +6,7 @@ import renderField from '../../../../components/renderField.jsx';
 import {required} from '../../../../utils/validation_field.js';
 import {renderDatasetFields} from './seriesField.jsx';
 import {renderSerie} from './series.jsx';
-import SelectField from '../../../components/selectField.jsx'; 
+import SelectField from '../../../components/selectField.jsx';
 import {
   Link
 }from 'react-router-dom';
@@ -73,7 +73,7 @@ class Form extends React.Component {
       if(series !== undefined){
         s = series.map((serie, index) =>{
           if(serie.data !== undefined){
-            return(renderSerie(index , serie.data, serie.type))
+            return(renderSerie(index , serie.data, serie.type, serie.color))
           }
         })
       }
@@ -148,7 +148,7 @@ class Form extends React.Component {
             {additional_field}
             <div className="row">
               <div className="col-md-6">
-                <div className="indicators__partial">
+                <div className="indicators__partial text-center">
                   {title}
                   {chart}
                   <small>fuente: {source}</small>
@@ -177,7 +177,6 @@ Form = reduxForm({
 const selector = formValueSelector('dataset')
 
 function mapStateToProps(state) {
-  console.log(state)
   const {
     type,
     title,

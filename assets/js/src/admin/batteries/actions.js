@@ -21,3 +21,9 @@ export function saveBattery(values){
     })
 }
 
+export function saveDataset(batteryId, values){
+  return (dispatch) => api.post(`/batteries/${batteryId}/datasets`, { dataset: values })
+    .then((res) => {
+      window.location.replace(`/admin/batteries/${batteryId}`)
+    })
+}

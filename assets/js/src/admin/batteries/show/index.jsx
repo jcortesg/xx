@@ -1,25 +1,53 @@
 import { connect } from 'react-redux';
 import React from "react";
-import { loadBattery } from '../actions.js';
+import { loadBattery, saveDataset } from '../actions.js';
 import { Provider } from 'react-redux';
 import renderField from '../../../components/renderField.jsx';
 import DatasetForm from './datasets/form.jsx';
+import Chart from '../../../components/charts.jsx'
 import {
   Link
 }from 'react-router-dom';
 
 class Index extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {activeForm: false, charts: []}
+  }
+
   componentWillMount() {
     const id = this.props.match.params.id;
     this.props.dispatch(loadBattery(id));
   }
 
   saveDatasets(values){
-    console.log(values)
+    const id = this.props.match.params.id;
+    this.props.dispatch(saveDataset(id, values));
+  }
+
+  activeForm(){
+   this.setState({activeFrom: true});
+  }
+
+  closeForm(){
+   this.setState({activeFrom: false});
   }
 
   render() {
     const {battery} = this.props
+    let form = ""
+
+
+    if(this.state.activeFrom){
+      form =(
+        <div>
+          <button onClick={this.closeForm.bind(this)}>Cancelar</button>
+          <DatasetForm sendInfo={this.saveDatasets.bind(this)}/>
+        </div>
+      )
+    }else{
+      form = <button onClick={this.activeForm.bind(this)}>Nueva Set de Datos</button>
+    }
 
     return(
       <div className="indicators">
@@ -32,7 +60,12 @@ class Index extends React.Component {
         </header>
         <strong>Fuente:</strong> <em>{battery.sources}</em>
         <hr/>
-        <DatasetForm sendInfo={this.saveDatasets.bind(this)}/>
+        {form}
+        <hr/>
+        {battery.datasets.map((item, index) =>{
+          return(<Chart dataset={item}/>)
+         })
+        }
       </div>
     )
   }

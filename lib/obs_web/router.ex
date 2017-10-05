@@ -34,8 +34,9 @@ defmodule ObsWeb.Router do
 
   scope "/api", ObsWeb.Api do
     pipe_through :api
-    resources "/datasets", DatasetController
-    resources "/batteries", BatteryController
+    resources "/batteries", BatteryController do
+      resources "/datasets", DatasetController
+    end
   end
 
   # Other scopes may use custom stacks.

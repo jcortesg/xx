@@ -19,6 +19,6 @@ defmodule Obs.Indicators.Serie do
   def changeset(%Serie{} = serie, attrs) do
     serie
     |> cast(attrs, [:name, :description, :source, :type, :data])
-    |> validate_required([:name, :description, :source, :type, :data])
+    |> validate_required([:name, :type, :data])
   end
 end

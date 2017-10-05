@@ -11,8 +11,10 @@ defmodule ObsWeb.Api.DatasetController do
     render(conn, "index.json", datasets: datasets)
   end
 
-  def create(conn, %{"dataset" => dataset_params}) do
-    with {:ok, %Dataset{} = dataset} <- Indicators.create_dataset(dataset_params) do
+  def create(conn, %{"dataset" => dataset_params, "battery_id" => battery}) do
+    with {:ok, %Dataset{} = dataset} <- Indicators.create_dataset(
+           dataset_params |> Map.put("battery_id", battery)
+         ) do
       conn
       |> put_status(:created)
       |> render("show.json", dataset: dataset)

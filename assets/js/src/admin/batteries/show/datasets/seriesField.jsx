@@ -33,7 +33,7 @@ const renderLineal = ({ fields, meta: { error, submitFailed } }) => {
       {fields.map((member, index) =>
         <li key={index}>
           <div className="row">
-            <div className="col-sm-6">
+            <div className="col-sm-4">
               <Field
                 name={`${member}.name`}
                 type="text"
@@ -42,14 +42,28 @@ const renderLineal = ({ fields, meta: { error, submitFailed } }) => {
                 validate={required}
               />
             </div>
-            <div className="col-sm-4">
+            <div className="col-sm-3">
               <Field
                 name={`${member}.type`}
                 component={SelectField}
                 label="Tipo:"
                 validate={required}>
+                <option />
                 <option value="LineSeries">Lineal</option>
                 <option value="BarSeries">Barras</option>
+              </Field>
+            </div>
+            <div className="col-sm-3">
+              <Field
+                name={`${member}.color`}
+                type="text"
+                component={SelectField}
+                label="Color">
+                <option />
+                <option value="#c9c9ff">Azul</option>
+                <option value="#d6ffc6">Verde</option>
+                <option value="#ffe2f1">Rosa</option>
+                <option value="#feffb9">Amarillo</option>
               </Field>
             </div>
             <div className="col-sm-2">
@@ -124,6 +138,44 @@ const renderRadial = ({ fields, meta: { error, submitFailed } }) => {
           <div className="row">
             <div className="col-sm-6">
               <Field
+                name={`${member}.name`}
+                type="text"
+                component={renderSerieField}
+                label="Nombre "
+                validate={required}
+              />
+            </div>
+            <div className="col-sm-3">
+              <Field
+                name={`${member}.type`}
+                type="text"
+                component={SelectField}
+                label="Tipo"
+                validate={required}>
+                <option />
+                <option value="Radio">Radio</option>
+              </Field>
+            </div>
+          </div>
+          <FieldArray name={`${member}.data`} component={renderRadioField} />
+        </li>
+       )}
+    </ul>
+  )
+}
+const renderRadioField = ({fields, meta: {error, submitFailed}}) => {
+  return(
+    <ul className="list-unstyled">
+      <li>
+        <button type="button" className="btn btn-sm btn-success" onClick={() => fields.push({})}>
+          Agregar Valor
+        </button>
+      </li>
+      {fields.map((member, index) =>
+        <li key={index}>
+          <div className="row">
+            <div className="col-sm-6">
+              <Field
                 name={`${member}.label`}
                 type="text"
                 component={renderSerieField}
@@ -145,10 +197,14 @@ const renderRadial = ({ fields, meta: { error, submitFailed } }) => {
               <Field
                 name={`${member}.color`}
                 type="text"
-                component={renderSerieField}
-                label="Color "
-                validate={required}
-              />
+                component={SelectField}
+                label="Color">
+                <option />
+                <option value="#c9c9ff">Azul</option>
+                <option value="#d6ffc6">Verde</option>
+                <option value="#ffe2f1">Rosa</option>
+                <option value="#feffb9">Amarillo</option>
+              </Field>
             </div>
           </div>
         </li>

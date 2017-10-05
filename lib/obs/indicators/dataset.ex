@@ -21,7 +21,8 @@ defmodule Obs.Indicators.Dataset do
   @doc false
   def changeset(%Dataset{} = dataset, attrs) do
     dataset
-    |> cast(attrs, [:title, :source, :description, :type, :periodicity, :measurement_unit, :x_type])
-    |> validate_required([:title, :source, :type])
+    |> cast(attrs, [:title, :source, :battery_id, :description, :type, :periodicity, :measurement_unit, :x_type])
+    |> validate_required([:title,:battery_id, :source, :type])
+    |> assoc_constraint(:battery)
   end
 end
