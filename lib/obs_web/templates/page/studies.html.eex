@@ -1,0 +1,7 @@
+<section>
+  <div class="container">
+    <div id="studies"></div>
+  </div>
+</section>
+<script src="<%= static_path(@conn, "/js/app.js") %>"></script>
+<script>require("js/app").Studies.run()</script>

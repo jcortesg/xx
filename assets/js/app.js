@@ -24,6 +24,7 @@ import ReactDOM from "react-dom";
 import BenchmarkModule from "./src/benchmark/application.jsx";
 import IndicatorModule from "./src/indicators/module.jsx";
 import AdminModule from "./src/admin/module.jsx"
+import StudiesModule from "./src/studies/module.jsx";
 
 var Benchmark = {
   run: function run() {
@@ -43,8 +44,15 @@ var Admin = {
   }
 }
 
+var Studies = {
+  run: function run() {
+    ReactDOM.render(<StudiesModule/>, document.getElementById("studies"))
+  }
+}
+
 module.exports = {
   Benchmark,
   Indicators,
-  Admin
+  Admin,
+  Studies
 };

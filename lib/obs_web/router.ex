@@ -18,6 +18,7 @@ defmodule ObsWeb.Router do
 
     get "/", PageController, :index
     get "/benchmark", BenchmarkController, :index
+    get "/studies", PageController, :studies
   end
 
   scope "/batteries", ObsWeb do
