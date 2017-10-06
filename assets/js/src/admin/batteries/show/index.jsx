@@ -22,6 +22,13 @@ class Index extends React.Component {
 
   saveDatasets(values){
     const id = this.props.match.params.id;
+    if(values.type == "Table"){
+      try{
+        values.series[0].data = JSON.parse(values.series[0].data)
+      }catch(err){
+        console.log(err)
+      }
+    }
     this.props.dispatch(saveDataset(id, values));
   }
 

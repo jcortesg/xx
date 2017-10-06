@@ -27,3 +27,10 @@ export function saveDataset(batteryId, values){
       window.location.replace(`/admin/batteries/${batteryId}`)
     })
 }
+
+export function loadCategories(){
+  return (dispatch) => api.fetch(`/categories/0`)
+    .then((res) => {
+      dispatch({type: 'LOAD_CATEGORY', playload: res.data})
+    })
+}

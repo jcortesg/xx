@@ -34,7 +34,6 @@ attrs = %{
   x_type: "ordinal"
 }
 
-IO.inspect battery.id
 {:ok, dataset} =
   %Dataset{}
   |> Dataset.changeset(attrs)

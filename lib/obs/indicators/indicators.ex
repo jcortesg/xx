@@ -6,7 +6,11 @@ defmodule Obs.Indicators do
   import Ecto.Query, warn: false
   alias Obs.Repo
 
-  alias Obs.Indicators.{Battery,Serie}
+  alias Obs.Indicators.{Battery,Serie, Category}
+
+  def list_categories do
+    Repo.all(Category)
+  end
 
   def list_batteries do
     Repo.all(Battery)
@@ -17,7 +21,8 @@ defmodule Obs.Indicators do
     |> where([battery], battery.id == ^id)
     |> join(:left, [battery], datasets in assoc(battery, :datasets))
     |> join(:left, [battery, datasets], series in assoc(datasets, :series))
-    |> preload([battery, datasets, series], [datasets: {datasets, series: series}])
+    |> join(:left, [battery], category in assoc(battery, :category))
+    |> preload([battery, datasets, series, category], [datasets: {datasets, series: series}, category: category])
     |> Repo.one
   end
 

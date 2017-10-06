@@ -14,7 +14,8 @@ defmodule ObsWeb.Api.BatteryView do
         description: battery.description,
         title: battery.title,
         sources: battery.sources,
-        datasets: render_many(battery.datasets, DatasetView, "dataset.json")
+        datasets: render_many(battery.datasets, DatasetView, "dataset.json"),
+        category: render_one(battery.category, ObsWeb.Api.CategoryView, "category.json")
       }
     }
   end

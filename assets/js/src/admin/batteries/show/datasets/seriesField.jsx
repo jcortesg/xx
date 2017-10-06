@@ -14,7 +14,7 @@ const renderSerieField = ({ input, label, type, meta: { touched, error } }) => {
 export const renderDatasetFields = (props) => {
   switch(props.dataType){
     case "Table":
-      return "table"
+      return renderTable(props)
     case "Radial":
       return(renderRadial(props))
     case "Lineal":
@@ -22,6 +22,42 @@ export const renderDatasetFields = (props) => {
       return(renderLineal(props))
   }
 }
+const renderTable = ({ fields, meta: { error, submitFailed } }) => {
+  return(
+    <div className="row">
+      <div className="col-sm-7">
+        <Field
+          name={`series[0].name`}
+          type="text"
+          component={renderSerieField}
+          label="Nombre"
+          validate={required}
+        />
+      </div>
+      <div className="col-sm-5">
+        <Field
+          name={`series[0].type`}
+          component={SelectField}
+          label="Tipo:"
+          validate={required}>
+          <option />
+          <option value="table">Tabla</option>
+        </Field>
+      </div>
+      <div className="col-sm-12">
+        <label>Datos:</label>
+        <Field
+          name={`series[0].data`}
+          component="textarea"
+          className="form-control"
+          validate={required}>
+        </Field>
+        <br/>
+      </div>
+    </div>
+  )
+}
+
 const renderLineal = ({ fields, meta: { error, submitFailed } }) => {
   return(
     <ul className="list-unstyled field-list">

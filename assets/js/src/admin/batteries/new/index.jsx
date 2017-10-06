@@ -2,8 +2,9 @@ import React from "react";
 import { connect } from 'react-redux';
 import { Provider } from 'react-redux';
 import { Field, reduxForm } from 'redux-form';
-import {saveBattery} from '../actions.js';
+import {saveBattery, loadCategories} from '../actions.js';
 import renderField from './../../../components/renderField.jsx';
+import SelectField from '../../components/selectField.jsx';
 import {required} from './../../../utils/validation_field.js';
 import {
   Link
@@ -15,12 +16,17 @@ class New extends React.Component {
     this.saveBattery = this.saveBattery.bind(this)
   }
 
+  componentWillMount() {
+    this.props.dispatch(loadCategories());
+  }
+
   saveBattery(values){
     this.props.dispatch(saveBattery(values))
   }
 
   render() {
     const { handleSubmit } = this.props
+
     return(
       <div className="indicators">
         <div className="controls">
@@ -50,12 +56,17 @@ class New extends React.Component {
              </div>
              <div className="col-md-12">
                <Field
-                 name="category_id"
-                 type="text"
-                 component={renderField}
-                 label="Categoría:"
-                 validate={required}
-               />
+                 name={`category_id`}
+                 component={SelectField}
+                 label="Categotia:"
+                 validate={required}>
+                 <option />
+                 {
+                   this.props.categories.map((item,index)=>{
+                     return(<option key={index} value={item.id}>{item.name}</option>)
+                  })
+                 }
+               </Field>
              </div>
              <div className="col-md-12">
                <Field
@@ -93,7 +104,8 @@ class New extends React.Component {
 
 function mapStateToProps(state) {
   return{
-    state
+    state,
+    categories: state.indicators.categories
   }
 }
 New = reduxForm({

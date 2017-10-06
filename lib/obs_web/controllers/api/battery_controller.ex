@@ -24,4 +24,10 @@ defmodule ObsWeb.Api.BatteryController do
       |> render("show.json", battery: battery)
     end
   end
+  def delete(conn, %{"id" => id}) do
+    battery = Indicators.get_battery!(id)
+    with {:ok, %Battery{}} <- Indicators.delete_battery(battery) do
+      send_resp(conn, :no_content, "")
+    end
+  end
 end

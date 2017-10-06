@@ -6,6 +6,7 @@ const initialState = {
   battery:{
     datasets: []
   },
+  categories: [],
   loading: true
 };
 
@@ -15,6 +16,8 @@ function indicators(state = initialState, action ) {
     return Object.assign({}, state, { loading: true });
   case 'LOAD_BATTERIES':
     return Object.assign({}, state, { batteries: action.playload, loading: false });
+  case 'LOAD_CATEGORY':
+    return Object.assign({}, state, { categories: action.playload });
   case 'LOAD_BATTERY':
     return Object.assign({}, state, { battery: action.playload, loading: false });
   default:

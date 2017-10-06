@@ -11,7 +11,7 @@ defmodule Obs.Repo.Migrations.CreateDatasets do
       add :measurement_unit, :string
       add :x_type, :string
       add :serie_type, :string
-      add :battery_id, references(:batteries, on_delete: :nothing)
+      add :battery_id, references(:batteries, on_delete: :delete_all)
 
       timestamps()
     end

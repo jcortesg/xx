@@ -69,7 +69,7 @@ class Form extends React.Component {
       serie_field = (
         <FieldArray name="series" dataType="Radial" component={renderDatasetFields} />
       )
-    }else{
+    }else if(type == "Lineal"){
       if(series !== undefined){
         s = series.map((serie, index) =>{
           if(serie.data !== undefined){
@@ -107,6 +107,52 @@ class Form extends React.Component {
             </Field>
           </div>
         </div>
+      )
+    }else{
+      let header = []
+      let body = []
+      if(series !== undefined){
+        s = series.map((serie, index) =>{
+          if(serie.data !== undefined){
+            try {
+              body =
+                (JSON.parse(serie.data)).map((obj, index) => {
+                if(index == 0){
+                  header =
+                    (Object.keys(obj)).map((hd, index) =>{
+                      return(<th>{hd}</th>)
+                    })
+                }
+                let keys = Object.keys(obj)
+                  return(
+                    <tr>
+                      {(Object.keys(obj)).map((hd, index) =>{
+                         return(<td>{obj[hd]}</td>)
+                       })}
+                    </tr>
+                  )
+              })
+            }catch(err){
+              console.log(err)
+            }
+          }
+        })
+      }
+
+      chart =(
+        <table className="table">
+          <thead>
+            <tr>
+              {header}
+            </tr>
+          </thead>
+          <tbody>
+            {body}
+          </tbody>
+        </table>
+      )
+      serie_field = (
+        <FieldArray name="series" x_type={x_type} dataType="Table" component={renderDatasetFields} />
       )
     }
 

@@ -8,7 +8,7 @@ defmodule Obs.Repo.Migrations.CreateIndicatorsSeries do
       add :source, :string
       add :type, :string
       add :data, {:array, :map}
-      add :dataset_id, references(:datasets, on_delete: :nothing)
+      add :dataset_id, references(:datasets, on_delete: :delete_all)
 
       timestamps()
     end

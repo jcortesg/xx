@@ -67,12 +67,63 @@ export const renderSerie = (key, data, type, color) =>{
   }
 }
 
+export const Table = (props) =>{
+  let series = props.data.series
+  let header = []
+  let body = []
+  let key = 0
+  if(series !== undefined){
+    series.map((serie, index) =>{
+      if(serie.data !== undefined){
+        try {
+          body =
+            serie.data.map((obj, index) => {
+              if(index == 0){
+                header =
+                  (Object.keys(obj)).map((hd, index) =>{
+                    return(<th>{hd}</th>)
+                  })
+              }
+              let keys = Object.keys(obj)
+              return(
+                <tr>
+                  {(Object.keys(obj)).map((hd, index) =>{
+                     return(<td>{obj[hd]}</td>)
+                   })}
+                </tr>
+              )
+            })
+        }catch(err){
+          console.log(err)
+        }
+      }
+    })
+  }
+  return(
+    <div>
+      <h4 className="text-center">{props.data.title}</h4>
+      <table key="x" className="table table-striped">
+        <thead>
+          <tr>
+            {header}
+          </tr>
+        </thead>
+        <tbody>
+          {body}
+        </tbody>
+      </table>
+    </div>
+  )
+}
+
 export default class Chart extends React.Component {
   render(){
     const {dataset} = this.props
     switch(dataset.type){
       case "Radial":
         return (<Radial data={dataset} />)
+      case "Table":
+        return (<Table data={dataset} />)
       default:
         return (<Lineal data={dataset} />)
     }

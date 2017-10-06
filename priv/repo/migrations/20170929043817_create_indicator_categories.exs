@@ -4,7 +4,7 @@ defmodule Obs.Repo.Migrations.CreateIndicatorCategories do
   def change do
     create table(:indicator_categories) do
       add :name, :string
-
+      add :type, :string
       timestamps()
     end
 
