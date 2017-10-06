@@ -3,6 +3,7 @@ import React from "react";
 import { Provider } from 'react-redux';
 import {loadBattery} from './actions.js';
 import Dataset from './datasets/dataset.jsx';
+import Chart from '../components/charts.jsx';
 
 class Show extends React.Component {
   componentWillMount() {
@@ -18,7 +19,7 @@ class Show extends React.Component {
 
     if(!loading){
       datasets = battery.datasets.map((item, index) =>(
-        <Dataset key={index} data={item}/>
+        <Chart key={index} dataset={item}/>
       ))
     }
 
@@ -30,9 +31,7 @@ class Show extends React.Component {
               {battery.title}
             </h4>
             <p>{battery.description}</p>
-            <strong>Fuente: </strong>{battery.source}
             <br/>
-            <strong>Fecha: </strong>
             <div className="datasets">
               {datasets}
             </div>

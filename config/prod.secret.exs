@@ -15,6 +15,6 @@ config :obs, ObsWeb.Endpoint,
 config :obs, Obs.Repo,
   adapter: Ecto.Adapters.Postgres,
   username: "postgres",
-  password: "postgres",
-  database: "obs_prod",
+  password: "password",
+  database: "observatorio_dev",
   pool_size: 15

@@ -14,8 +14,9 @@ import {
 } from 'react-vis';
 
 const Radial = props => {
-  console.log(props.data.series[0])
   return(
+      <div className="row">
+      <div className="col-md-8">
       <RadialChart
       colorType={'literal'}
       colorDomain={[0, 100]}
@@ -25,6 +26,20 @@ const Radial = props => {
       showLabels
       width={400}
       height={200} />
+
+</div>
+<div className="col-md-4">
+  {props.data.series.map((serie, index) =>
+    serie.data.map((item, index) =>
+      <ul>
+        <li>
+          <div styleHtml="xx"></div><strong>{item.label}:</strong>{item.angle}
+        </li>
+      </ul>
+    )
+   )}
+</div>
+    </div>
   )
 }
 
@@ -37,17 +52,36 @@ const Lineal = props => {
   })
 
   return(
+    <div>
+    <h4 className="text-center">{props.data.title}</h4>
+    <div className="row">
+      <div className= "col-md-8">
         <XYPlot
-        xType={props.data.x_type}
-        width={400}
-        height={300}
-        xDistance={100}>
+          xType={props.data.x_type}
+          width={500}
+          height={300}
+          xDistance={100}>
           <VerticalGridLines />
           <HorizontalGridLines />
           <XAxis />
           <YAxis />
           {s}
         </XYPlot>
+        <em>fuente: {props.data.source}</em>
+      </div>
+      <div className="col-md-4">
+        {props.data.series.map((serie, index) =>
+           serie.data.map((item, index) =>
+             <ul>
+               <li>
+               <strong>{item.x}:</strong>{item.y}
+               </li>
+             </ul>
+           )
+         )}
+      </div>
+    </div>
+    </div>
   )
 }
 

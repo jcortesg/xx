@@ -16,10 +16,10 @@
           <a class="nav-link" href="#">Estudios del sector</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Últimos informes</a>
+          <a class="nav-link" href="#">Boletines</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Analytic empresas TI</a>
+          <a class="nav-link" href="#">Principales indicadores</a>
         </li>
       </ul>
     </div>
