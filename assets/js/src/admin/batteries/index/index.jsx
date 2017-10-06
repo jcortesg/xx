@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import React from "react";
 import { Provider } from 'react-redux';
-import {loadBatteries} from '../actions.js'
+import {loadBatteries, deleteBattery} from '../actions.js'
 import renderField from '../../../components/renderField.jsx';
 import {
   Link
@@ -11,6 +11,10 @@ class Index extends React.Component {
   componentWillMount() {
     // despachamos la acción al store
     this.props.dispatch(loadBatteries());
+  }
+
+  deleteBattery(id){
+    this.props.dispatch(deleteBattery(id))
   }
 
   render() {
@@ -28,7 +32,11 @@ class Index extends React.Component {
           <td>
             {item.description}
           </td>
-          <td></td>
+          <td>
+            <button onClick={() => this.deleteBattery(item.id)} className="btn btn-sm btn-danger">
+              Eliminar
+            </button>
+          </td>
         </tr>
       ))
     }
@@ -46,7 +54,7 @@ class Index extends React.Component {
             <tr>
               <th>Título</th>
               <th>Descripción</th>
-              <th>Publicado</th>
+              <th></th>
             </tr>
           </thead>
           <tbody>
