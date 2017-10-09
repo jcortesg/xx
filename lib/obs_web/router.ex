@@ -39,6 +39,7 @@ defmodule ObsWeb.Router do
     resources "/batteries", BatteryController do
       resources "/datasets", DatasetController
     end
+    resources "/posts", PostController, except: [:new, :edit]
   end
 
   # Other scopes may use custom stacks.

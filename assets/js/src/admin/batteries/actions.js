@@ -1,7 +1,8 @@
 import api from '../../utils/request.js';
 
 export function loadBatteries() {
-  return (dispatch) => api.fetch(`/batteries/`)
+  return (dispatch) =>
+    api.fetch(`/batteries/`)
     .then((response) => {
       dispatch({ type: 'LOAD_BATTERIES', playload: response.data });
     });

@@ -1,5 +1,6 @@
 import { combineReducers } from 'redux';
 import { reducer as form } from 'redux-form';
+import cms from './cms/reducer.js';
 
 const initialState = {
   batteries: [],
@@ -27,7 +28,8 @@ function indicators(state = initialState, action ) {
 
 const appReducer = combineReducers({
   form,
-  indicators
+  indicators,
+  cms
 });
 
 export default function (state, action) {
