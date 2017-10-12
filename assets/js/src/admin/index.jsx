@@ -9,7 +9,7 @@ import {
   BrowserRouter as Router,
   Route,
   Switch
-}from 'react-router-dom'
+} from 'react-router-dom'
 
 export default class Index extends React.Component {
   render() {

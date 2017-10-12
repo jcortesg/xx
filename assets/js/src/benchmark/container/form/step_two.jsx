@@ -25,7 +25,7 @@ class StepTwo extends React.Component {
             <div className="col-md-4">
               <Field
                 name="Nit"
-                type="text"
+                type="number"
                 component={renderField}
                 label="NIT"
               />
@@ -36,53 +36,53 @@ class StepTwo extends React.Component {
           <div className="row">
             <div className="col-md-6">
               <Field
-                name="revenue"
-                type="text"
+                name="total_revenue"
+                type="number"
                 component={renderField}
                 label="Ingresos"
               />
               <Field
-                name="cost"
-                type="text"
+                name="cost_revenue"
+                type="number"
                 component={renderField}
                 label="Costo de los bienes vendidos "
               />
               <Field
-                name="expenses"
-                type="text"
+                name="operating_expenses"
+                type="number"
                 component={renderField}
                 label="Otros Gastos Operativos"
               />
               <Field
-                name="last1"
-                type="text"
+                name="administrative_expenses"
+                type="number"
                 component={renderField}
                 label="Gastos Generales y Administrativos"
               />
               <Field
-                name="last11"
-                type="text"
+                name="research_market"
+                type="number"
                 component={renderField}
                 label="Investigación y Mercadeo"
               />
               <Field
-                name="last2"
-                type="text"
+                name="net_income"
+                type="number"
                 component={renderField}
                 label="Ingresos Netos"
               />
             </div>
             <div className="col-md-6">
               <Field
-                name="last3"
-                type="text"
+                name="previous_income"
+                type="number"
                 component={renderField}
                 label="Ingresos del Año Anterior"
               />
 
               <Field
-                name="last4"
-                type="text"
+                name="previous_net_income"
+                type="number"
                 component={renderField}
                 label="Ingresos Netos del Año Anterior"
               />

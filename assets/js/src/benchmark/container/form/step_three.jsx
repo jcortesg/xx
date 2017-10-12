@@ -7,7 +7,7 @@ class StepThree extends React.Component {
     const { handleSubmit, pristine, previousPage, submitting } = this.props
 
     return(
-      <form onSubmit={handleSubmit} className="form-horizontal">
+      <form onSubmit={handleSubmit.bind(this)} className="form-horizontal">
         <p>
           Complete la información de los espacios, información soportada en los estados financieros de la empresa.
           Los valores en los otros espacios en blanco serán calculados automáticamente.
@@ -16,40 +16,40 @@ class StepThree extends React.Component {
           <div className="row">
             <div className="col-md-6">
               <Field
-                name="last5"
-                type="text"
+                name="cash_n_investments"
+                type="number"
                 component={renderField}
                 label="Efectivo e Inversiones"
               />
               <Field
-                name="last6"
-                type="text"
+                name="current_assets"
+                type="number"
                 component={renderField}
                 label="Activos Corrientes"
               />
               <Field
-                name="last7"
-                type="text"
+                name="total_assets"
+                type="number"
                 component={renderField}
                 label="Activos Totales"
               />
             </div>
             <div className="col-md-6">
               <Field
-                name="last8"
-                type="text"
+                name="current_liabilities"
+                type="number"
                 component={renderField}
                 label="Pasivo Corriente"
               />
               <Field
-                name="last9"
-                type="text"
+                name="non-current_liabilities"
+                type="number"
                 component={renderField}
                 label="Pasivo no Corriente"
               />
               <Field
-                name="last10"
-                type="text"
+                name="acumulated utilities"
+                type="number"
                 component={renderField}
                 label="Utilidades Acumuladas"
               />

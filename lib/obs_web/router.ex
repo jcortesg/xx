@@ -17,7 +17,6 @@ defmodule ObsWeb.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
-    get "/benchmark", BenchmarkController, :index
     get "/studies", PageController, :studies
   end
 
@@ -25,6 +24,12 @@ defmodule ObsWeb.Router do
     pipe_through :browser # Use the default browser stack
     get "/", BatteryController, :index
     get "/*path", BatteryController, :index
+  end
+
+  scope "/benchmark", ObsWeb do
+    pipe_through :browser # Use the default browser stack
+    get "/", BenchmarkController, :index
+    get "/*path", BenchmarkController, :index
   end
 
   scope "/admin", ObsWeb do
