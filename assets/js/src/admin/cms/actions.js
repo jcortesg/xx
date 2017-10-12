@@ -11,6 +11,13 @@ export function loadPosts() {
   }
 }
 
+export function loadPost(id){
+  return(dispatch) => api.fetch(`/posts/`+id)
+    .then((res) => {
+      dispatch({type: 'LOAD_POST', playload: res.data})
+    })
+}
+
 export function savePost(values) {
   return (dispatch) => {
     // Show the loading indicator
@@ -18,10 +25,22 @@ export function savePost(values) {
     api.post(`/posts/`, {post: values})
       .then((response) => {
         dispatch({ type: 'SAVE_POST', playload: response.data });
+        window.location.replace(`/admin/cms/${response.data.id}`)
       }).catch((err) => (console.log(err)));
   }
 }
 
 export function sendingRequest(sending) {
   return { type: 'SENDING_REQUEST', sending };
+}
+
+export function loadCategories(){
+  return (dispatch) =>{
+    dispatch(sendingRequest(true))
+    api.fetch(`/categories/0`)
+    .then((res) => {
+      console.log(res)
+      dispatch({type: 'LOAD_CATEGORY', playload: res.data})
+    })
+  }
 }

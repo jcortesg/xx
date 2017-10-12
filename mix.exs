@@ -20,7 +20,7 @@ defmodule Obs.Mixfile do
   def application do
     [
       mod: {Obs.Application, []},
-      extra_applications: [:logger, :runtime_tools, :exrm, :edeliver]
+      extra_applications: [:logger, :runtime_tools, :arc_ecto, :exrm, :edeliver]
     ]
   end
 
@@ -41,6 +41,8 @@ defmodule Obs.Mixfile do
       {:phoenix_live_reload, "~> 1.0", only: :dev},
       {:gettext, "~> 0.11"},
       {:edeliver, "~> 1.4.4"},
+      {:arc, "~> 0.8.0"},
+      {:arc_ecto, "~> 0.7.0"},
       {:exrm, "~> 1.0"},
       {:distillery, ">= 0.8.0", warn_missing: true},
       {:cowboy, "~> 1.0"}

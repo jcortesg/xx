@@ -17,22 +17,22 @@ export default class Application extends React.Component {
               <h4>Indicadores</h4>
               <ul className="nav nav-pills flex-column">
                 <li className="nav-item">
-                  <Link to="/admin/cms" className="nav-link">
+                  <Link to="#" className="nav-link">
                     Industria
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link to="/admin/cms" className="nav-link">
+                  <Link to="#" className="nav-link">
                     Mercado
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link to="/admin/cms" className="nav-link">
+                  <Link to="#" className="nav-link">
                     Talento
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link to="/admin/cms" className="nav-link">
+                  <Link to="#" className="nav-link">
                     Tendencias
                   </Link>
                 </li>

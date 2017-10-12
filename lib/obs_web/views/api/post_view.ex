@@ -1,9 +1,10 @@
 defmodule ObsWeb.Api.PostView do
   use ObsWeb, :view
-  alias ObsWeb.PostView
+  alias ObsWeb.Api.PostView
+  alias Obs.Cms.PostImage
 
   def render("index.json", %{posts: posts}) do
-    %{data: render_many(posts, PostView, "posts.json")}
+    %{data: render_many(posts, PostView, "post.json")}
   end
 
   def render("show.json", %{post: post}) do
@@ -14,6 +15,9 @@ defmodule ObsWeb.Api.PostView do
     %{id: post.id,
       title: post.title,
       description: post.description,
+      image: PostImage.url({post.image, %{id: post.id}}),
+      category: render_one(post.category, ObsWeb.Api.CategoryView, "category.json"),
+      type: post.type,
       file: post.file}
   end
 end

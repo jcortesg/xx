@@ -26,9 +26,14 @@ class Index extends React.Component {
     } else if (this.props.repos !== false) {
       mainContent = posts.map((item, index) => (
         <tr key={index}>
-          <td>{item.title}</td>
+          <td>
+            <Link to={"/admin/cms/"+item.id}>
+              {item.title}
+            </Link>
+          </td>
           <td>{item.description}</td>
-          <td></td>
+          <td>{item.category.name}</td>
+          <td>{item.type}</td>
         </tr>
       ))
     }
@@ -46,7 +51,8 @@ class Index extends React.Component {
       <tr>
       <th>Título</th>
       <th>Descripción</th>
-      <th></th>
+      <th>Categoría</th>
+      <th>Type</th>
       </tr>
       </thead>
       <tbody>

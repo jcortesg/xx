@@ -18,7 +18,7 @@ defmodule Obs.Cms do
 
   """
   def list_posts do
-    Repo.all(Post)
+    Repo.all(Post) |> Repo.preload([:category])
   end
 
   @doc """
@@ -35,7 +35,7 @@ defmodule Obs.Cms do
       ** (Ecto.NoResultsError)
 
   """
-  def get_post!(id), do: Repo.get!(Post, id)
+  def get_post!(id), do: Repo.get!(Post, id)|> Repo.preload([:category])
 
   @doc """
   Creates a study.
@@ -50,9 +50,23 @@ defmodule Obs.Cms do
 
   """
   def create_post(attrs \\ %{}) do
-    %Post{}
+
+    {:ok, post } = %Post{}
     |> Post.changeset(attrs)
     |> Repo.insert()
+
+    if attrs["image"]do
+      post
+      |> Post.update_image(attrs)
+      |> Repo.update
+    end
+
+    if attrs["file"]do
+      post
+      |> Post.upload_file(attrs)
+      |> Repo.update
+    end
+    {:ok, post |> Repo.preload([:category])}
   end
 
   @doc """

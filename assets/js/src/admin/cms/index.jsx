@@ -1,6 +1,7 @@
 import { connect } from 'react-redux';
 import List from './index/index.jsx'
 import New from './new/index.jsx';
+import ShowPost from './show/index.jsx';
 import React from "react";
 import {
   BrowserRouter as Router,
@@ -16,6 +17,7 @@ export default class Index extends React.Component {
         <Switch>
           <Route exact path="/admin/cms" component={ List } />
           <Route path="/admin/cms/new" component={ New } />
+          <Route path="/admin/cms/:id" component={ ShowPost } />
         </Switch>
       </div>
     )

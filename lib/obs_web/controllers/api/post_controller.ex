@@ -20,8 +20,8 @@ defmodule ObsWeb.Api.PostController do
   end
 
   def show(conn, %{"id" => id}) do
-    study = Cms.get_study!(id)
-    render(conn, "show.json", study: study)
+    post = Cms.get_post!(id)
+    render(conn, "show.json", post: post)
   end
 
   def update(conn, %{"id" => id, "study" => study_params}) do

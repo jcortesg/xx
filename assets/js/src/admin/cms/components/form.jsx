@@ -1,23 +1,25 @@
 import React from "react";
 import { connect } from 'react-redux';
-import { Field, reduxForm } from 'redux-form';
+import { Field, reduxForm, Fields } from 'redux-form';
 import renderField from './../../../components/renderField.jsx';
 import SelectField from '../../components/selectField.jsx';
 import {required} from './../../../utils/validation_field.js';
+import {FileInput} from './FileInput.jsx'
 
 const renderNormalField = ({ input, label, type, meta: { touched, error } }) => {
   return(
     <div>
-      <input {...input} value={null} type={type} className="form-control" placeholder={label} />
+      <input {...input}  type={type} className="form-control" placeholder={label} />
     </div>
   )
 }
 
-let Form = (props) => {
-  const { handleSubmit, load, pristine, submitting, submitAction } = props
 
+
+let Form = (props) => {
+  const { handleSubmit, load, pristine, submitting, submitAction, categories } = props
   return(
-    <form onSubmit={handleSubmit(submitAction)}>
+    <form onSubmit={handleSubmit(submitAction)} encType="multipart/form-data">
       <legend>Datos Básicos</legend>
       <div className="row form-group">
         <div className="col-md-12">
@@ -37,18 +39,23 @@ let Form = (props) => {
             name="category_id"
             type="text"
             label= "Categoria:"
-            component={SelectField}
-          >
+            component={SelectField}>
             <option />
+            {
+              categories.map((item,index)=>{
+                return(<option key={index} value={item.id}>{item.name}</option>)
+              })
+            }
           </Field>
         </div>
         <div className="col-md-6">
           <Field
             name="type"
             label= "Tipo:"
-            component={SelectField}
-          >
-            <option />
+            component={SelectField}>
+            <option></option>
+            <option value="study">Estudio</option>
+            <option value="bulletin">Boletines</option>
           </Field>
         </div>
       </div>
@@ -67,8 +74,8 @@ let Form = (props) => {
           <label>Imagen:</label>
             <Field
               name="image"
-              label= "Tipo:"
-              component={renderNormalField}
+              label= "Imagen:"
+              component={FileInput}
               type="file"
               className="form-control-file"/>
         </div>
@@ -78,7 +85,7 @@ let Form = (props) => {
               name="file"
               label= "Tipo:"
               type="file"
-              component={renderNormalField}
+              component={FileInput}
               className="form-control-file"/>
         </div>
       </div>
@@ -90,7 +97,8 @@ let Form = (props) => {
 }
 
 Form = reduxForm({
-  form: "newPost"
+  form: "newPost",
+  fields: ['title', 'category_id', 'content', 'image']
 })(Form)
 
 

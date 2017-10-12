@@ -19,42 +19,42 @@ export default class Application extends React.Component {
               <h4>Indicadores</h4>
               <ul className="nav nav-pills flex-column">
                 <li className="nav-item">
-                  <Link to="/batteries" className="nav-link">
+                  <Link to="#" className="nav-link">
                     Principales indicadores
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link to="/admin/cms" className="nav-link">
+                  <Link to="#" className="nav-link">
                     Asociatividad
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link to="/admin/cms" className="nav-link">
+                  <Link to="#" className="nav-link">
                     Calidad
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link to="/admin/cms" className="nav-link">
+                  <Link to="#" className="nav-link">
                     Gestión Empresarial
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link to="/admin/cms" className="nav-link">
+                  <Link to="#" className="nav-link">
                     Infraestructura
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link to="/admin/cms" className="nav-link">
+                  <Link to="#" className="nav-link">
                     Ratios Financieros
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link to="/admin/cms" className="nav-link">
+                  <Link to="#" className="nav-link">
                     Investigación, desarrollo e innovación
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link to="/admin/cms" className="nav-link">
+                  <Link to="#" className="nav-link">
                     Talento Humano
                   </Link>
                 </li>

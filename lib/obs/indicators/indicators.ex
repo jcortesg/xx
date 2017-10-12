@@ -56,7 +56,6 @@ defmodule Obs.Indicators do
 
   def create_dataset(attrs \\ %{}) do
     changeset = Dataset.changeset(%Dataset{},attrs)
-    r = ""
     Repo.transaction fn ->
       dataset = Repo.insert!(changeset)
 
