@@ -3,7 +3,14 @@ import React from "react";
 import {calculeBenchmark} from "../action.js";
 
 class Show extends React.Component {
+  toDollar(value){
+    let dollar = 3000
+    let div = 1000
+    return value/dollar/div
+  }
+
   render() {
+    const { values } = this.props
     return(
       <div className="container-form">
         <h3 className="text-center">
@@ -16,13 +23,13 @@ class Show extends React.Component {
             <table className="table">
               <thead>
                 <tr>
-                  <th colSpan="2">Titulo</th>
+                  <th colSpan="2">{values.company}</th>
                   <th colSpan="2">Benchmark Rankings</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td colspan="2">
+                  <td colSpan="2">
                     <strong>Comparación con la Industria </strong>
                   </td>
                   <td>
@@ -35,14 +42,14 @@ class Show extends React.Component {
                     Ingresos
                   </td>
                   <td>
-                    0,0000
+                    {this.toDollar(values.total_revenue)}
                   </td>
                   <td>Ingresos (Percentil)</td>
                   <td>0,000</td>
                 </tr>
                 <tr>
                   <td>Ingresos Netos</td>
-                  <td>0,000</td>
+                  <td>{this.toDollar(values.net_income)}</td>
                   <td>Ingresos Netos (Percentil)</td>
                   <td>0,000</td>
                 </tr>
@@ -57,13 +64,13 @@ class Show extends React.Component {
                 </tr>
                 <tr>
                   <td>Crecimiento en Ingresos</td>
-                  <td>0,000</td>
+                  <td>{(this.toDollar(values.total_revenue))/(this.toDollar(values.previous_income))}</td>
                   <td>Crecimiento en Ingresos (Percentil)</td>
                   <td>0,000</td>
                 </tr>
                 <tr>
                   <td>Crecimiento en Ingresos Netos</td>
-                  <td>0,000</td>
+                  <td>{this.toDollar(((values.net_income)-(values.previous_net_income))/(values.previous_net_income))}</td>
                   <td>Crecimiento en Ingresos Netos (Percentil)</td>
                   <td>0,000</td>
                 </tr>
@@ -192,7 +199,7 @@ class Show extends React.Component {
 
 function mapStateToProps(state) {
   return {
-    values: state
+    values: state.benchmark.values
   }
 }
 export default connect(mapStateToProps)(Show);

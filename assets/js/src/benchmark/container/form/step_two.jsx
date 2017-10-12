@@ -16,7 +16,7 @@ class StepTwo extends React.Component {
           <div className="row">
             <div className="col-md-8">
               <Field
-                name="Company"
+                name="company"
                 type="text"
                 component={renderField}
                 label="Nombre de la compañia"
@@ -24,7 +24,7 @@ class StepTwo extends React.Component {
             </div>
             <div className="col-md-4">
               <Field
-                name="Nit"
+                name="nit"
                 type="number"
                 component={renderField}
                 label="NIT"

@@ -2,7 +2,24 @@ import { combineReducers } from 'redux';
 import { reducer as form } from 'redux-form';
 
 const initialState = {
-  values: [],
+  values: {
+    company: "Su Compañia",
+    nit: 0,
+    acumulated_utilities: 0,
+    administrative_expenses: 0,
+    cash_n_investments: 0,
+    cost_revenue: 2000000000,
+    current_assets: 0,
+    current_liabilities: 0,
+    net_income: 1000000000,
+    nonCurrent_liabilities: 0,
+    operating_expenses: 0,
+    previous_income: 4000000000,
+    previous_net_income: 700000000,
+    research_market: 0,
+    total_assets: 0,
+    total_revenue: 5000000000
+  },
   complete: false,
   loading: true
 };

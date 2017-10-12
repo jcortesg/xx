@@ -37,7 +37,7 @@ class Form extends React.Component {
 
   render(){
     const { page } = this.state
-    if (this.props.complete) {
+    if (this.props.complete){
       return (
         <Redirect to={"/benchmark/calcule"}/>
       )

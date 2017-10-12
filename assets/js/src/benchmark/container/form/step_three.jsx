@@ -42,7 +42,7 @@ class StepThree extends React.Component {
                 label="Pasivo Corriente"
               />
               <Field
-                name="non-current_liabilities"
+                name="nonCurrent_liabilities"
                 type="number"
                 component={renderField}
                 label="Pasivo no Corriente"
