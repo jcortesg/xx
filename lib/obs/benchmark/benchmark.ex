@@ -16,7 +16,7 @@ defmodule Obs.Benchmark do
       Datasheet
       |> Repo.all
       |> Enum.each(fn(data) ->
-      Ratios.calculate(data)
+        Ratios.calculate(data)
     end)
   end
 

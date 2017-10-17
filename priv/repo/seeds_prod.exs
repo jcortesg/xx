@@ -73,3 +73,6 @@ Enum.map(data_json, fn(data) ->
   |> Datasheet.changeset(Map.new(comp))
   |> Repo.insert!
 end)
+
+
+Obs.Benchmark.create_ratios

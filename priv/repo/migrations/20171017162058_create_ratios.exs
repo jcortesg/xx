@@ -19,8 +19,10 @@ defmodule Obs.Repo.Migrations.CreateRatios do
       add :gya_ryd_ratio, :float
       add :gya_op_ryd, :float
 
+      add :datasheet_id, references(:datasheets, on_delete: :nothing)
+
       timestamps()
     end
-
+    create index(:ratios, [:datasheet_id])
   end
 end
