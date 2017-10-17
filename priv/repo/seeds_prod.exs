@@ -45,7 +45,6 @@ end)
 companies_json = Application.app_dir(:obs, "priv/repo/companies.json") |> File.read! |> Poison.decode!()
 
 Enum.map(companies_json, fn(company) ->
-  IO.inspect company
   %Benchmark.Company{}
   |> Benchmark.Company.changeset(company)
   |> Repo.insert!
@@ -62,6 +61,11 @@ Enum.map(data_json, fn(data) ->
     |> String.replace(",", "")
     |> String.replace(" ","")
     |> Float.parse
+
+  if( String.equivalent?(k, "company_id")) do
+    f = f |> round
+  end
+
   {k,  f}
   end)
 

@@ -1,6 +1,6 @@
 [
 {
-	" company_id": 1,
+	"company_id": 1,
 	"total_revenue": " 90,272,000 ",
 	"cost_revenue": " 35,138,000 ",
 	"research_development": " 13,948,000 ",
@@ -31,7 +31,7 @@
 	"net_profit_margin":  0.22 ,
 	"free_cash_flow":  31.05 },
 {
-	" company_id": 2,
+	"company_id": 2,
 	"total_revenue": " 85,320,000 ",
 	"cost_revenue": " 32,780,000 ",
 	"research_development": " 11,988,000 ",
@@ -62,7 +62,7 @@
 	"net_profit_margin":  0.20 ,
 	"free_cash_flow":  426.62 },
 {
-	" company_id": 3,
+	"company_id": 3,
 	"total_revenue": " 79,920,000 ",
 	"cost_revenue": " 41,625,000 ",
 	"research_development": " 4,120,000 ",
@@ -93,7 +93,7 @@
 	"net_profit_margin":  0.15 ,
 	"free_cash_flow":  13.97 },
 {
-	" company_id": 4,
+	"company_id": 4,
 	"total_revenue": " 37,047,000 ",
 	"cost_revenue": " 7,479,000 ",
 	"research_development": " 5,787,000 ",
@@ -124,7 +124,7 @@
 	"net_profit_margin":  0.25 ,
 	"free_cash_flow": 0},
 {
-	" company_id": 5,
+	"company_id": 5,
 	"total_revenue": " 34,797,661 ",
 	"cost_revenue": " 24,520,234 ",
 	"research_development": 0.0,
@@ -155,7 +155,7 @@
 	"net_profit_margin":  0.10 ,
 	"free_cash_flow":  34.68 },
 {
-	" company_id": 6,
+	"company_id": 6,
 	"total_revenue": " 27,638,000 ",
 	"cost_revenue": " 3,789,000 ",
 	"research_development": " 5,919,000 ",
@@ -186,7 +186,7 @@
 	"net_profit_margin":  0.38 ,
 	"free_cash_flow":  55.82 },
 {
-	" company_id": 7,
+	"company_id": 7,
 	"total_revenue": " 26,379,783 ",
 	"cost_revenue": " 25,093,122 ",
 	"research_development": 0.0,
@@ -217,7 +217,7 @@
 	"net_profit_margin":  0.01 ,
 	"free_cash_flow": 0},
 {
-	" company_id": 8,
+	"company_id": 8,
 	"total_revenue": " 19,654,100 ",
 	"cost_revenue": " 16,320,300 ",
 	"research_development": 0.0,
@@ -248,7 +248,7 @@
 	"net_profit_margin":  0.02 ,
 	"free_cash_flow":  12.90 },
 {
-	" company_id": 9,
+	"company_id": 9,
 	"total_revenue": " 14,061,837 ",
 	"cost_revenue": " 12,778,872 ",
 	"research_development": 0.0,
@@ -279,7 +279,7 @@
 	"net_profit_margin":  0.02 ,
 	"free_cash_flow": 0},
 {
-	" company_id": 10,
+	"company_id": 10,
 	"total_revenue": " 13,981,900 ",
 	"cost_revenue": " 11,654,700 ",
 	"research_development": 0.0,
@@ -310,7 +310,7 @@
 	"net_profit_margin":  0.03 ,
 	"free_cash_flow":  20.64 },
 {
-	" company_id": 11,
+	"company_id": 11,
 	"total_revenue": " 13,487,000 ",
 	"cost_revenue": " 8,108,000 ",
 	"research_development": 0.0,
@@ -341,7 +341,7 @@
 	"net_profit_margin":  0.12 ,
 	"free_cash_flow":  40.76 },
 {
-	" company_id": 12,
+	"company_id": 12,
 	"total_revenue": " 11,667,800 ",
 	"cost_revenue": " 6,840,300 ",
 	"research_development": 0.0,
@@ -372,7 +372,7 @@
 	"net_profit_margin":  0.14 ,
 	"free_cash_flow":  22.67 },
 {
-	" company_id": 13,
+	"company_id": 13,
 	"total_revenue": " 10,771,000 ",
 	"cost_revenue": " 6,382,000 ",
 	"research_development": " 476,000 ",
@@ -403,7 +403,7 @@
 	"net_profit_margin": "  0.05 ",
 	"free_cash_flow":  2.01 },
 {
-	" company_id": 14,
+	"company_id": 14,
 	"total_revenue": " 9,241,000 ",
 	"cost_revenue": " 6,233,000 ",
 	"research_development": 0.0,
@@ -434,7 +434,7 @@
 	"net_profit_margin":  0.07 ,
 	"free_cash_flow":  17.79 },
 {
-	" company_id": 15,
+	"company_id": 15,
 	"total_revenue": " 8,172,000 ",
 	"cost_revenue": " 4,071,000 ",
 	"research_development": 0.0,
@@ -465,7 +465,7 @@
 	"net_profit_margin":  0.08 ,
 	"free_cash_flow":  23.01 },
 {
-	" company_id": 16,
+	"company_id": 16,
 	"total_revenue": " 7,106,000 ",
 	"cost_revenue": " 5,185,000 ",
 	"research_development": 0.0,
@@ -496,7 +496,7 @@
 	"net_profit_margin": "  0.01 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 17,
+	"company_id": 17,
 	"total_revenue": " 7,093,000 ",
 	"cost_revenue": " 1,053,000 ",
 	"research_development": " 1,503,000 ",
@@ -527,7 +527,7 @@
 	"net_profit_margin":  0.17 ,
 	"free_cash_flow":  12.31 },
 {
-	" company_id": 18,
+	"company_id": 18,
 	"total_revenue": " 7,043,000 ",
 	"cost_revenue": " 6,194,000 ",
 	"research_development": 0.0,
@@ -558,7 +558,7 @@
 	"net_profit_margin":  0.03 ,
 	"free_cash_flow": 0},
 {
-	" company_id": 19,
+	"company_id": 19,
 	"total_revenue": " 6,667,216 ",
 	"cost_revenue": " 1,654,548 ",
 	"research_development": " 946,300 ",
@@ -589,7 +589,7 @@
 	"net_profit_margin":  0.01 ,
 	"free_cash_flow": 0},
 {
-	" company_id": 20,
+	"company_id": 20,
 	"total_revenue": " 6,608,000 ",
 	"cost_revenue": " 2,394,000 ",
 	"research_development": " 958,000 ",
@@ -620,7 +620,7 @@
 	"net_profit_margin":  0.15 ,
 	"free_cash_flow":  23.43 },
 {
-	" company_id": 21,
+	"company_id": 21,
 	"total_revenue": " 6,543,000 ",
 	"cost_revenue": " 4,761,000 ",
 	"research_development": " 242,000 ",
@@ -651,7 +651,7 @@
 	"net_profit_margin":  0.05 ,
 	"free_cash_flow":  11.20 },
 {
-	" company_id": 22,
+	"company_id": 22,
 	"total_revenue": " 6,309,000 ",
 	"cost_revenue": " 2,607,000 ",
 	"research_development": 0.0,
@@ -682,7 +682,7 @@
 	"net_profit_margin":  0.08 ,
 	"free_cash_flow":  64.99 },
 {
-	" company_id": 23,
+	"company_id": 23,
 	"total_revenue": " 5,854,430 ",
 	"cost_revenue": " 819,908 ",
 	"research_development": " 975,987 ",
@@ -713,7 +713,7 @@
 	"net_profit_margin":  0.22 ,
 	"free_cash_flow":  45.70 },
 {
-	" company_id": 24,
+	"company_id": 24,
 	"total_revenue": " 5,505,000 ",
 	"cost_revenue": " 2,959,000 ",
 	"research_development": 0.0,
@@ -744,7 +744,7 @@
 	"net_profit_margin":  0.16 ,
 	"free_cash_flow":  30.12 },
 {
-	" company_id": 25,
+	"company_id": 25,
 	"total_revenue": " 5,485,515 ",
 	"cost_revenue": " 4,742,413 ",
 	"research_development": 0.0,
@@ -775,7 +775,7 @@
 	"net_profit_margin":  0.02 ,
 	"free_cash_flow": 0},
 {
-	" company_id": 26,
+	"company_id": 26,
 	"total_revenue": " 5,276,800 ",
 	"cost_revenue": " 4,370,500 ",
 	"research_development": 0.0,
@@ -806,7 +806,7 @@
 	"net_profit_margin":  0.02 ,
 	"free_cash_flow":  11.17 },
 {
-	" company_id": 27,
+	"company_id": 27,
 	"total_revenue": " 5,250,399 ",
 	"cost_revenue": " 3,089,723 ",
 	"research_development": 0.0,
@@ -837,7 +837,7 @@
 	"net_profit_margin":  0.06 ,
 	"free_cash_flow":  16.84 },
 {
-	" company_id": 28,
+	"company_id": 28,
 	"total_revenue": " 4,796,473 ",
 	"cost_revenue": " 779,116 ",
 	"research_development": " 551,418 ",
@@ -868,7 +868,7 @@
 	"net_profit_margin":  0.13 ,
 	"free_cash_flow":  53.83 },
 {
-	" company_id": 29,
+	"company_id": 29,
 	"total_revenue": " 4,694,000 ",
 	"cost_revenue": " 730,000 ",
 	"research_development": " 881,000 ",
@@ -899,7 +899,7 @@
 	"net_profit_margin":  0.18 ,
 	"free_cash_flow":  36.84 },
 {
-	" company_id": 30,
+	"company_id": 30,
 	"total_revenue": " 4,396,000 ",
 	"cost_revenue": " 1,354,000 ",
 	"research_development": " 1,109,000 ",
@@ -930,7 +930,7 @@
 	"net_profit_margin":  0.20 ,
 	"free_cash_flow":  26.99 },
 {
-	" company_id": 31,
+	"company_id": 31,
 	"total_revenue": " 4,315,000 ",
 	"cost_revenue": " 3,904,000 ",
 	"research_development": 0.0,
@@ -961,7 +961,7 @@
 	"net_profit_margin":  0.04 ,
 	"free_cash_flow":  12.93 },
 {
-	" company_id": 32,
+	"company_id": 32,
 	"total_revenue": " 4,250,000 ",
 	"cost_revenue": " 3,576,000 ",
 	"research_development": 0.0,
@@ -992,7 +992,7 @@
 	"net_profit_margin":  0.06 ,
 	"free_cash_flow":  31.90 },
 {
-	" company_id": 33,
+	"company_id": 33,
 	"total_revenue": " 4,025,000 ",
 	"cost_revenue": " 583,000 ",
 	"research_development": " 560,000 ",
@@ -1023,7 +1023,7 @@
 	"net_profit_margin":  0.19 ,
 	"free_cash_flow": 0},
 {
-	" company_id": 34,
+	"company_id": 34,
 	"total_revenue": " 3,921,225 ",
 	"cost_revenue": " 1,440,521 ",
 	"research_development": 0.0,
@@ -1054,7 +1054,7 @@
 	"net_profit_margin":  0.11 ,
 	"free_cash_flow": 0},
 {
-	" company_id": 35,
+	"company_id": 35,
 	"total_revenue": " 3,744,053 ",
 	"cost_revenue": " 3,479,303 ",
 	"research_development": 0.0,
@@ -1085,7 +1085,7 @@
 	"net_profit_margin":  0.04 ,
 	"free_cash_flow":  17.47 },
 {
-	" company_id": 36,
+	"company_id": 36,
 	"total_revenue": " 3,611,989 ",
 	"cost_revenue": " 1,820,870 ",
 	"research_development": 0.0,
@@ -1116,7 +1116,7 @@
 	"net_profit_margin":  0.05 ,
 	"free_cash_flow":  142.56 },
 {
-	" company_id": 37,
+	"company_id": 37,
 	"total_revenue": " 3,600,000 ",
 	"cost_revenue": " 615,000 ",
 	"research_development": " 748,000 ",
@@ -1147,7 +1147,7 @@
 	"net_profit_margin": "  0.03 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 38,
+	"company_id": 38,
 	"total_revenue": " 3,540,226 ",
 	"cost_revenue": " 3,184,786 ",
 	"research_development": 0.0,
@@ -1178,7 +1178,7 @@
 	"net_profit_margin":  0.02 ,
 	"free_cash_flow": 0},
 {
-	" company_id": 39,
+	"company_id": 39,
 	"total_revenue": " 3,511,453 ",
 	"cost_revenue": " 1,567,777 ",
 	"research_development": 0.0,
@@ -1209,7 +1209,7 @@
 	"net_profit_margin":  0.03 ,
 	"free_cash_flow": 0},
 {
-	" company_id": 40,
+	"company_id": 40,
 	"total_revenue": " 3,418,265 ",
 	"cost_revenue": " 559,541 ",
 	"research_development": " 489,265 ",
@@ -1240,7 +1240,7 @@
 	"net_profit_margin":  0.14 ,
 	"free_cash_flow":  10.97 },
 {
-	" company_id": 41,
+	"company_id": 41,
 	"total_revenue": " 3,373,387 ",
 	"cost_revenue": " 2,287,662 ",
 	"research_development": 0.0,
@@ -1271,7 +1271,7 @@
 	"net_profit_margin":  0.06 ,
 	"free_cash_flow": 0},
 {
-	" company_id": 42,
+	"company_id": 42,
 	"total_revenue": " 3,143,354 ",
 	"cost_revenue": " 1,786,451 ",
 	"research_development": 0.0,
@@ -1302,7 +1302,7 @@
 	"net_profit_margin": "  0.05 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 43,
+	"company_id": 43,
 	"total_revenue": " 2,941,347 ",
 	"cost_revenue": " 2,449,737 ",
 	"research_development": 0.0,
@@ -1333,7 +1333,7 @@
 	"net_profit_margin":  0.02 ,
 	"free_cash_flow":  33.47 },
 {
-	" company_id": 44,
+	"company_id": 44,
 	"total_revenue": " 2,913,600 ",
 	"cost_revenue": " 1,865,900 ",
 	"research_development": 0.0,
@@ -1364,7 +1364,7 @@
 	"net_profit_margin":  0.05 ,
 	"free_cash_flow":  43.86 },
 {
-	" company_id": 45,
+	"company_id": 45,
 	"total_revenue": " 2,897,000 ",
 	"cost_revenue": " 1,975,900 ",
 	"research_development": 0.0,
@@ -1395,7 +1395,7 @@
 	"net_profit_margin":  0.08 ,
 	"free_cash_flow": 0},
 {
-	" company_id": 46,
+	"company_id": 46,
 	"total_revenue": " 2,883,400 ",
 	"cost_revenue": " 821,100 ",
 	"research_development": " 204,800 ",
@@ -1426,7 +1426,7 @@
 	"net_profit_margin": "  0.12 ",
 	"free_cash_flow":  17.69 },
 {
-	" company_id": 47,
+	"company_id": 47,
 	"total_revenue": " 2,820,700 ",
 	"cost_revenue": " 2,262,100 ",
 	"research_development": " 55,400 ",
@@ -1457,7 +1457,7 @@
 	"net_profit_margin": "  0.01 ",
 	"free_cash_flow":  3.12 },
 {
-	" company_id": 48,
+	"company_id": 48,
 	"total_revenue": " 2,750,640 ",
 	"cost_revenue": " 2,070,922 ",
 	"research_development": 0.0,
@@ -1488,7 +1488,7 @@
 	"net_profit_margin": "  0.01 ",
 	"free_cash_flow":  8.56 },
 {
-	" company_id": 49,
+	"company_id": 49,
 	"total_revenue": " 2,734,800 ",
 	"cost_revenue": " 1,037,700 ",
 	"research_development": 0.0,
@@ -1519,7 +1519,7 @@
 	"net_profit_margin":  0.07 ,
 	"free_cash_flow": 0},
 {
-	" company_id": 50,
+	"company_id": 50,
 	"total_revenue": " 2,529,619 ",
 	"cost_revenue": " 932,240 ",
 	"research_development": " 713,482 ",
@@ -1550,7 +1550,7 @@
 	"net_profit_margin": "  0.18 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 51,
+	"company_id": 51,
 	"total_revenue": " 2,504,100 ",
 	"cost_revenue": " 370,700 ",
 	"research_development": " 790,000 ",
@@ -1581,7 +1581,7 @@
 	"net_profit_margin": "  0.27 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 52,
+	"company_id": 52,
 	"total_revenue": " 2,444,540 ",
 	"cost_revenue": " 945,648 ",
 	"research_development": 0.0,
@@ -1612,7 +1612,7 @@
 	"net_profit_margin":  0.07 ,
 	"free_cash_flow":  168.20 },
 {
-	" company_id": 53,
+	"company_id": 53,
 	"total_revenue": " 2,440,413 ",
 	"cost_revenue": " 1,645,230 ",
 	"research_development": 0.0,
@@ -1643,7 +1643,7 @@
 	"net_profit_margin":  0.04 ,
 	"free_cash_flow":  23.49 },
 {
-	" company_id": 54,
+	"company_id": 54,
 	"total_revenue": " 2,422,532 ",
 	"cost_revenue": " 542,962 ",
 	"research_development": " 856,705 ",
@@ -1674,7 +1674,7 @@
 	"net_profit_margin":  0.11 ,
 	"free_cash_flow":  362.06 },
 {
-	" company_id": 55,
+	"company_id": 55,
 	"total_revenue": " 2,340,049 ",
 	"cost_revenue": " 809,001 ",
 	"research_development": " 167,628 ",
@@ -1705,7 +1705,7 @@
 	"net_profit_margin":  0.14 ,
 	"free_cash_flow":  38.04 },
 {
-	" company_id": 56,
+	"company_id": 56,
 	"total_revenue": " 2,114,600 ",
 	"cost_revenue": " 1,243,400 ",
 	"research_development": 0.0,
@@ -1736,7 +1736,7 @@
 	"net_profit_margin":  0.14 ,
 	"free_cash_flow":  32.75 },
 {
-	" company_id": 57,
+	"company_id": 57,
 	"total_revenue": " 2,052,230 ",
 	"cost_revenue": " 309,629 ",
 	"research_development": " 413,322 ",
@@ -1767,7 +1767,7 @@
 	"net_profit_margin":  0.11 ,
 	"free_cash_flow":  33.76 },
 {
-	" company_id": 58,
+	"company_id": 58,
 	"total_revenue": " 1,995,200 ",
 	"cost_revenue": " 714,400 ",
 	"research_development": 0.0,
@@ -1798,7 +1798,7 @@
 	"net_profit_margin":  0.30 ,
 	"free_cash_flow":  27.55 },
 {
-	" company_id": 59,
+	"company_id": 59,
 	"total_revenue": " 1,995,034 ",
 	"cost_revenue": " 337,205 ",
 	"research_development": " 334,227 ",
@@ -1829,7 +1829,7 @@
 	"net_profit_margin":  0.19 ,
 	"free_cash_flow":  14.03 },
 {
-	" company_id": 60,
+	"company_id": 60,
 	"total_revenue": " 1,952,557 ",
 	"cost_revenue": " 1,043,937 ",
 	"research_development": 0.0,
@@ -1860,7 +1860,7 @@
 	"net_profit_margin":  0.05 ,
 	"free_cash_flow": 0},
 {
-	" company_id": 61,
+	"company_id": 61,
 	"total_revenue": " 1,948,903 ",
 	"cost_revenue": " 829,500 ",
 	"research_development": " 271,130 ",
@@ -1891,7 +1891,7 @@
 	"net_profit_margin": "  0.03 ",
 	"free_cash_flow":  33.81 },
 {
-	" company_id": 62,
+	"company_id": 62,
 	"total_revenue": " 1,847,900 ",
 	"cost_revenue": " 657,800 ",
 	"research_development": 0.0,
@@ -1922,7 +1922,7 @@
 	"net_profit_margin": "  0.00 ",
 	"free_cash_flow":  17.13 },
 {
-	" company_id": 63,
+	"company_id": 63,
 	"total_revenue": " 1,824,228 ",
 	"cost_revenue": " 574,000 ",
 	"research_development": " 194,057 ",
@@ -1953,7 +1953,7 @@
 	"net_profit_margin":  0.50 ,
 	"free_cash_flow": 0},
 {
-	" company_id": 64,
+	"company_id": 64,
 	"total_revenue": " 1,816,083 ",
 	"cost_revenue": " 256,492 ",
 	"research_development": " 735,340 ",
@@ -1984,7 +1984,7 @@
 	"net_profit_margin":  0.12 ,
 	"free_cash_flow":  45.82 },
 {
-	" company_id": 65,
+	"company_id": 65,
 	"total_revenue": " 1,708,721 ",
 	"cost_revenue": " 1,132,683 ",
 	"research_development": " 268,537 ",
@@ -2015,7 +2015,7 @@
 	"net_profit_margin": "  0.05 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 66,
+	"company_id": 66,
 	"total_revenue": " 1,703,700 ",
 	"cost_revenue": 0.0,
 	"research_development": 0.0,
@@ -2046,7 +2046,7 @@
 	"net_profit_margin":  0.05 ,
 	"free_cash_flow":  61.92 },
 {
-	" company_id": 67,
+	"company_id": 67,
 	"total_revenue": " 1,680,100 ",
 	"cost_revenue": " 1,355,400 ",
 	"research_development": 0.0,
@@ -2077,7 +2077,7 @@
 	"net_profit_margin": "  0.02 ",
 	"free_cash_flow":  45.61 },
 {
-	" company_id": 68,
+	"company_id": 68,
 	"total_revenue": " 1,666,900 ",
 	"cost_revenue": " 1,085,400 ",
 	"research_development": " 311,200 ",
@@ -2108,7 +2108,7 @@
 	"net_profit_margin":  0.01 ,
 	"free_cash_flow":  28.16 },
 {
-	" company_id": 69,
+	"company_id": 69,
 	"total_revenue": " 1,650,431 ",
 	"cost_revenue": " 859,800 ",
 	"research_development": " 353,144 ",
@@ -2139,7 +2139,7 @@
 	"net_profit_margin": "  0.11 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 70,
+	"company_id": 70,
 	"total_revenue": " 1,601,596 ",
 	"cost_revenue": " 1,369,775 ",
 	"research_development": 0.0,
@@ -2170,7 +2170,7 @@
 	"net_profit_margin":  0.04 ,
 	"free_cash_flow":  50.88 },
 {
-	" company_id": 71,
+	"company_id": 71,
 	"total_revenue": " 1,556,700 ",
 	"cost_revenue": 0.0,
 	"research_development": 0.0,
@@ -2201,7 +2201,7 @@
 	"net_profit_margin":  0.39 ,
 	"free_cash_flow": " 1,529.92 "},
 {
-	" company_id": 72,
+	"company_id": 72,
 	"total_revenue": " 1,549,899 ",
 	"cost_revenue": " 878,860 ",
 	"research_development": " 187,906 ",
@@ -2232,7 +2232,7 @@
 	"net_profit_margin": "  0.00 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 73,
+	"company_id": 73,
 	"total_revenue": " 1,532,000 ",
 	"cost_revenue": 0.0,
 	"research_development": 0.0,
@@ -2263,7 +2263,7 @@
 	"net_profit_margin":  0.03 ,
 	"free_cash_flow":  62.65 },
 {
-	" company_id": 74,
+	"company_id": 74,
 	"total_revenue": " 1,512,086 ",
 	"cost_revenue": " 400,692 ",
 	"research_development": " 43,154 ",
@@ -2294,7 +2294,7 @@
 	"net_profit_margin":  0.08 ,
 	"free_cash_flow":  57.39 },
 {
-	" company_id": 75,
+	"company_id": 75,
 	"total_revenue": " 1,496,261 ",
 	"cost_revenue": " 1,246,594 ",
 	"research_development": 0.0,
@@ -2325,7 +2325,7 @@
 	"net_profit_margin":  0.02 ,
 	"free_cash_flow": 0},
 {
-	" company_id": 76,
+	"company_id": 76,
 	"total_revenue": " 1,481,436 ",
 	"cost_revenue": " 800,489 ",
 	"research_development": " 152,689 ",
@@ -2356,7 +2356,7 @@
 	"net_profit_margin":  0.11 ,
 	"free_cash_flow":  27.93 },
 {
-	" company_id": 77,
+	"company_id": 77,
 	"total_revenue": " 1,480,000 ",
 	"cost_revenue": " 71,000 ",
 	"research_development": 0.0,
@@ -2387,7 +2387,7 @@
 	"net_profit_margin":  0.07 ,
 	"free_cash_flow":  38.35 },
 {
-	" company_id": 78,
+	"company_id": 78,
 	"total_revenue": " 1,460,037 ",
 	"cost_revenue": " 947,677 ",
 	"research_development": 0.0,
@@ -2418,7 +2418,7 @@
 	"net_profit_margin":  0.04 ,
 	"free_cash_flow": 0},
 {
-	" company_id": 79,
+	"company_id": 79,
 	"total_revenue": " 1,413,698 ",
 	"cost_revenue": " 813,873 ",
 	"research_development": " 119,807 ",
@@ -2449,7 +2449,7 @@
 	"net_profit_margin":  0.04 ,
 	"free_cash_flow":  56.42 },
 {
-	" company_id": 80,
+	"company_id": 80,
 	"total_revenue": " 1,390,513 ",
 	"cost_revenue": " 398,682 ",
 	"research_development": " 285,239 ",
@@ -2480,7 +2480,7 @@
 	"net_profit_margin": "  0.11 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 81,
+	"company_id": 81,
 	"total_revenue": " 1,354,646 ",
 	"cost_revenue": " 773,651 ",
 	"research_development": " 81,234 ",
@@ -2511,7 +2511,7 @@
 	"net_profit_margin":  0.19 ,
 	"free_cash_flow":  34.25 },
 {
-	" company_id": 82,
+	"company_id": 82,
 	"total_revenue": " 1,334,747 ",
 	"cost_revenue": " 1,132,253 ",
 	"research_development": 0.0,
@@ -2542,7 +2542,7 @@
 	"net_profit_margin": "  0.01 ",
 	"free_cash_flow":  11.72 },
 {
-	" company_id": 83,
+	"company_id": 83,
 	"total_revenue": " 1,319,706 ",
 	"cost_revenue": " 911,207 ",
 	"research_development": 0.0,
@@ -2573,7 +2573,7 @@
 	"net_profit_margin":  0.03 ,
 	"free_cash_flow":  96.59 },
 {
-	" company_id": 84,
+	"company_id": 84,
 	"total_revenue": " 1,275,443 ",
 	"cost_revenue": " 337,837 ",
 	"research_development": " 183,084 ",
@@ -2604,7 +2604,7 @@
 	"net_profit_margin":  0.03 ,
 	"free_cash_flow":  44.41 },
 {
-	" company_id": 85,
+	"company_id": 85,
 	"total_revenue": " 1,275,258 ",
 	"cost_revenue": " 941,592 ",
 	"research_development": 0.0,
@@ -2635,7 +2635,7 @@
 	"net_profit_margin":  0.04 ,
 	"free_cash_flow":  25.52 },
 {
-	" company_id": 86,
+	"company_id": 86,
 	"total_revenue": " 1,228,179 ",
 	"cost_revenue": " 313,121 ",
 	"research_development": " 235,706 ",
@@ -2666,7 +2666,7 @@
 	"net_profit_margin":  0.07 ,
 	"free_cash_flow":  50.60 },
 {
-	" company_id": 87,
+	"company_id": 87,
 	"total_revenue": " 1,222,526 ",
 	"cost_revenue": " 233,946 ",
 	"research_development": " 83,065 ",
@@ -2697,7 +2697,7 @@
 	"net_profit_margin":  0.15 ,
 	"free_cash_flow":  18.95 },
 {
-	" company_id": 88,
+	"company_id": 88,
 	"total_revenue": " 1,209,847 ",
 	"cost_revenue": " 369,104 ",
 	"research_development": " 28,159 ",
@@ -2728,7 +2728,7 @@
 	"net_profit_margin":  0.15 ,
 	"free_cash_flow":  7.84 },
 {
-	" company_id": 89,
+	"company_id": 89,
 	"total_revenue": " 1,204,199 ",
 	"cost_revenue": " 943,920 ",
 	"research_development": 0.0,
@@ -2759,7 +2759,7 @@
 	"net_profit_margin":  0.04 ,
 	"free_cash_flow":  26.08 },
 {
-	" company_id": 90,
+	"company_id": 90,
 	"total_revenue": " 1,180,988 ",
 	"cost_revenue": " 189,658 ",
 	"research_development": " 381,440 ",
@@ -2790,7 +2790,7 @@
 	"net_profit_margin":  0.12 ,
 	"free_cash_flow":  20.01 },
 {
-	" company_id": 91,
+	"company_id": 91,
 	"total_revenue": " 1,162,594 ",
 	"cost_revenue": " 457,056 ",
 	"research_development": " 2,925 ",
@@ -2821,7 +2821,7 @@
 	"net_profit_margin":  0.27 ,
 	"free_cash_flow": 0},
 {
-	" company_id": 92,
+	"company_id": 92,
 	"total_revenue": " 1,162,346 ",
 	"cost_revenue": " 374,427 ",
 	"research_development": " 469,944 ",
@@ -2852,7 +2852,7 @@
 	"net_profit_margin": "  0.23 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 93,
+	"company_id": 93,
 	"total_revenue": " 1,160,132 ",
 	"cost_revenue": " 737,186 ",
 	"research_development": 0.0,
@@ -2883,7 +2883,7 @@
 	"net_profit_margin":  0.08 ,
 	"free_cash_flow":  44.00 },
 {
-	" company_id": 94,
+	"company_id": 94,
 	"total_revenue": " 1,142,167 ",
 	"cost_revenue": " 198,242 ",
 	"research_development": " 59,100 ",
@@ -2914,7 +2914,7 @@
 	"net_profit_margin":  0.39 ,
 	"free_cash_flow": 0},
 {
-	" company_id": 95,
+	"company_id": 95,
 	"total_revenue": " 1,140,533 ",
 	"cost_revenue": " 325,665 ",
 	"research_development": " 229,331 ",
@@ -2945,7 +2945,7 @@
 	"net_profit_margin": "  0.03 ",
 	"free_cash_flow":  145.80 },
 {
-	" company_id": 96,
+	"company_id": 96,
 	"total_revenue": " 1,130,266 ",
 	"cost_revenue": " 428,906 ",
 	"research_development": " 177,650 ",
@@ -2976,7 +2976,7 @@
 	"net_profit_margin": "  0.03 ",
 	"free_cash_flow":  97.29 },
 {
-	" company_id": 97,
+	"company_id": 97,
 	"total_revenue": " 1,127,092 ",
 	"cost_revenue": " 487,409 ",
 	"research_development": 0.0,
@@ -3007,7 +3007,7 @@
 	"net_profit_margin":  0.29 ,
 	"free_cash_flow": 0},
 {
-	" company_id": 98,
+	"company_id": 98,
 	"total_revenue": " 1,120,625 ",
 	"cost_revenue": " 561,852 ",
 	"research_development": " 35,799 ",
@@ -3038,7 +3038,7 @@
 	"net_profit_margin":  0.09 ,
 	"free_cash_flow":  15.09 },
 {
-	" company_id": 99,
+	"company_id": 99,
 	"total_revenue": " 1,111,142 ",
 	"cost_revenue": " 583,991 ",
 	"research_development": " 87,601 ",
@@ -3069,7 +3069,7 @@
 	"net_profit_margin": "  0.11 ",
 	"free_cash_flow":  15.20 },
 {
-	" company_id": 100,
+	"company_id": 100,
 	"total_revenue": " 1,082,900 ",
 	"cost_revenue": " 533,500 ",
 	"research_development": " 134,500 ",
@@ -3100,7 +3100,7 @@
 	"net_profit_margin":  0.03 ,
 	"free_cash_flow": 0},
 {
-	" company_id": 101,
+	"company_id": 101,
 	"total_revenue": " 1,026,000 ",
 	"cost_revenue": 0.0,
 	"research_development": 0.0,
@@ -3131,7 +3131,7 @@
 	"net_profit_margin":  0.13 ,
 	"free_cash_flow":  37.69 },
 {
-	" company_id": 102,
+	"company_id": 102,
 	"total_revenue": " 1,005,701 ",
 	"cost_revenue": " 444,914 ",
 	"research_development": " 169,900 ",
@@ -3162,7 +3162,7 @@
 	"net_profit_margin":  0.04 ,
 	"free_cash_flow":  52.56 },
 {
-	" company_id": 103,
+	"company_id": 103,
 	"total_revenue": " 988,465 ",
 	"cost_revenue": " 146,860 ",
 	"research_development": " 183,093 ",
@@ -3193,7 +3193,7 @@
 	"net_profit_margin":  0.27 ,
 	"free_cash_flow":  34.50 },
 {
-	" company_id": 104,
+	"company_id": 104,
 	"total_revenue": " 966,550 ",
 	"cost_revenue": " 595,725 ",
 	"research_development": 0.0,
@@ -3224,7 +3224,7 @@
 	"net_profit_margin": "  0.08 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 105,
+	"company_id": 105,
 	"total_revenue": " 955,621 ",
 	"cost_revenue": " 355,150 ",
 	"research_development": " 29,759 ",
@@ -3255,7 +3255,7 @@
 	"net_profit_margin":  0.02 ,
 	"free_cash_flow": 0},
 {
-	" company_id": 106,
+	"company_id": 106,
 	"total_revenue": " 955,419 ",
 	"cost_revenue": " 328,449 ",
 	"research_development": " 208,630 ",
@@ -3286,7 +3286,7 @@
 	"net_profit_margin":  0.03 ,
 	"free_cash_flow":  18.68 },
 {
-	" company_id": 107,
+	"company_id": 107,
 	"total_revenue": " 881,356 ",
 	"cost_revenue": " 265,173 ",
 	"research_development": " 103,669 ",
@@ -3317,7 +3317,7 @@
 	"net_profit_margin":  0.14 ,
 	"free_cash_flow":  30.36 },
 {
-	" company_id": 108,
+	"company_id": 108,
 	"total_revenue": " 874,255 ",
 	"cost_revenue": " 147,100 ",
 	"research_development": " 38,046 ",
@@ -3348,7 +3348,7 @@
 	"net_profit_margin":  0.16 ,
 	"free_cash_flow": 0},
 {
-	" company_id": 109,
+	"company_id": 109,
 	"total_revenue": " 864,367 ",
 	"cost_revenue": " 702,247 ",
 	"research_development": 0.0,
@@ -3379,7 +3379,7 @@
 	"net_profit_margin": "  0.04 ",
 	"free_cash_flow":  9.28 },
 {
-	" company_id": 110,
+	"company_id": 110,
 	"total_revenue": " 850,088 ",
 	"cost_revenue": " 488,382 ",
 	"research_development": " 74,247 ",
@@ -3410,7 +3410,7 @@
 	"net_profit_margin":  0.00 ,
 	"free_cash_flow": 0},
 {
-	" company_id": 111,
+	"company_id": 111,
 	"total_revenue": " 840,586 ",
 	"cost_revenue": " 695,050 ",
 	"research_development": 0.0,
@@ -3441,7 +3441,7 @@
 	"net_profit_margin":  0.02 ,
 	"free_cash_flow":  0.23 },
 {
-	" company_id": 112,
+	"company_id": 112,
 	"total_revenue": " 833,537 ",
 	"cost_revenue": " 612,395 ",
 	"research_development": 0.0,
@@ -3472,7 +3472,7 @@
 	"net_profit_margin": "  0.01 ",
 	"free_cash_flow":  28.44 },
 {
-	" company_id": 113,
+	"company_id": 113,
 	"total_revenue": " 826,943 ",
 	"cost_revenue": " 99,090 ",
 	"research_development": " 302,759 ",
@@ -3503,7 +3503,7 @@
 	"net_profit_margin": "  0.18 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 114,
+	"company_id": 114,
 	"total_revenue": " 819,625 ",
 	"cost_revenue": 0.0,
 	"research_development": 0.0,
@@ -3534,7 +3534,7 @@
 	"net_profit_margin":  0.13 ,
 	"free_cash_flow":  34.97 },
 {
-	" company_id": 115,
+	"company_id": 115,
 	"total_revenue": " 798,600 ",
 	"cost_revenue": " 344,300 ",
 	"research_development": 0.0,
@@ -3565,7 +3565,7 @@
 	"net_profit_margin":  0.18 ,
 	"free_cash_flow": 0},
 {
-	" company_id": 116,
+	"company_id": 116,
 	"total_revenue": " 781,291 ",
 	"cost_revenue": " 300,109 ",
 	"research_development": " 120,650 ",
@@ -3596,7 +3596,7 @@
 	"net_profit_margin":  0.04 ,
 	"free_cash_flow": 0},
 {
-	" company_id": 117,
+	"company_id": 117,
 	"total_revenue": " 760,958 ",
 	"cost_revenue": " 375,147 ",
 	"research_development": " 98,683 ",
@@ -3627,7 +3627,7 @@
 	"net_profit_margin":  0.08 ,
 	"free_cash_flow":  20.26 },
 {
-	" company_id": 118,
+	"company_id": 118,
 	"total_revenue": " 750,266 ",
 	"cost_revenue": " 239,256 ",
 	"research_development": " 145,548 ",
@@ -3658,7 +3658,7 @@
 	"net_profit_margin":  0.05 ,
 	"free_cash_flow": 0},
 {
-	" company_id": 119,
+	"company_id": 119,
 	"total_revenue": " 741,420 ",
 	"cost_revenue": " 238,546 ",
 	"research_development": " 320,300 ",
@@ -3689,7 +3689,7 @@
 	"net_profit_margin": "  0.12 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 120,
+	"company_id": 120,
 	"total_revenue": " 730,815 ",
 	"cost_revenue": " 339,220 ",
 	"research_development": " 89,870 ",
@@ -3720,7 +3720,7 @@
 	"net_profit_margin":  0.06 ,
 	"free_cash_flow":  31.95 },
 {
-	" company_id": 121,
+	"company_id": 121,
 	"total_revenue": " 727,977 ",
 	"cost_revenue": " 252,279 ",
 	"research_development": " 245,817 ",
@@ -3751,7 +3751,7 @@
 	"net_profit_margin": "  0.32 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 122,
+	"company_id": 122,
 	"total_revenue": " 714,114 ",
 	"cost_revenue": " 271,868 ",
 	"research_development": " 279,594 ",
@@ -3782,7 +3782,7 @@
 	"net_profit_margin": "  0.57 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 123,
+	"company_id": 123,
 	"total_revenue": " 713,069 ",
 	"cost_revenue": " 60,363 ",
 	"research_development": " 138,549 ",
@@ -3813,7 +3813,7 @@
 	"net_profit_margin":  0.01 ,
 	"free_cash_flow": 0},
 {
-	" company_id": 124,
+	"company_id": 124,
 	"total_revenue": " 710,505 ",
 	"cost_revenue": " 224,032 ",
 	"research_development": " 65,800 ",
@@ -3844,7 +3844,7 @@
 	"net_profit_margin":  0.01 ,
 	"free_cash_flow":  16.14 },
 {
-	" company_id": 125,
+	"company_id": 125,
 	"total_revenue": " 705,046 ",
 	"cost_revenue": " 266,654 ",
 	"research_development": 0.0,
@@ -3875,7 +3875,7 @@
 	"net_profit_margin":  0.13 ,
 	"free_cash_flow":  2.49 },
 {
-	" company_id": 126,
+	"company_id": 126,
 	"total_revenue": " 692,623 ",
 	"cost_revenue": " 378,823 ",
 	"research_development": " 57,799 ",
@@ -3906,7 +3906,7 @@
 	"net_profit_margin": "  0.01 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 127,
+	"company_id": 127,
 	"total_revenue": " 668,435 ",
 	"cost_revenue": " 114,122 ",
 	"research_development": " 215,309 ",
@@ -3937,7 +3937,7 @@
 	"net_profit_margin": "  0.35 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 128,
+	"company_id": 128,
 	"total_revenue": " 632,965 ",
 	"cost_revenue": " 323,214 ",
 	"research_development": " 88,395 ",
@@ -3968,7 +3968,7 @@
 	"net_profit_margin": "  0.05 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 129,
+	"company_id": 129,
 	"total_revenue": " 625,162 ",
 	"cost_revenue": " 251,768 ",
 	"research_development": 0.0,
@@ -3999,7 +3999,7 @@
 	"net_profit_margin":  0.11 ,
 	"free_cash_flow": 0},
 {
-	" company_id": 130,
+	"company_id": 130,
 	"total_revenue": " 604,557 ",
 	"cost_revenue": " 249,879 ",
 	"research_development": " 54,736 ",
@@ -4030,7 +4030,7 @@
 	"net_profit_margin":  0.21 ,
 	"free_cash_flow":  21.23 },
 {
-	" company_id": 131,
+	"company_id": 131,
 	"total_revenue": " 600,302 ",
 	"cost_revenue": " 389,310 ",
 	"research_development": 0.0,
@@ -4061,7 +4061,7 @@
 	"net_profit_margin":  0.02 ,
 	"free_cash_flow": 0},
 {
-	" company_id": 132,
+	"company_id": 132,
 	"total_revenue": " 596,550 ",
 	"cost_revenue": 0.0,
 	"research_development": 0.0,
@@ -4092,7 +4092,7 @@
 	"net_profit_margin": "  0.23 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 133,
+	"company_id": 133,
 	"total_revenue": " 595,126 ",
 	"cost_revenue": " 82,712 ",
 	"research_development": " 69,287 ",
@@ -4123,7 +4123,7 @@
 	"net_profit_margin":  0.00 ,
 	"free_cash_flow":  152.50 },
 {
-	" company_id": 134,
+	"company_id": 134,
 	"total_revenue": " 568,128 ",
 	"cost_revenue": " 242,301 ",
 	"research_development": " 73,607 ",
@@ -4154,7 +4154,7 @@
 	"net_profit_margin":  0.04 ,
 	"free_cash_flow": 0},
 {
-	" company_id": 135,
+	"company_id": 135,
 	"total_revenue": " 521,688 ",
 	"cost_revenue": " 274,012 ",
 	"research_development": 0.0,
@@ -4185,7 +4185,7 @@
 	"net_profit_margin": "  0.02 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 136,
+	"company_id": 136,
 	"total_revenue": " 512,161 ",
 	"cost_revenue": " 93,147 ",
 	"research_development": " 73,142 ",
@@ -4216,7 +4216,7 @@
 	"net_profit_margin":  0.18 ,
 	"free_cash_flow":  24.06 },
 {
-	" company_id": 137,
+	"company_id": 137,
 	"total_revenue": " 511,930 ",
 	"cost_revenue": " 179,207 ",
 	"research_development": " 81,564 ",
@@ -4247,7 +4247,7 @@
 	"net_profit_margin":  0.05 ,
 	"free_cash_flow": 0},
 {
-	" company_id": 138,
+	"company_id": 138,
 	"total_revenue": " 494,317 ",
 	"cost_revenue": " 203,129 ",
 	"research_development": " 47,789 ",
@@ -4278,7 +4278,7 @@
 	"net_profit_margin":  0.07 ,
 	"free_cash_flow":  132.77 },
 {
-	" company_id": 139,
+	"company_id": 139,
 	"total_revenue": " 493,331 ",
 	"cost_revenue": 0.0,
 	"research_development": 0.0,
@@ -4309,7 +4309,7 @@
 	"net_profit_margin":  0.11 ,
 	"free_cash_flow": 0},
 {
-	" company_id": 140,
+	"company_id": 140,
 	"total_revenue": " 492,477 ",
 	"cost_revenue": " 225,615 ",
 	"research_development": " 65,661 ",
@@ -4340,7 +4340,7 @@
 	"net_profit_margin":  0.04 ,
 	"free_cash_flow":  13.71 },
 {
-	" company_id": 141,
+	"company_id": 141,
 	"total_revenue": " 486,982 ",
 	"cost_revenue": " 335,702 ",
 	"research_development": 0.0,
@@ -4371,7 +4371,7 @@
 	"net_profit_margin":  0.04 ,
 	"free_cash_flow":  18.75 },
 {
-	" company_id": 142,
+	"company_id": 142,
 	"total_revenue": " 484,845 ",
 	"cost_revenue": " 103,569 ",
 	"research_development": " 102,534 ",
@@ -4402,7 +4402,7 @@
 	"net_profit_margin": "  0.07 ",
 	"free_cash_flow":  29.67 },
 {
-	" company_id": 143,
+	"company_id": 143,
 	"total_revenue": " 476,750 ",
 	"cost_revenue": " 194,198 ",
 	"research_development": " 106,681 ",
@@ -4433,7 +4433,7 @@
 	"net_profit_margin":  0.02 ,
 	"free_cash_flow": 0},
 {
-	" company_id": 144,
+	"company_id": 144,
 	"total_revenue": " 472,344 ",
 	"cost_revenue": " 48,611 ",
 	"research_development": " 67,152 ",
@@ -4464,7 +4464,7 @@
 	"net_profit_margin":  0.30 ,
 	"free_cash_flow":  12.34 },
 {
-	" company_id": 145,
+	"company_id": 145,
 	"total_revenue": " 463,381 ",
 	"cost_revenue": " 112,609 ",
 	"research_development": " 112,595 ",
@@ -4495,7 +4495,7 @@
 	"net_profit_margin":  0.07 ,
 	"free_cash_flow": 0},
 {
-	" company_id": 146,
+	"company_id": 146,
 	"total_revenue": " 456,263 ",
 	"cost_revenue": 0.0,
 	"research_development": " 35,354 ",
@@ -4526,7 +4526,7 @@
 	"net_profit_margin": "  0.15 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 147,
+	"company_id": 147,
 	"total_revenue": " 455,911 ",
 	"cost_revenue": " 223,176 ",
 	"research_development": 0.0,
@@ -4557,7 +4557,7 @@
 	"net_profit_margin": "  0.12 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 148,
+	"company_id": 148,
 	"total_revenue": " 446,900 ",
 	"cost_revenue": " 194,066 ",
 	"research_development": 0.0,
@@ -4588,7 +4588,7 @@
 	"net_profit_margin":  0.03 ,
 	"free_cash_flow":  80.38 },
 {
-	" company_id": 149,
+	"company_id": 149,
 	"total_revenue": " 434,161 ",
 	"cost_revenue": " 227,546 ",
 	"research_development": " 29,312 ",
@@ -4619,7 +4619,7 @@
 	"net_profit_margin": "  0.09 ",
 	"free_cash_flow":  176.70 },
 {
-	" company_id": 150,
+	"company_id": 150,
 	"total_revenue": " 433,640 ",
 	"cost_revenue": " 44,286 ",
 	"research_development": " 16,079 ",
@@ -4650,7 +4650,7 @@
 	"net_profit_margin":  0.28 ,
 	"free_cash_flow": 0},
 {
-	" company_id": 151,
+	"company_id": 151,
 	"total_revenue": " 427,588 ",
 	"cost_revenue": " 159,169 ",
 	"research_development": " 29,148 ",
@@ -4681,7 +4681,7 @@
 	"net_profit_margin":  0.07 ,
 	"free_cash_flow": 0},
 {
-	" company_id": 152,
+	"company_id": 152,
 	"total_revenue": " 424,446 ",
 	"cost_revenue": " 151,834 ",
 	"research_development": " 112,496 ",
@@ -4712,7 +4712,7 @@
 	"net_profit_margin":  0.02 ,
 	"free_cash_flow": 0},
 {
-	" company_id": 153,
+	"company_id": 153,
 	"total_revenue": " 423,124 ",
 	"cost_revenue": " 135,752 ",
 	"research_development": " 46,977 ",
@@ -4743,7 +4743,7 @@
 	"net_profit_margin": "  0.15 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 154,
+	"company_id": 154,
 	"total_revenue": " 422,744 ",
 	"cost_revenue": " 388,175 ",
 	"research_development": 0.0,
@@ -4774,7 +4774,7 @@
 	"net_profit_margin": "  0.02 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 155,
+	"company_id": 155,
 	"total_revenue": " 418,131 ",
 	"cost_revenue": " 390,800 ",
 	"research_development": 0.0,
@@ -4805,7 +4805,7 @@
 	"net_profit_margin":  0.01 ,
 	"free_cash_flow": 0},
 {
-	" company_id": 156,
+	"company_id": 156,
 	"total_revenue": " 409,221 ",
 	"cost_revenue": " 142,214 ",
 	"research_development": " 65,976 ",
@@ -4836,7 +4836,7 @@
 	"net_profit_margin":  0.16 ,
 	"free_cash_flow":  73.50 },
 {
-	" company_id": 157,
+	"company_id": 157,
 	"total_revenue": " 405,341 ",
 	"cost_revenue": " 65,712 ",
 	"research_development": " 88,587 ",
@@ -4867,7 +4867,7 @@
 	"net_profit_margin": "  0.14 ",
 	"free_cash_flow":  19.38 },
 {
-	" company_id": 158,
+	"company_id": 158,
 	"total_revenue": " 392,963 ",
 	"cost_revenue": " 165,835 ",
 	"research_development": 0.0,
@@ -4898,7 +4898,7 @@
 	"net_profit_margin": "  0.00 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 159,
+	"company_id": 159,
 	"total_revenue": " 389,507 ",
 	"cost_revenue": 0.0,
 	"research_development": 0.0,
@@ -4929,7 +4929,7 @@
 	"net_profit_margin":  0.20 ,
 	"free_cash_flow":  16.75 },
 {
-	" company_id": 160,
+	"company_id": 160,
 	"total_revenue": " 379,724 ",
 	"cost_revenue": " 92,211 ",
 	"research_development": " 65,514 ",
@@ -4960,7 +4960,7 @@
 	"net_profit_margin": "  0.07 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 161,
+	"company_id": 161,
 	"total_revenue": " 375,496 ",
 	"cost_revenue": " 108,593 ",
 	"research_development": " 98,506 ",
@@ -4991,7 +4991,7 @@
 	"net_profit_margin": "  0.26 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 162,
+	"company_id": 162,
 	"total_revenue": " 364,305 ",
 	"cost_revenue": " 62,972 ",
 	"research_development": " 35,158 ",
@@ -5022,7 +5022,7 @@
 	"net_profit_margin":  0.25 ,
 	"free_cash_flow":  54.25 },
 {
-	" company_id": 163,
+	"company_id": 163,
 	"total_revenue": " 360,285 ",
 	"cost_revenue": " 120,145 ",
 	"research_development": " 58,501 ",
@@ -5053,7 +5053,7 @@
 	"net_profit_margin":  0.12 ,
 	"free_cash_flow": 0},
 {
-	" company_id": 164,
+	"company_id": 164,
 	"total_revenue": " 343,274 ",
 	"cost_revenue": " 147,100 ",
 	"research_development": " 47,355 ",
@@ -5084,7 +5084,7 @@
 	"net_profit_margin": "  0.10 ",
 	"free_cash_flow":  64.74 },
 {
-	" company_id": 165,
+	"company_id": 165,
 	"total_revenue": " 340,962 ",
 	"cost_revenue": " 91,177 ",
 	"research_development": " 77,202 ",
@@ -5115,7 +5115,7 @@
 	"net_profit_margin": "  0.02 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 166,
+	"company_id": 166,
 	"total_revenue": " 339,522 ",
 	"cost_revenue": " 183,809 ",
 	"research_development": " 69,598 ",
@@ -5146,7 +5146,7 @@
 	"net_profit_margin": "  0.09 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 167,
+	"company_id": 167,
 	"total_revenue": " 336,068 ",
 	"cost_revenue": " 45,501 ",
 	"research_development": " 57,193 ",
@@ -5177,7 +5177,7 @@
 	"net_profit_margin": "  0.03 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 168,
+	"company_id": 168,
 	"total_revenue": " 329,141 ",
 	"cost_revenue": " 54,066 ",
 	"research_development": " 20,966 ",
@@ -5208,7 +5208,7 @@
 	"net_profit_margin":  0.14 ,
 	"free_cash_flow": 0},
 {
-	" company_id": 169,
+	"company_id": 169,
 	"total_revenue": " 324,893 ",
 	"cost_revenue": 0.0,
 	"research_development": 0.0,
@@ -5239,7 +5239,7 @@
 	"net_profit_margin": "  0.04 ",
 	"free_cash_flow":  8.92 },
 {
-	" company_id": 170,
+	"company_id": 170,
 	"total_revenue": " 323,329 ",
 	"cost_revenue": 0.0,
 	"research_development": 0.0,
@@ -5270,7 +5270,7 @@
 	"net_profit_margin": "  0.00 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 171,
+	"company_id": 171,
 	"total_revenue": " 322,410 ",
 	"cost_revenue": " 266,238 ",
 	"research_development": 0.0,
@@ -5301,7 +5301,7 @@
 	"net_profit_margin":  0.02 ,
 	"free_cash_flow":  11.30 },
 {
-	" company_id": 172,
+	"company_id": 172,
 	"total_revenue": " 317,915 ",
 	"cost_revenue": 0.0,
 	"research_development": 0.0,
@@ -5332,7 +5332,7 @@
 	"net_profit_margin":  0.18 ,
 	"free_cash_flow":  15.54 },
 {
-	" company_id": 173,
+	"company_id": 173,
 	"total_revenue": " 311,999 ",
 	"cost_revenue": " 93,900 ",
 	"research_development": " 91,067 ",
@@ -5363,7 +5363,7 @@
 	"net_profit_margin": "  0.31 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 174,
+	"company_id": 174,
 	"total_revenue": " 310,855 ",
 	"cost_revenue": " 54,801 ",
 	"research_development": " 68,084 ",
@@ -5394,7 +5394,7 @@
 	"net_profit_margin":  0.14 ,
 	"free_cash_flow": 0},
 {
-	" company_id": 175,
+	"company_id": 175,
 	"total_revenue": " 307,200 ",
 	"cost_revenue": " 270,779 ",
 	"research_development": 0.0,
@@ -5425,7 +5425,7 @@
 	"net_profit_margin":  0.01 ,
 	"free_cash_flow":  26.05 },
 {
-	" company_id": 176,
+	"company_id": 176,
 	"total_revenue": " 302,704 ",
 	"cost_revenue": " 87,100 ",
 	"research_development": " 102,500 ",
@@ -5456,7 +5456,7 @@
 	"net_profit_margin": "  0.36 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 177,
+	"company_id": 177,
 	"total_revenue": " 298,297 ",
 	"cost_revenue": " 156,439 ",
 	"research_development": 0.0,
@@ -5487,7 +5487,7 @@
 	"net_profit_margin": "  0.42 ",
 	"free_cash_flow":  18.64 },
 {
-	" company_id": 178,
+	"company_id": 178,
 	"total_revenue": " 298,294 ",
 	"cost_revenue": " 85,128 ",
 	"research_development": " 32,981 ",
@@ -5518,7 +5518,7 @@
 	"net_profit_margin":  0.32 ,
 	"free_cash_flow":  29.85 },
 {
-	" company_id": 179,
+	"company_id": 179,
 	"total_revenue": " 297,706 ",
 	"cost_revenue": " 270,963 ",
 	"research_development": " 16,431 ",
@@ -5549,7 +5549,7 @@
 	"net_profit_margin": "  0.05 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 180,
+	"company_id": 180,
 	"total_revenue": " 288,027 ",
 	"cost_revenue": " 196,772 ",
 	"research_development": 0.0,
@@ -5580,7 +5580,7 @@
 	"net_profit_margin": "  0.05 ",
 	"free_cash_flow":  38.24 },
 {
-	" company_id": 181,
+	"company_id": 181,
 	"total_revenue": " 278,221 ",
 	"cost_revenue": " 73,247 ",
 	"research_development": " 51,184 ",
@@ -5611,7 +5611,7 @@
 	"net_profit_margin": "  0.14 ",
 	"free_cash_flow":  2.93 },
 {
-	" company_id": 182,
+	"company_id": 182,
 	"total_revenue": " 277,852 ",
 	"cost_revenue": " 126,562 ",
 	"research_development": " 41,237 ",
@@ -5642,7 +5642,7 @@
 	"net_profit_margin": "  0.05 ",
 	"free_cash_flow":  35.44 },
 {
-	" company_id": 183,
+	"company_id": 183,
 	"total_revenue": " 277,507 ",
 	"cost_revenue": 0.0,
 	"research_development": 0.0,
@@ -5673,7 +5673,7 @@
 	"net_profit_margin": "  0.13 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 184,
+	"company_id": 184,
 	"total_revenue": " 277,335 ",
 	"cost_revenue": " 120,520 ",
 	"research_development": " 77,926 ",
@@ -5704,7 +5704,7 @@
 	"net_profit_margin": "  0.16 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 185,
+	"company_id": 185,
 	"total_revenue": " 270,967 ",
 	"cost_revenue": " 61,865 ",
 	"research_development": " 45,997 ",
@@ -5735,7 +5735,7 @@
 	"net_profit_margin": "  0.15 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 186,
+	"company_id": 186,
 	"total_revenue": " 267,272 ",
 	"cost_revenue": " 129,258 ",
 	"research_development": " 32,621 ",
@@ -5766,7 +5766,7 @@
 	"net_profit_margin":  0.02 ,
 	"free_cash_flow":  102.78 },
 {
-	" company_id": 187,
+	"company_id": 187,
 	"total_revenue": " 264,455 ",
 	"cost_revenue": " 53,832 ",
 	"research_development": " 62,402 ",
@@ -5797,7 +5797,7 @@
 	"net_profit_margin": "  0.08 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 188,
+	"company_id": 188,
 	"total_revenue": " 261,106 ",
 	"cost_revenue": " 99,380 ",
 	"research_development": " 44,272 ",
@@ -5828,7 +5828,7 @@
 	"net_profit_margin":  0.04 ,
 	"free_cash_flow": 0},
 {
-	" company_id": 189,
+	"company_id": 189,
 	"total_revenue": " 253,852 ",
 	"cost_revenue": " 193,779 ",
 	"research_development": 0.0,
@@ -5859,7 +5859,7 @@
 	"net_profit_margin":  0.03 ,
 	"free_cash_flow":  25.02 },
 {
-	" company_id": 190,
+	"company_id": 190,
 	"total_revenue": " 252,887 ",
 	"cost_revenue": " 165,069 ",
 	"research_development": " 8,344 ",
@@ -5890,7 +5890,7 @@
 	"net_profit_margin": "  0.14 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 191,
+	"company_id": 191,
 	"total_revenue": " 252,591 ",
 	"cost_revenue": " 84,980 ",
 	"research_development": " 72,841 ",
@@ -5921,7 +5921,7 @@
 	"net_profit_margin": "  0.08 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 192,
+	"company_id": 192,
 	"total_revenue": " 233,335 ",
 	"cost_revenue": " 120,681 ",
 	"research_development": " 56,584 ",
@@ -5952,7 +5952,7 @@
 	"net_profit_margin": "  0.14 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 193,
+	"company_id": 193,
 	"total_revenue": " 230,701 ",
 	"cost_revenue": " 98,085 ",
 	"research_development": " 26,736 ",
@@ -5983,7 +5983,7 @@
 	"net_profit_margin":  0.02 ,
 	"free_cash_flow": 0},
 {
-	" company_id": 194,
+	"company_id": 194,
 	"total_revenue": " 229,653 ",
 	"cost_revenue": " 183,453 ",
 	"research_development": " 11,581 ",
@@ -6014,7 +6014,7 @@
 	"net_profit_margin":  0.01 ,
 	"free_cash_flow":  102.67 },
 {
-	" company_id": 195,
+	"company_id": 195,
 	"total_revenue": " 225,974 ",
 	"cost_revenue": " 96,634 ",
 	"research_development": " 28,897 ",
@@ -6045,7 +6045,7 @@
 	"net_profit_margin":  0.02 ,
 	"free_cash_flow": 0},
 {
-	" company_id": 196,
+	"company_id": 196,
 	"total_revenue": " 222,779 ",
 	"cost_revenue": " 63,161 ",
 	"research_development": " 40,198 ",
@@ -6076,7 +6076,7 @@
 	"net_profit_margin": "  0.13 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 197,
+	"company_id": 197,
 	"total_revenue": " 209,336 ",
 	"cost_revenue": " 57,246 ",
 	"research_development": " 24,040 ",
@@ -6107,7 +6107,7 @@
 	"net_profit_margin": "  0.02 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 198,
+	"company_id": 198,
 	"total_revenue": " 206,986 ",
 	"cost_revenue": " 60,937 ",
 	"research_development": " 33,298 ",
@@ -6138,7 +6138,7 @@
 	"net_profit_margin":  0.04 ,
 	"free_cash_flow": 0},
 {
-	" company_id": 199,
+	"company_id": 199,
 	"total_revenue": " 206,718 ",
 	"cost_revenue": " 78,077 ",
 	"research_development": " 31,712 ",
@@ -6169,7 +6169,7 @@
 	"net_profit_margin": "  0.10 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 200,
+	"company_id": 200,
 	"total_revenue": " 205,864 ",
 	"cost_revenue": " 33,283 ",
 	"research_development": 0.0,
@@ -6200,7 +6200,7 @@
 	"net_profit_margin": "  0.09 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 201,
+	"company_id": 201,
 	"total_revenue": " 204,094 ",
 	"cost_revenue": " 67,412 ",
 	"research_development": " 45,769 ",
@@ -6231,7 +6231,7 @@
 	"net_profit_margin": "  0.04 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 202,
+	"company_id": 202,
 	"total_revenue": " 203,441 ",
 	"cost_revenue": " 37,576 ",
 	"research_development": " 28,915 ",
@@ -6262,7 +6262,7 @@
 	"net_profit_margin":  0.04 ,
 	"free_cash_flow": 0},
 {
-	" company_id": 203,
+	"company_id": 203,
 	"total_revenue": " 202,926 ",
 	"cost_revenue": " 39,876 ",
 	"research_development": " 27,313 ",
@@ -6293,7 +6293,7 @@
 	"net_profit_margin":  0.12 ,
 	"free_cash_flow": 0},
 {
-	" company_id": 204,
+	"company_id": 204,
 	"total_revenue": " 200,581 ",
 	"cost_revenue": " 120,138 ",
 	"research_development": " 81,879 ",
@@ -6324,7 +6324,7 @@
 	"net_profit_margin": "  0.50 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 205,
+	"company_id": 205,
 	"total_revenue": " 199,766 ",
 	"cost_revenue": " 76,867 ",
 	"research_development": " 41,477 ",
@@ -6355,7 +6355,7 @@
 	"net_profit_margin": "  0.08 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 206,
+	"company_id": 206,
 	"total_revenue": " 197,925 ",
 	"cost_revenue": " 42,473 ",
 	"research_development": " 35,267 ",
@@ -6386,7 +6386,7 @@
 	"net_profit_margin":  0.18 ,
 	"free_cash_flow":  42.40 },
 {
-	" company_id": 207,
+	"company_id": 207,
 	"total_revenue": " 194,089 ",
 	"cost_revenue": " 34,321 ",
 	"research_development": " 26,273 ",
@@ -6417,7 +6417,7 @@
 	"net_profit_margin": "  0.10 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 208,
+	"company_id": 208,
 	"total_revenue": " 193,295 ",
 	"cost_revenue": " 64,346 ",
 	"research_development": " 21,981 ",
@@ -6448,7 +6448,7 @@
 	"net_profit_margin":  0.04 ,
 	"free_cash_flow": 0},
 {
-	" company_id": 209,
+	"company_id": 209,
 	"total_revenue": " 192,304 ",
 	"cost_revenue": " 61,647 ",
 	"research_development": " 23,214 ",
@@ -6479,7 +6479,7 @@
 	"net_profit_margin":  0.05 ,
 	"free_cash_flow":  18.86 },
 {
-	" company_id": 210,
+	"company_id": 210,
 	"total_revenue": " 189,819 ",
 	"cost_revenue": " 126,765 ",
 	"research_development": " 4,495 ",
@@ -6510,7 +6510,7 @@
 	"net_profit_margin":  0.07 ,
 	"free_cash_flow": 0},
 {
-	" company_id": 211,
+	"company_id": 211,
 	"total_revenue": " 186,744 ",
 	"cost_revenue": " 99,202 ",
 	"research_development": 0.0,
@@ -6541,7 +6541,7 @@
 	"net_profit_margin": "  0.13 ",
 	"free_cash_flow":  241.29 },
 {
-	" company_id": 212,
+	"company_id": 212,
 	"total_revenue": " 184,461 ",
 	"cost_revenue": " 72,170 ",
 	"research_development": " 99,202 ",
@@ -6572,7 +6572,7 @@
 	"net_profit_margin": "  1.21 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 213,
+	"company_id": 213,
 	"total_revenue": " 181,309 ",
 	"cost_revenue": " 37,183 ",
 	"research_development": " 46,394 ",
@@ -6603,7 +6603,7 @@
 	"net_profit_margin": "  0.23 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 214,
+	"company_id": 214,
 	"total_revenue": " 178,646 ",
 	"cost_revenue": " 51,625 ",
 	"research_development": " 57,438 ",
@@ -6634,7 +6634,7 @@
 	"net_profit_margin": "  0.20 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 215,
+	"company_id": 215,
 	"total_revenue": " 176,448 ",
 	"cost_revenue": " 129,418 ",
 	"research_development": 0.0,
@@ -6665,7 +6665,7 @@
 	"net_profit_margin":  0.01 ,
 	"free_cash_flow":  6.89 },
 {
-	" company_id": 216,
+	"company_id": 216,
 	"total_revenue": " 175,662 ",
 	"cost_revenue": " 55,218 ",
 	"research_development": 0.0,
@@ -6696,7 +6696,7 @@
 	"net_profit_margin": "  0.18 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 217,
+	"company_id": 217,
 	"total_revenue": " 169,825 ",
 	"cost_revenue": " 55,297 ",
 	"research_development": " 41,504 ",
@@ -6727,7 +6727,7 @@
 	"net_profit_margin": "  0.20 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 218,
+	"company_id": 218,
 	"total_revenue": " 168,234 ",
 	"cost_revenue": " 96,889 ",
 	"research_development": " 24,335 ",
@@ -6758,7 +6758,7 @@
 	"net_profit_margin": "  0.42 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 219,
+	"company_id": 219,
 	"total_revenue": " 166,761 ",
 	"cost_revenue": " 90,488 ",
 	"research_development": " 21,045 ",
@@ -6789,7 +6789,7 @@
 	"net_profit_margin": "  0.10 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 220,
+	"company_id": 220,
 	"total_revenue": " 164,456 ",
 	"cost_revenue": " 15,843 ",
 	"research_development": " 36,660 ",
@@ -6820,7 +6820,7 @@
 	"net_profit_margin": "  0.10 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 221,
+	"company_id": 221,
 	"total_revenue": " 163,926 ",
 	"cost_revenue": " 30,548 ",
 	"research_development": " 67,398 ",
@@ -6851,7 +6851,7 @@
 	"net_profit_margin": "  0.36 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 222,
+	"company_id": 222,
 	"total_revenue": " 162,090 ",
 	"cost_revenue": " 66,934 ",
 	"research_development": " 23,878 ",
@@ -6882,7 +6882,7 @@
 	"net_profit_margin": "  0.07 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 223,
+	"company_id": 223,
 	"total_revenue": " 161,754 ",
 	"cost_revenue": " 31,830 ",
 	"research_development": " 20,402 ",
@@ -6913,7 +6913,7 @@
 	"net_profit_margin":  0.01 ,
 	"free_cash_flow":  62.18 },
 {
-	" company_id": 224,
+	"company_id": 224,
 	"total_revenue": " 160,569 ",
 	"cost_revenue": " 54,160 ",
 	"research_development": " 35,475 ",
@@ -6944,7 +6944,7 @@
 	"net_profit_margin": "  0.19 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 225,
+	"company_id": 225,
 	"total_revenue": " 159,344 ",
 	"cost_revenue": 0.0,
 	"research_development": " 22,126 ",
@@ -6975,7 +6975,7 @@
 	"net_profit_margin": "  0.14 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 226,
+	"company_id": 226,
 	"total_revenue": " 157,437 ",
 	"cost_revenue": " 39,725 ",
 	"research_development": " 47,955 ",
@@ -7006,7 +7006,7 @@
 	"net_profit_margin": "  0.26 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 227,
+	"company_id": 227,
 	"total_revenue": " 156,684 ",
 	"cost_revenue": " 98,771 ",
 	"research_development": 0.0,
@@ -7037,7 +7037,7 @@
 	"net_profit_margin":  0.03 ,
 	"free_cash_flow":  17.14 },
 {
-	" company_id": 228,
+	"company_id": 228,
 	"total_revenue": " 153,276 ",
 	"cost_revenue": " 63,353 ",
 	"research_development": " 52,804 ",
@@ -7068,7 +7068,7 @@
 	"net_profit_margin": "  0.48 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 229,
+	"company_id": 229,
 	"total_revenue": " 150,266 ",
 	"cost_revenue": " 55,847 ",
 	"research_development": " 30,171 ",
@@ -7099,7 +7099,7 @@
 	"net_profit_margin": "  0.09 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 230,
+	"company_id": 230,
 	"total_revenue": " 150,224 ",
 	"cost_revenue": " 77,429 ",
 	"research_development": " 32,460 ",
@@ -7130,7 +7130,7 @@
 	"net_profit_margin": "  0.21 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 231,
+	"company_id": 231,
 	"total_revenue": " 139,021 ",
 	"cost_revenue": " 43,080 ",
 	"research_development": " 30,316 ",
@@ -7161,7 +7161,7 @@
 	"net_profit_margin": "  0.14 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 232,
+	"company_id": 232,
 	"total_revenue": " 128,552 ",
 	"cost_revenue": " 14,313 ",
 	"research_development": " 9,445 ",
@@ -7192,7 +7192,7 @@
 	"net_profit_margin":  0.06 ,
 	"free_cash_flow":  13.51 },
 {
-	" company_id": 233,
+	"company_id": 233,
 	"total_revenue": " 127,373 ",
 	"cost_revenue": " 59,146 ",
 	"research_development": " 25,612 ",
@@ -7223,7 +7223,7 @@
 	"net_profit_margin": "  0.13 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 234,
+	"company_id": 234,
 	"total_revenue": " 126,786 ",
 	"cost_revenue": " 54,188 ",
 	"research_development": " 16,832 ",
@@ -7254,7 +7254,7 @@
 	"net_profit_margin":  0.17 ,
 	"free_cash_flow":  99.55 },
 {
-	" company_id": 235,
+	"company_id": 235,
 	"total_revenue": " 126,522 ",
 	"cost_revenue": " 80,340 ",
 	"research_development": 0.0,
@@ -7285,7 +7285,7 @@
 	"net_profit_margin": "  0.04 ",
 	"free_cash_flow":  15.80 },
 {
-	" company_id": 236,
+	"company_id": 236,
 	"total_revenue": " 123,123 ",
 	"cost_revenue": " 30,211 ",
 	"research_development": " 21,125 ",
@@ -7316,7 +7316,7 @@
 	"net_profit_margin": "  0.29 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 237,
+	"company_id": 237,
 	"total_revenue": " 122,045 ",
 	"cost_revenue": " 68,058 ",
 	"research_development": 0.0,
@@ -7347,7 +7347,7 @@
 	"net_profit_margin": "  0.10 ",
 	"free_cash_flow":  3.57 },
 {
-	" company_id": 238,
+	"company_id": 238,
 	"total_revenue": " 120,468 ",
 	"cost_revenue": " 64,968 ",
 	"research_development": " 29,923 ",
@@ -7378,7 +7378,7 @@
 	"net_profit_margin": "  0.25 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 239,
+	"company_id": 239,
 	"total_revenue": " 120,366 ",
 	"cost_revenue": " 52,260 ",
 	"research_development": " 26,688 ",
@@ -7409,7 +7409,7 @@
 	"net_profit_margin": "  0.09 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 240,
+	"company_id": 240,
 	"total_revenue": " 113,889 ",
 	"cost_revenue": " 54,229 ",
 	"research_development": " 11,248 ",
@@ -7440,7 +7440,7 @@
 	"net_profit_margin":  0.14 ,
 	"free_cash_flow":  25.74 },
 {
-	" company_id": 241,
+	"company_id": 241,
 	"total_revenue": " 113,452 ",
 	"cost_revenue": " 42,081 ",
 	"research_development": " 19,964 ",
@@ -7471,7 +7471,7 @@
 	"net_profit_margin": "  0.00 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 242,
+	"company_id": 242,
 	"total_revenue": " 113,302 ",
 	"cost_revenue": " 62,832 ",
 	"research_development": " 16,267 ",
@@ -7502,7 +7502,7 @@
 	"net_profit_margin": "  0.01 ",
 	"free_cash_flow":  28.51 },
 {
-	" company_id": 243,
+	"company_id": 243,
 	"total_revenue": " 113,200 ",
 	"cost_revenue": " 27,620 ",
 	"research_development": " 17,736 ",
@@ -7533,7 +7533,7 @@
 	"net_profit_margin": "  0.10 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 244,
+	"company_id": 244,
 	"total_revenue": " 110,880 ",
 	"cost_revenue": " 32,749 ",
 	"research_development": " 35,973 ",
@@ -7564,7 +7564,7 @@
 	"net_profit_margin": "  0.43 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 245,
+	"company_id": 245,
 	"total_revenue": " 110,518 ",
 	"cost_revenue": " 33,216 ",
 	"research_development": " 24,534 ",
@@ -7595,7 +7595,7 @@
 	"net_profit_margin": "  0.14 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 246,
+	"company_id": 246,
 	"total_revenue": " 109,301 ",
 	"cost_revenue": " 29,186 ",
 	"research_development": " 21,642 ",
@@ -7626,7 +7626,7 @@
 	"net_profit_margin":  0.62 ,
 	"free_cash_flow": 0},
 {
-	" company_id": 247,
+	"company_id": 247,
 	"total_revenue": " 107,461 ",
 	"cost_revenue": " 44,448 ",
 	"research_development": " 27,559 ",
@@ -7657,7 +7657,7 @@
 	"net_profit_margin":  0.07 ,
 	"free_cash_flow": 0},
 {
-	" company_id": 248,
+	"company_id": 248,
 	"total_revenue": " 106,992 ",
 	"cost_revenue": " 60,153 ",
 	"research_development": " 33,696 ",
@@ -7688,7 +7688,7 @@
 	"net_profit_margin": "  0.86 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 249,
+	"company_id": 249,
 	"total_revenue": " 106,971 ",
 	"cost_revenue": " 53,693 ",
 	"research_development": " 23,706 ",
@@ -7719,7 +7719,7 @@
 	"net_profit_margin": "  0.31 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 250,
+	"company_id": 250,
 	"total_revenue": " 106,625 ",
 	"cost_revenue": " 30,217 ",
 	"research_development": " 8,038 ",
@@ -7750,7 +7750,7 @@
 	"net_profit_margin":  0.02 ,
 	"free_cash_flow":  0.71 },
 {
-	" company_id": 251,
+	"company_id": 251,
 	"total_revenue": " 105,586 ",
 	"cost_revenue": " 44,630 ",
 	"research_development": " 12,638 ",
@@ -7781,7 +7781,7 @@
 	"net_profit_margin": "  0.04 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 252,
+	"company_id": 252,
 	"total_revenue": " 103,367 ",
 	"cost_revenue": " 78,326 ",
 	"research_development": " 2,984 ",
@@ -7812,7 +7812,7 @@
 	"net_profit_margin":  0.02 ,
 	"free_cash_flow":  5.23 },
 {
-	" company_id": 253,
+	"company_id": 253,
 	"total_revenue": " 102,208 ",
 	"cost_revenue": " 60,406 ",
 	"research_development": " 12,825 ",
@@ -7843,7 +7843,7 @@
 	"net_profit_margin": "  0.26 ",
 	"free_cash_flow":  0.60 },
 {
-	" company_id": 254,
+	"company_id": 254,
 	"total_revenue": " 101,700 ",
 	"cost_revenue": " 34,561 ",
 	"research_development": " 40,460 ",
@@ -7874,7 +7874,7 @@
 	"net_profit_margin": "  0.49 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 255,
+	"company_id": 255,
 	"total_revenue": " 100,552 ",
 	"cost_revenue": " 23,057 ",
 	"research_development": " 19,187 ",
@@ -7905,7 +7905,7 @@
 	"net_profit_margin":  0.13 ,
 	"free_cash_flow": 0},
 {
-	" company_id": 256,
+	"company_id": 256,
 	"total_revenue": " 100,380 ",
 	"cost_revenue": " 72,334 ",
 	"research_development": " 61,637 ",
@@ -7936,7 +7936,7 @@
 	"net_profit_margin": "  1.83 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 257,
+	"company_id": 257,
 	"total_revenue": " 99,878 ",
 	"cost_revenue": " 35,203 ",
 	"research_development": " 27,841 ",
@@ -7967,7 +7967,7 @@
 	"net_profit_margin": "  0.20 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 258,
+	"company_id": 258,
 	"total_revenue": " 97,441 ",
 	"cost_revenue": " 81,621 ",
 	"research_development": " 2,859 ",
@@ -7998,7 +7998,7 @@
 	"net_profit_margin": "  0.01 ",
 	"free_cash_flow":  234.04 },
 {
-	" company_id": 259,
+	"company_id": 259,
 	"total_revenue": " 92,027 ",
 	"cost_revenue": " 27,525 ",
 	"research_development": " 37,795 ",
@@ -8029,7 +8029,7 @@
 	"net_profit_margin": "  0.45 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 260,
+	"company_id": 260,
 	"total_revenue": " 91,447 ",
 	"cost_revenue": " 71,473 ",
 	"research_development": 0.0,
@@ -8060,7 +8060,7 @@
 	"net_profit_margin":  0.16 ,
 	"free_cash_flow": 0},
 {
-	" company_id": 261,
+	"company_id": 261,
 	"total_revenue": " 88,775 ",
 	"cost_revenue": " 41,865 ",
 	"research_development": " 18,502 ",
@@ -8091,7 +8091,7 @@
 	"net_profit_margin": "  0.12 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 262,
+	"company_id": 262,
 	"total_revenue": " 85,604 ",
 	"cost_revenue": " 67,776 ",
 	"research_development": 0.0,
@@ -8122,7 +8122,7 @@
 	"net_profit_margin":  0.04 ,
 	"free_cash_flow": 0},
 {
-	" company_id": 263,
+	"company_id": 263,
 	"total_revenue": " 81,894 ",
 	"cost_revenue": " 56,895 ",
 	"research_development": " 22,297 ",
@@ -8153,7 +8153,7 @@
 	"net_profit_margin": "  0.28 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 264,
+	"company_id": 264,
 	"total_revenue": " 78,421 ",
 	"cost_revenue": " 64,410 ",
 	"research_development":  699 ,
@@ -8184,7 +8184,7 @@
 	"net_profit_margin": "  0.06 ",
 	"free_cash_flow":  19.60 },
 {
-	" company_id": 265,
+	"company_id": 265,
 	"total_revenue": " 78,000 ",
 	"cost_revenue": " 58,195 ",
 	"research_development": 0.0,
@@ -8215,7 +8215,7 @@
 	"net_profit_margin": "  0.49 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 266,
+	"company_id": 266,
 	"total_revenue": " 76,124 ",
 	"cost_revenue": 0.0,
 	"research_development": 0.0,
@@ -8246,7 +8246,7 @@
 	"net_profit_margin":  0.54 ,
 	"free_cash_flow": 0},
 {
-	" company_id": 267,
+	"company_id": 267,
 	"total_revenue": " 76,024 ",
 	"cost_revenue": " 34,953 ",
 	"research_development": " 13,019 ",
@@ -8277,7 +8277,7 @@
 	"net_profit_margin": "  0.18 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 268,
+	"company_id": 268,
 	"total_revenue": " 75,974 ",
 	"cost_revenue": " 31,402 ",
 	"research_development": " 15,650 ",
@@ -8308,7 +8308,7 @@
 	"net_profit_margin": "  0.17 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 269,
+	"company_id": 269,
 	"total_revenue": " 74,767 ",
 	"cost_revenue": " 27,565 ",
 	"research_development": " 14,919 ",
@@ -8339,7 +8339,7 @@
 	"net_profit_margin": "  0.17 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 270,
+	"company_id": 270,
 	"total_revenue": " 73,161 ",
 	"cost_revenue": " 35,736 ",
 	"research_development": " 16,795 ",
@@ -8370,7 +8370,7 @@
 	"net_profit_margin": "  0.23 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 271,
+	"company_id": 271,
 	"total_revenue": " 69,375 ",
 	"cost_revenue": " 23,689 ",
 	"research_development": " 16,063 ",
@@ -8401,7 +8401,7 @@
 	"net_profit_margin": "  0.08 ",
 	"free_cash_flow":  18.87 },
 {
-	" company_id": 272,
+	"company_id": 272,
 	"total_revenue": " 65,088 ",
 	"cost_revenue": " 25,794 ",
 	"research_development": 0.0,
@@ -8432,7 +8432,7 @@
 	"net_profit_margin":  0.33 ,
 	"free_cash_flow":  2.29 },
 {
-	" company_id": 273,
+	"company_id": 273,
 	"total_revenue": " 64,550 ",
 	"cost_revenue": " 33,749 ",
 	"research_development":  486 ,
@@ -8463,7 +8463,7 @@
 	"net_profit_margin":  0.05 ,
 	"free_cash_flow": 0},
 {
-	" company_id": 274,
+	"company_id": 274,
 	"total_revenue": " 63,500 ",
 	"cost_revenue": " 32,441 ",
 	"research_development": 0.0,
@@ -8494,7 +8494,7 @@
 	"net_profit_margin": "  0.24 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 275,
+	"company_id": 275,
 	"total_revenue": " 63,222 ",
 	"cost_revenue": " 33,150 ",
 	"research_development": " 7,276 ",
@@ -8525,7 +8525,7 @@
 	"net_profit_margin": "  0.13 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 276,
+	"company_id": 276,
 	"total_revenue": " 63,074 ",
 	"cost_revenue": 0.0,
 	"research_development": 0.0,
@@ -8556,7 +8556,7 @@
 	"net_profit_margin": "  0.12 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 277,
+	"company_id": 277,
 	"total_revenue": " 61,660 ",
 	"cost_revenue": " 50,731 ",
 	"research_development": " 5,577 ",
@@ -8587,7 +8587,7 @@
 	"net_profit_margin": "  0.22 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 278,
+	"company_id": 278,
 	"total_revenue": " 60,998 ",
 	"cost_revenue": " 51,039 ",
 	"research_development": 0.0,
@@ -8618,7 +8618,7 @@
 	"net_profit_margin":  0.01 ,
 	"free_cash_flow":  2.83 },
 {
-	" company_id": 279,
+	"company_id": 279,
 	"total_revenue": " 60,144 ",
 	"cost_revenue": " 10,533 ",
 	"research_development": " 9,553 ",
@@ -8649,7 +8649,7 @@
 	"net_profit_margin":  0.10 ,
 	"free_cash_flow":  67.67 },
 {
-	" company_id": 280,
+	"company_id": 280,
 	"total_revenue": " 59,328 ",
 	"cost_revenue": " 11,155 ",
 	"research_development": " 2,796 ",
@@ -8680,7 +8680,7 @@
 	"net_profit_margin": "  0.49 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 281,
+	"company_id": 281,
 	"total_revenue": " 58,743 ",
 	"cost_revenue": " 18,730 ",
 	"research_development": " 20,314 ",
@@ -8711,7 +8711,7 @@
 	"net_profit_margin":  0.04 ,
 	"free_cash_flow": 0},
 {
-	" company_id": 282,
+	"company_id": 282,
 	"total_revenue": " 57,086 ",
 	"cost_revenue":  191 ,
 	"research_development": " 13,388 ",
@@ -8742,7 +8742,7 @@
 	"net_profit_margin": "  0.94 ",
 	"free_cash_flow":  13.01 },
 {
-	" company_id": 283,
+	"company_id": 283,
 	"total_revenue": " 54,287 ",
 	"cost_revenue": " 40,521 ",
 	"research_development": 0.0,
@@ -8773,7 +8773,7 @@
 	"net_profit_margin": "  0.25 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 284,
+	"company_id": 284,
 	"total_revenue": " 53,167 ",
 	"cost_revenue": " 38,240 ",
 	"research_development": " 2,277 ",
@@ -8804,7 +8804,7 @@
 	"net_profit_margin": "  0.56 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 285,
+	"company_id": 285,
 	"total_revenue": " 53,101 ",
 	"cost_revenue": " 37,857 ",
 	"research_development": " 1,380 ",
@@ -8835,7 +8835,7 @@
 	"net_profit_margin":  0.02 ,
 	"free_cash_flow":  8.24 },
 {
-	" company_id": 286,
+	"company_id": 286,
 	"total_revenue": " 47,693 ",
 	"cost_revenue": " 8,806 ",
 	"research_development": " 5,093 ",
@@ -8866,7 +8866,7 @@
 	"net_profit_margin":  0.05 ,
 	"free_cash_flow": 0},
 {
-	" company_id": 287,
+	"company_id": 287,
 	"total_revenue": " 42,097 ",
 	"cost_revenue": " 13,788 ",
 	"research_development": " 12,502 ",
@@ -8897,7 +8897,7 @@
 	"net_profit_margin": "  0.47 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 288,
+	"company_id": 288,
 	"total_revenue": " 37,975 ",
 	"cost_revenue": " 9,985 ",
 	"research_development": " 6,837 ",
@@ -8928,7 +8928,7 @@
 	"net_profit_margin": "  0.12 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 289,
+	"company_id": 289,
 	"total_revenue": " 35,760 ",
 	"cost_revenue": " 22,402 ",
 	"research_development": " 5,193 ",
@@ -8959,7 +8959,7 @@
 	"net_profit_margin": "  0.25 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 290,
+	"company_id": 290,
 	"total_revenue": " 35,542 ",
 	"cost_revenue": " 8,117 ",
 	"research_development": " 2,897 ",
@@ -8990,7 +8990,7 @@
 	"net_profit_margin": "  0.01 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 291,
+	"company_id": 291,
 	"total_revenue": " 34,750 ",
 	"cost_revenue": " 26,999 ",
 	"research_development": " 1,996 ",
@@ -9021,7 +9021,7 @@
 	"net_profit_margin": "  0.16 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 292,
+	"company_id": 292,
 	"total_revenue": " 34,701 ",
 	"cost_revenue": " 3,395 ",
 	"research_development": " 7,794 ",
@@ -9052,7 +9052,7 @@
 	"net_profit_margin":  0.06 ,
 	"free_cash_flow":  349.39 },
 {
-	" company_id": 293,
+	"company_id": 293,
 	"total_revenue": " 34,577 ",
 	"cost_revenue": " 6,877 ",
 	"research_development":  22 ,
@@ -9083,7 +9083,7 @@
 	"net_profit_margin": "  0.17 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 294,
+	"company_id": 294,
 	"total_revenue": " 33,336 ",
 	"cost_revenue": " 6,322 ",
 	"research_development": " 2,539 ",
@@ -9114,7 +9114,7 @@
 	"net_profit_margin":  0.13 ,
 	"free_cash_flow":  14.24 },
 {
-	" company_id": 295,
+	"company_id": 295,
 	"total_revenue": " 32,212 ",
 	"cost_revenue": " 14,598 ",
 	"research_development": " 3,777 ",
@@ -9145,7 +9145,7 @@
 	"net_profit_margin":  0.11 ,
 	"free_cash_flow":  34.21 },
 {
-	" company_id": 296,
+	"company_id": 296,
 	"total_revenue": " 31,682 ",
 	"cost_revenue": " 12,360 ",
 	"research_development": " 8,541 ",
@@ -9176,7 +9176,7 @@
 	"net_profit_margin": "  0.36 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 297,
+	"company_id": 297,
 	"total_revenue": " 30,462 ",
 	"cost_revenue": " 5,005 ",
 	"research_development": " 8,167 ",
@@ -9207,7 +9207,7 @@
 	"net_profit_margin": "  0.30 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 298,
+	"company_id": 298,
 	"total_revenue": " 30,263 ",
 	"cost_revenue": " 8,284 ",
 	"research_development": " 11,703 ",
@@ -9238,7 +9238,7 @@
 	"net_profit_margin": "  0.27 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 299,
+	"company_id": 299,
 	"total_revenue": " 28,235 ",
 	"cost_revenue": " 7,564 ",
 	"research_development": " 15,906 ",
@@ -9269,7 +9269,7 @@
 	"net_profit_margin": "  0.49 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 300,
+	"company_id": 300,
 	"total_revenue": " 27,060 ",
 	"cost_revenue": " 8,663 ",
 	"research_development": " 7,454 ",
@@ -9300,7 +9300,7 @@
 	"net_profit_margin": "  0.22 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 301,
+	"company_id": 301,
 	"total_revenue": " 26,896 ",
 	"cost_revenue": 0.0,
 	"research_development": 0.0,
@@ -9331,7 +9331,7 @@
 	"net_profit_margin": "  0.65 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 302,
+	"company_id": 302,
 	"total_revenue": " 26,760 ",
 	"cost_revenue": " 12,969 ",
 	"research_development": " 3,612 ",
@@ -9362,7 +9362,7 @@
 	"net_profit_margin": "  0.34 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 303,
+	"company_id": 303,
 	"total_revenue": " 26,338 ",
 	"cost_revenue": " 7,820 ",
 	"research_development": " 9,518 ",
@@ -9393,7 +9393,7 @@
 	"net_profit_margin": "  0.30 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 304,
+	"company_id": 304,
 	"total_revenue": " 26,227 ",
 	"cost_revenue": " 3,082 ",
 	"research_development": 0.0,
@@ -9424,7 +9424,7 @@
 	"net_profit_margin": "  0.24 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 305,
+	"company_id": 305,
 	"total_revenue": " 24,778 ",
 	"cost_revenue": " 5,297 ",
 	"research_development": " 3,014 ",
@@ -9455,7 +9455,7 @@
 	"net_profit_margin":  0.16 ,
 	"free_cash_flow":  5.71 },
 {
-	" company_id": 306,
+	"company_id": 306,
 	"total_revenue": " 24,493 ",
 	"cost_revenue": 0.0,
 	"research_development":  902 ,
@@ -9486,7 +9486,7 @@
 	"net_profit_margin": "  0.34 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 307,
+	"company_id": 307,
 	"total_revenue": " 21,793 ",
 	"cost_revenue": " 8,497 ",
 	"research_development": " 13,394 ",
@@ -9517,7 +9517,7 @@
 	"net_profit_margin": "  1.01 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 308,
+	"company_id": 308,
 	"total_revenue": " 21,566 ",
 	"cost_revenue": " 1,000 ",
 	"research_development": " 6,938 ",
@@ -9548,7 +9548,7 @@
 	"net_profit_margin":  0.18 ,
 	"free_cash_flow": 0},
 {
-	" company_id": 309,
+	"company_id": 309,
 	"total_revenue": " 19,972 ",
 	"cost_revenue": " 4,602 ",
 	"research_development": " 1,445 ",
@@ -9579,7 +9579,7 @@
 	"net_profit_margin":  0.25 ,
 	"free_cash_flow":  98.33 },
 {
-	" company_id": 310,
+	"company_id": 310,
 	"total_revenue": " 19,218 ",
 	"cost_revenue": 0.0,
 	"research_development": 0.0,
@@ -9610,7 +9610,7 @@
 	"net_profit_margin": "  0.20 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 311,
+	"company_id": 311,
 	"total_revenue": " 18,387 ",
 	"cost_revenue": " 3,037 ",
 	"research_development":  570 ,
@@ -9641,7 +9641,7 @@
 	"net_profit_margin":  0.43 ,
 	"free_cash_flow":  2.91 },
 {
-	" company_id": 312,
+	"company_id": 312,
 	"total_revenue": " 15,895 ",
 	"cost_revenue": " 7,282 ",
 	"research_development": " 1,578 ",
@@ -9672,7 +9672,7 @@
 	"net_profit_margin": "  0.42 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 313,
+	"company_id": 313,
 	"total_revenue": " 14,555 ",
 	"cost_revenue": " 11,570 ",
 	"research_development": 0.0,
@@ -9703,7 +9703,7 @@
 	"net_profit_margin": "  0.07 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 314,
+	"company_id": 314,
 	"total_revenue": " 14,142 ",
 	"cost_revenue": " 4,098 ",
 	"research_development": " 2,946 ",
@@ -9734,7 +9734,7 @@
 	"net_profit_margin":  0.08 ,
 	"free_cash_flow":  96.46 },
 {
-	" company_id": 315,
+	"company_id": 315,
 	"total_revenue": " 14,011 ",
 	"cost_revenue": " 4,280 ",
 	"research_development": 0.0,
@@ -9765,7 +9765,7 @@
 	"net_profit_margin":  0.19 ,
 	"free_cash_flow":  533.43 },
 {
-	" company_id": 316,
+	"company_id": 316,
 	"total_revenue": " 12,059 ",
 	"cost_revenue": " 3,024 ",
 	"research_development":  404 ,
@@ -9796,7 +9796,7 @@
 	"net_profit_margin":  0.12 ,
 	"free_cash_flow":  38.55 },
 {
-	" company_id": 317,
+	"company_id": 317,
 	"total_revenue": " 11,542 ",
 	"cost_revenue": " 4,462 ",
 	"research_development": " 2,309 ",
@@ -9827,7 +9827,7 @@
 	"net_profit_margin":  0.36 ,
 	"free_cash_flow": 0},
 {
-	" company_id": 318,
+	"company_id": 318,
 	"total_revenue": " 11,113 ",
 	"cost_revenue": " 1,299 ",
 	"research_development": 0.0,
@@ -9858,7 +9858,7 @@
 	"net_profit_margin": "  0.12 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 319,
+	"company_id": 319,
 	"total_revenue": " 11,081 ",
 	"cost_revenue": " 1,667 ",
 	"research_development": " 4,737 ",
@@ -9889,7 +9889,7 @@
 	"net_profit_margin": "  0.23 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 320,
+	"company_id": 320,
 	"total_revenue": " 10,981 ",
 	"cost_revenue": " 4,857 ",
 	"research_development": " 2,053 ",
@@ -9920,7 +9920,7 @@
 	"net_profit_margin": "  1.18 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 321,
+	"company_id": 321,
 	"total_revenue": " 7,940 ",
 	"cost_revenue": " 3,324 ",
 	"research_development": " 6,901 ",
@@ -9951,7 +9951,7 @@
 	"net_profit_margin": "  1.30 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 322,
+	"company_id": 322,
 	"total_revenue": " 6,760 ",
 	"cost_revenue": " 4,861 ",
 	"research_development": 0.0,
@@ -9982,7 +9982,7 @@
 	"net_profit_margin": "  2.24 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 323,
+	"company_id": 323,
 	"total_revenue": " 4,186 ",
 	"cost_revenue":  747 ,
 	"research_development": " 3,694 ",
@@ -10013,7 +10013,7 @@
 	"net_profit_margin": "  3.21 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 324,
+	"company_id": 324,
 	"total_revenue": " 3,839 ",
 	"cost_revenue":  769 ,
 	"research_development": " 2,406 ",
@@ -10044,7 +10044,7 @@
 	"net_profit_margin": "  1.26 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 325,
+	"company_id": 325,
 	"total_revenue": " 2,156 ",
 	"cost_revenue":  933 ,
 	"research_development": " 1,286 ",
@@ -10075,7 +10075,7 @@
 	"net_profit_margin": "  65.42 ",
 	"free_cash_flow": 0},
 {
-	" company_id": 326,
+	"company_id": 326,
 	"total_revenue": " 1,550 ",
 	"cost_revenue": 0.0,
 	"research_development": " 2,499 ",
