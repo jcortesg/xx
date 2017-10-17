@@ -11,6 +11,7 @@ class Show extends React.Component {
 
   render() {
     const { values } = this.props
+    let capital = values.total_assets - (values.current_liabilities + values.nonCurrent_liabilities) -  values.acumulated_utilities
     return(
       <div className="container-form">
         <h3 className="text-center">
@@ -64,7 +65,7 @@ class Show extends React.Component {
                 </tr>
                 <tr>
                   <td>Crecimiento en Ingresos</td>
-                  <td>{(this.toDollar(values.total_revenue))/(this.toDollar(values.previous_income))}</td>
+                  <td>{((this.toDollar(values.total_revenue))/(this.toDollar(values.previous_income))-1)}</td>
                   <td>Crecimiento en Ingresos (Percentil)</td>
                   <td>0,000</td>
                 </tr>
@@ -85,25 +86,25 @@ class Show extends React.Component {
                 </tr>
                 <tr>
                   <td>Ingresos netos como porcentaje de los Ingresos </td>
-                  <td>0,000</td>
+                  <td>{values.net_income/values.total_revenue}</td>
                   <td>Ingresos netos como porcentaje de los Ingresos (Percentil)</td>
-                  <td>0,000</td>
+                  <td>0</td>
                 </tr>
                 <tr>
                   <td> Ingreso Operacional como % de los Ingresos</td>
-                  <td>0,000</td>
+                  <td>{(values.total_revenue - values.cost_revenue - values.operating_expenses - values.administrative_expenses - values.research_market)/ values.total_revenue }</td>
                   <td> Ingreso Operacional como % de los Ingresos (Percentil)</td>
                   <td>0,000</td>
                 </tr>
                 <tr>
                   <td>Retorno al Patrimonio y Utilidades Acumuladas</td>
-                  <td>0,000</td>
+                  <td>{values.net_income/( capital + values.acumulated_utilities)}</td>
                   <td>Retorno al Patrimonio y Utilidades Acumuladas (Percentil)</td>
                   <td>0,000</td>
                 </tr>
                 <tr>
                   <td>Retorno en los Activos (ROA)</td>
-                  <td>0,000</td>
+                  <td>{values.net_income/values.total_assets}</td>
                   <td> Retorno en los Activos (ROA - Percentil)</td>
                   <td>0,000</td>
                 </tr>

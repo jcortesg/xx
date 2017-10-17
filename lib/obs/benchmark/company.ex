@@ -5,16 +5,19 @@ defmodule Obs.Benchmark.Company do
 
 
   schema "companies" do
-    field :category_id, :string
-    field :name, :string
+    field :company_name, :string
+    field :ticker, :string
+    field :group_industrial, :string
+    field :web, :string
 
+    belongs_to :category, Obs.Benchmark.Category
     timestamps()
   end
 
   @doc false
   def changeset(%Company{} = company, attrs) do
     company
-    |> cast(attrs, [:name, :category_id])
-    |> validate_required([:name, :category_id])
+    |> cast(attrs, [:company_name, :web,  :category_id, :ticker, :group_industrial])
+    |> validate_required([:company_name, :category_id])
   end
 end

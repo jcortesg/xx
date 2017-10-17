@@ -3,7 +3,9 @@ defmodule Obs.Repo.Migrations.CreateCompanies do
 
   def change do
     create table(:companies) do
-      add :name, :string
+      add :company_name, :string
+      add :ticker, :string
+      add :web, :string
       add :category_id, references(:categories, on_delete: :nothing)
 
       timestamps()
