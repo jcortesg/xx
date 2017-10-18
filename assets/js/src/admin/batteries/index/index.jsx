@@ -9,7 +9,6 @@ import {
 
 class Index extends React.Component {
   componentWillMount() {
-    // despachamos la acción al store
     this.props.dispatch(loadBatteries());
   }
 

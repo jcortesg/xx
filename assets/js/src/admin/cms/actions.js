@@ -2,7 +2,6 @@ import api from '../../utils/request.js';
 
 export function loadPosts() {
   return (dispatch) => {
-    // Show the loading indicator
     dispatch(sendingRequest(true))
     api.fetch(`/posts/`)
       .then((response) => {

@@ -2,21 +2,19 @@ import { combineReducers } from 'redux';
 import { reducer as form } from 'redux-form';
 
 const initialState = {
-  batteries: [],
-  battery:{
-    datasets: []
-  },
+  posts: [],
+  post: false,
   loading: true
 };
 
-function indicators(state = initialState, action ) {
+function posts(state = initialState, action ) {
   switch(action.type) {
   case 'LOADING':
     return Object.assign({}, state, { loading: true });
-  case 'LOAD_BATTERIES':
-    return Object.assign({}, state, { batteries: action.playload, loading: false });
-  case 'LOAD_BATTERY':
-    return Object.assign({}, state, { battery: action.playload, loading: false });
+  case 'LOAD_POSTS':
+    return Object.assign({}, state, { posts: action.playload, loading: false });
+  case 'LOAD_POST':
+    return Object.assign({}, state, { post: action.playload, loading: false });
   default:
     return state;
   }
@@ -24,7 +22,7 @@ function indicators(state = initialState, action ) {
 
 const appReducer = combineReducers({
   form,
-  indicators
+  posts
 });
 
 export default function (state, action) {

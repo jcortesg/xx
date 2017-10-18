@@ -3,7 +3,7 @@ import { reducer as form } from 'redux-form';
 
 const initialState = {
   values: {
-    company: "Su Compañia",
+    company: "Compañia",
     nit: 0,
     acumulated_utilities: 400000000,
     administrative_expenses: 900000000,
@@ -21,7 +21,8 @@ const initialState = {
     total_revenue: 5000000000
   },
   complete: false,
-  loading: true
+  loading: true,
+  ratios: []
 };
 
 function benchmark(state = initialState, action ) {
@@ -30,6 +31,8 @@ function benchmark(state = initialState, action ) {
     return Object.assign({}, state, { loading: true });
   case 'LOAD_VALUES':
     return Object.assign({}, state, { values: action.playload, complete: true });
+  case 'LOAD_RATIOS':
+    return Object.assign({}, state, { ratios: action.playload, complete: true });
   default:
     return state;
   }

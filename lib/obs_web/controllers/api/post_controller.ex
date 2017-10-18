@@ -6,7 +6,7 @@ defmodule ObsWeb.Api.PostController do
 
   action_fallback ObsWeb.FallbackController
 
-  def index(conn, _params) do
+  def index(conn, params) do
     posts = Cms.list_posts()
     render(conn, "index.json", posts: posts)
   end

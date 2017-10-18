@@ -31,7 +31,6 @@ class Index extends React.Component {
 }
 
 function mapStateToProps(state) {
-  console.log(state)
   return {
     post: state.cms.post,
     loading: state.indicators.loading

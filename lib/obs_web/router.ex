@@ -18,6 +18,9 @@ defmodule ObsWeb.Router do
 
     get "/", PageController, :index
     get "/studies", PageController, :studies
+    get "/studies/id", PageController, :studies
+    get "/bulletins", PageController, :studies
+    get "/bulletins/:id", PageController, :studies
   end
 
   scope "/batteries", ObsWeb do
@@ -44,6 +47,7 @@ defmodule ObsWeb.Router do
     resources "/batteries", BatteryController do
       resources "/datasets", DatasetController
     end
+
     resources "/posts", PostController, except: [:new, :edit]
     resources "ratios", RatiosController, only: [:index]
   end

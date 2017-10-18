@@ -27,7 +27,7 @@ defmodule Obs.Benchmark do
   def calculate_percentil(ratios) do
     total_revenue = Enum.map(ratios, & &1.datasheet.total_revenue)
     net_income = Enum.map(ratios, & &1.datasheet.net_income)
-    equity_to_assent = Enum.map(ratios, fn(x) -> x.equity_to_assent end)
+    equity_to_assent = Enum.map(ratios, fn(x) -> x.equity_to_assent * 100 end)
     general_admin = Enum.map(ratios, fn(x) -> x.general_admin end)
     gross_margin = Enum.map(ratios, fn(x) -> x.gross_margin end)
     gya_op_ryd = Enum.map(ratios, fn(x) -> x.gya_op_ryd end)
@@ -40,7 +40,7 @@ defmodule Obs.Benchmark do
     return_on_assent = Enum.map(ratios, fn(x) -> x.return_on_assent end)
     return_on_equety = Enum.map(ratios, fn(x) -> x.return_on_equety end)
     rev_per_employee = Enum.map(ratios, fn(x) -> x.rev_per_employee end)
-    revenue_growth = Enum.map(ratios, fn(x) -> x.revenue_growth end)
+    revenue_growth = Enum.map(ratios, fn(x) -> x.revenue_growth *100 end)
 
     %{
       total_revenue: percentile_list(total_revenue),
