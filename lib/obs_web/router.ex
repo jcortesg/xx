@@ -45,6 +45,7 @@ defmodule ObsWeb.Router do
       resources "/datasets", DatasetController
     end
     resources "/posts", PostController, except: [:new, :edit]
+    resources "ratios", RatiosController, only: [:index]
   end
 
   # Other scopes may use custom stacks.

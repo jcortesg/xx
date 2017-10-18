@@ -29,7 +29,9 @@ defmodule Obs.Benchmark.Ratios do
   @doc false
   def changeset(%Ratios{} = ratios, attrs) do
     ratios
-    |> cast(attrs, [:revenue_growth, :datasheet_id, :net_income_growth, :net_income_percent, :operating_income, :return_on_equety, :return_on_assent, :assent_revenue, :non_cash_assent, :equity_to_assent, :rev_per_employee, :gross_margin, :general_admin, :r_y_d, :gya_ryd_ratio, :gya_op_ryd])
+    |> cast(attrs,
+    [:revenue_growth, :datasheet_id, :net_income_growth, :net_income_percent, :operating_income, :return_on_equety, :return_on_assent, :assent_revenue, :non_cash_assent, :equity_to_assent, :rev_per_employee, :gross_margin, :general_admin, :r_y_d, :gya_ryd_ratio, :gya_op_ryd]
+    )
     |> validate_required([:revenue_growth, :net_income_growth, :net_income_percent, :operating_income, :return_on_equety, :return_on_assent, :assent_revenue, :non_cash_assent, :equity_to_assent, :rev_per_employee, :gross_margin, :general_admin, :r_y_d, :gya_ryd_ratio, :gya_op_ryd])
   end
 

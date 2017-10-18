@@ -20,84 +20,77 @@ defmodule Obs.Benchmark do
     end)
   end
 
-  def list_categories do
-    Repo.all(Category)
+  def percentil_ratios do
+    Repo.all(Ratios)|> Repo.preload([:datasheet]) |> calculate_percentil
   end
 
-  def get_category!(id), do: Repo.get!(Category, id)
+  def calculate_percentil(ratios) do
+    total_revenue = Enum.map(ratios, & &1.datasheet.total_revenue)
+    net_income = Enum.map(ratios, & &1.datasheet.net_income)
+    equity_to_assent = Enum.map(ratios, fn(x) -> x.equity_to_assent end)
+    general_admin = Enum.map(ratios, fn(x) -> x.general_admin end)
+    gross_margin = Enum.map(ratios, fn(x) -> x.gross_margin end)
+    gya_op_ryd = Enum.map(ratios, fn(x) -> x.gya_op_ryd end)
+    gya_ryd_ratio = Enum.map(ratios, fn(x) -> x.gya_ryd_ratio end)
+    net_income_growth = Enum.map(ratios, fn(x) -> x.net_income_growth end)
+    net_income_percent = Enum.map(ratios, fn(x) -> x.net_income_percent end)
+    non_cash_assent = Enum.map(ratios, fn(x) -> x.non_cash_assent end)
+    operating_income = Enum.map(ratios, fn(x) -> x.operating_income end)
+    r_y_d = Enum.map(ratios, fn(x) -> x.r_y_d end)
+    return_on_assent = Enum.map(ratios, fn(x) -> x.return_on_assent end)
+    return_on_equety = Enum.map(ratios, fn(x) -> x.return_on_equety end)
+    rev_per_employee = Enum.map(ratios, fn(x) -> x.rev_per_employee end)
+    revenue_growth = Enum.map(ratios, fn(x) -> x.revenue_growth end)
 
-  def create_category(attrs \\ %{}) do
-    %Category{}
-    |> Category.changeset(attrs)
-    |> Repo.insert()
+    %{
+      total_revenue: percentile_list(total_revenue),
+      net_income: percentile_list(total_revenue),
+      equity_to_assent: percentile_list(equity_to_assent),
+      general_admin: percentile_list(equity_to_assent),
+      gross_margin: percentile_list(equity_to_assent),
+      gya_op_ryd: percentile_list(equity_to_assent),
+      gya_ryd_ratio: percentile_list(equity_to_assent),
+      net_income_growth: percentile_list(equity_to_assent),
+      net_income_percent: percentile_list(equity_to_assent),
+      non_cash_assent: percentile_list(equity_to_assent),
+      operating_income: percentile_list(equity_to_assent),
+      r_y_d: percentile_list(equity_to_assent)           ,
+      return_on_assent: percentile_list(equity_to_assent),
+      return_on_equety: percentile_list(equity_to_assent),
+      rev_per_employee: percentile_list(equity_to_assent),
+      revenue_growth: percentile_list(equity_to_assent)
+    }
   end
 
-  def update_category(%Category{} = category, attrs) do
-    category
-    |> Category.changeset(attrs)
-    |> Repo.update()
-  end
-
-  def delete_category(%Category{} = category) do
-    Repo.delete(category)
-  end
-
-  def change_category(%Category{} = category) do
-    Category.changeset(category, %{})
+  def percentile_list(list) do
+    Enum.map([100, 90, 80,70,60,50,40,30,20,10], fn(k) -> percentile(list,k) end)
   end
 
 
-  def list_companies do
-    Repo.all(Company)
+  @spec min(list) :: number
+  def min([]), do: nil
+  def min(list) do
+    Enum.min(list)
   end
 
-  def get_company!(id), do: Repo.get!(Company, id)
+  @spec max(list) :: number
+  def max([]), do: nil
 
-  def create_company(attrs \\ %{}) do
-    %Company{}
-    |> Company.changeset(attrs)
-    |> Repo.insert()
+  def max(list) do
+    Enum.max(list)
   end
 
-  def update_company(%Company{} = company, attrs) do
-    company
-    |> Company.changeset(attrs)
-    |> Repo.update()
-  end
+  @spec percentile(list,number) :: number
+  def percentile([], _), do: nil
+  def percentile(list, 0), do: min(list)
+  def percentile(list, 100), do: max(list)
 
-  def delete_company(%Company{} = company) do
-    Repo.delete(company)
-  end
-
-  def change_company(%Company{} = company) do
-    Company.changeset(company, %{})
-  end
-
-  alias Obs.Benchmark.Datasheet
-
-  def list_datasheets do
-    Repo.all(Datasheet)
-  end
-
-  def get_datasheet!(id), do: Repo.get!(Datasheet, id)
-
-  def create_datasheet(attrs \\ %{}) do
-    %Datasheet{}
-    |> Datasheet.changeset(attrs)
-    |> Repo.insert()
-  end
-
-  def update_datasheet(%Datasheet{} = datasheet, attrs) do
-    datasheet
-    |> Datasheet.changeset(attrs)
-    |> Repo.update()
-  end
-
-  def delete_datasheet(%Datasheet{} = datasheet) do
-    Repo.delete(datasheet)
-  end
-
-  def change_datasheet(%Datasheet{} = datasheet) do
-    Datasheet.changeset(datasheet, %{})
+  def percentile(list, n) when is_list(list) and is_number(n) do
+    s = Enum.sort(list)
+    r = n/100.0 * (length(list) - 1)
+    f = :erlang.trunc(r)
+    lower = Enum.at(s, f)
+    upper = Enum.at(s, f + 1)
+    lower + (upper - lower) * (r - f)
   end
 end
