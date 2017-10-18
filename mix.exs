@@ -20,7 +20,7 @@ defmodule Obs.Mixfile do
   def application do
     [
       mod: {Obs.Application, []},
-      extra_applications: [:logger, :runtime_tools, :arc_ecto, :exrm, :edeliver]
+      extra_applications: [:logger, :runtime_tools, :arc_ecto, :distillery, :edeliver]
     ]
   end
 
@@ -44,7 +44,7 @@ defmodule Obs.Mixfile do
       {:arc, "~> 0.8.0"},
       {:arc_ecto, "~> 0.7.0"},
       {:exrm, "~> 1.0"},
-      {:distillery, ">= 0.8.0", warn_missing: true},
+      {:distillery, "~> 1.5", warn_missing: true},
       {:cowboy, "~> 1.0"}
     ]
   end
