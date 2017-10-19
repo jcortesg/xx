@@ -1,11 +1,13 @@
 <section class="monitoring">
   <div class="container">
     <header>
-      <h3 class="title">Herramienta observatorio TI</h3>
+      <h3 class="title">Herramientas Observatorio TI</h3>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        El Observatorio TI ha creado diferentes herramientas que proporcionan
+        una visión integral del comportamiento y tendencias del sector.
+        Servirán como insumo para la formulación, implementación, seguimiento,
+        evaluación de políticas públicas que beneficien al Sector TI y
+        el proceso de toma de decisiones de las empresas del sector TI.
       </p>
     </header>
     <div class="row">
@@ -19,29 +21,30 @@
               <i class="icon fa fa-desktop" aria-hidden="true"></i>
               <h5> Obsevatorio de empleo</h5>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt, ut labore et dolore magna
-                aliqua. Ut enim ad minim veniam
+                Herramienta que realiza el seguimiento de la oferta y demanda en
+                el Mercado Laboral TI en tiempo real de los comportamientos en la
+                búsqueda de talento humano TI en las empresas
               </p>
             </a>
           </li>
           <li>
             <a href="benchmark">
               <i class="icon fa fa-check-square-o" aria-hidden="true"></i>
-              <h5>Benchmark</h5>
+              <h5>Benchmark Financiero</h5>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt
+                Herramienta que permite hacer el análisis financiero comparativo,
+                para obtener una idea clara de cómo se está desempeñando su empresa
+                frente a un referente internacional
               </p>
             </a>
           </li>
           <li>
             <a>
               <i class="icon fa fa-area-chart" aria-hidden="true"></i>
-              <h5>Analitics de empresas</h5>
+              <h5>Indicadores del sector</h5>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt
+                El Observatorio TI ha generado la batería de indicadores de la Industria TI
+                con el fin de entender el estado y la evolución del sector de TI en Colombia
               </p>
             </a>
           </li>

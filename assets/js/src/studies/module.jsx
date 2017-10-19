@@ -5,6 +5,7 @@ import {loadPosts} from './actions.js';
 import Index from './index.jsx';
 import Show from './show.jsx';
 import Navbar from './navbar.jsx';
+import HomeIndex from './home.jsx';
 import {
   BrowserRouter as Router,
   Route,
@@ -18,17 +19,13 @@ export default class Application extends React.Component {
     return(
       <Provider store={store}>
         <Router>
-          <div className="row">
-            <Navbar/>
-            <div className="col-md-9">
-              <Switch>
-                <Route exact path="/studies/" component={ Index } />
-                <Route exact path="/studies/:id" component={ Show } />
-                <Route exact path="/bulletins/" component={ Index } />
-                <Route exact path="/bulletins/:id" component={ Show } />
-              </Switch>
-            </div>
-          </div>
+          <Switch>
+            <Route exact path="/" component={ HomeIndex } />
+            <Route exact path="/study/" component={ Index } />
+            <Route exact path="/study/:id" component={ Show } />
+            <Route exact path="/bulletin/" component={ Index } />
+            <Route exact path="/bulletin/:id" component={ Show } />
+          </Switch>
         </Router>
       </Provider>
     )

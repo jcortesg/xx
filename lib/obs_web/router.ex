@@ -17,10 +17,10 @@ defmodule ObsWeb.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
-    get "/studies", PageController, :studies
-    get "/studies/id", PageController, :studies
-    get "/bulletins", PageController, :studies
-    get "/bulletins/:id", PageController, :studies
+    get "/study", PageController, :studies
+    get "/study/id", PageController, :studies
+    get "/bulletin", PageController, :studies
+    get "/bulletin/:id", PageController, :studies
   end
 
   scope "/batteries", ObsWeb do
@@ -47,8 +47,9 @@ defmodule ObsWeb.Router do
     resources "/batteries", BatteryController do
       resources "/datasets", DatasetController
     end
-
+    #get "/posts/search/:seach_params", PostController, :index
     resources "/posts", PostController, except: [:new, :edit]
+
     resources "ratios", RatiosController, only: [:index]
   end
 

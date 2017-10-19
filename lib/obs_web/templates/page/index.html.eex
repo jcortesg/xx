@@ -7,8 +7,9 @@
             Observatorio TI
           </h1>
           <p>
-            Una iniciativa del Ministerio de Tecnologías de la Información y
-            las Comunicaciones en Alianza con FEDESOFT.
+            Es el encargado de consolidar la información más importante sobre la industria TI
+            del país, relacionado con el desempeño del ecosistema. Donde se encuentran estudios
+            de interés para la industria, indicadores de desempeño y reportes de la industria.
           </p>
         </div>
       </div>
@@ -17,6 +18,9 @@
   <%= render "_monitoring.html"  %>
   <%= render "_about.html"  %>
   <%= render"_indicators.html" %>
-  <%= render "_studies.html" %>
+  <div id="studies"></div>
 </div>
+
+<script src="<%= static_path(@conn, "/js/app.js") %>"></script>
+<script>require("js/app").Studies.run()</script>
 

@@ -2,7 +2,7 @@ import api from '../utils/request.js';
 
 export function loadPosts(search) {
   return (dispatch) => {
-    api.fetch(`/posts/`, {pp: "xxx"})
+    api.fetch(`/posts`, search)
       .then((response) => {
         dispatch({ type: 'LOAD_POSTS', playload: response.data });
       }).catch((err) => (console.log(err)));

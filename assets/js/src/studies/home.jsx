@@ -10,10 +10,9 @@ import {
   Link
 }from 'react-router-dom';
 
-class Index extends React.Component {
+class HomeIndex extends React.Component {
   componentWillMount() {
-    let type = this.props.match.path.replace(/[/]/g, '')
-    this.props.dispatch(loadPosts({type: type}));
+    this.props.dispatch(loadPosts({type: "study"}));
   }
 
   render() {
@@ -31,34 +30,33 @@ class Index extends React.Component {
       // If we're not loading, don't have an error and there are repos, show the repos
     } else if (this.props.repos !== false) {
       mainContent = posts.map((item, index) => (
-          <li className="indicators__list__item" key={index}>
-            <Link to={"/"+type + "/" + item.id }>
-              <h4>{item.title}</h4>
-            </Link>
-            <p>
-              {item.description}
-            </p>
-            <p className="text-right">
-              <em>Categoría: {item.category.name}</em>
-            </p>
-          </li>
+        <div class="col-md-3 blog--item">
+          <h4>{item.title}</h4>
+          <img class="img-responsive" src={item.image} />
+        </div>
       ))
     }
 
     return(
-      <div className="row">
-        <Navbar/>
-        <div className="col-md-9">
-          <div className="indicators">
-            <ul className="indicators__list">
-              { mainContent }
-            </ul>
+      <section className="studies">
+        <div className="container">
+          <header>
+            <h3 className="title">ESTUDIOS DEL SECTOR TI</h3>
+            <p>
+              Los estudios de sector TI analizan el desarrollo de la
+              industria TI del país, donde se encuentra información
+              desglosada del comportamiento de diferentes características del sector
+            </p>
+          </header>
+          <div className="row blog">
+            { mainContent }
           </div>
         </div>
-      </div>
+      </section>
     )
   }
 }
+
 function mapStateToProps(state) {
   return {
     posts: state.posts.posts,
@@ -67,4 +65,4 @@ function mapStateToProps(state) {
   }
 }
 
-export default connect(mapStateToProps)(Index);
+export default connect(mapStateToProps)(HomeIndex);

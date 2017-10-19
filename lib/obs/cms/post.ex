@@ -9,8 +9,8 @@ defmodule Obs.Cms.Post do
     field :file, :string
     field :title, :string
     field :type, :string, default: "study"
+    field :is_home, :boolean, default: false
     field :image, Obs.Cms.PostImage.Type
-
     belongs_to :category, Obs.Indicators.Category
 
     timestamps()
@@ -19,7 +19,7 @@ defmodule Obs.Cms.Post do
   @doc false
   def changeset(%Post{} = post, attrs) do
     post
-    |> cast(attrs, [:title, :description, :category_id, :type])
+    |> cast(attrs, [:title, :is_home, :description, :category_id, :type])
     |> validate_required([:title, :description ])
   end
 

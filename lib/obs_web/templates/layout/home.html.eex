@@ -16,7 +16,7 @@
       <nav class="navbar navbar-dark navbar-expand-lg" style="background-color: transparent">
         <div class="container">
           <a class="navbar-brand" href="/">
-            <img class="logo" src="/images/logo.png">
+            <img class="logo" src="/images/logo_light.png">
           </a>
           <button class="navbar-toggler"
             type="button"
@@ -30,10 +30,10 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item active">
-                <a class="nav-link" href="/studies">Estudios del sector</a>
+                <a class="nav-link" href="/study">Estudios del sector</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/bulletins">Boletines</a>
+                <a class="nav-link" href="/bulletin">Boletines</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/batteries">Principales indicadores</a>
@@ -50,14 +50,14 @@
     <footer class="container-fluid">
       <div class="row">
         <div class="col-md-4">SÍGANOS EN:</div>
-        <div class="col-md-4">INFORMACIÓN:</div>
+        <div class="col-md-4"></div>
         <div class="col-md-4">
           <address>
             <h5>Mayor Información:</h5>
             <br/>
             Email: observatorioti@fedesoft.org
             <br/>
-            Teléfono: (1) 604 0818 - 317 56
+            Teléfono: (1) 604 0818 - 317 56 72
           </address>
         </div>
       </div>

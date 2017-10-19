@@ -3,11 +3,22 @@ defmodule ObsWeb.Api.PostController do
 
   alias Obs.Cms
   alias Obs.Cms.Post
+  import Ecto.Query
 
   action_fallback ObsWeb.FallbackController
 
   def index(conn, params) do
-    posts = Cms.list_posts()
+    filtered_params =
+    params
+    |> Map.take(~w(category_id type))
+    |> Enum.map(fn {k, v} -> {String.to_atom(k), v} end)
+
+    query = from(Post, where: ^filtered_params)
+    posts=
+      query
+      |> Obs.Repo.all
+      |> Obs.Repo.preload([:category])
+
     render(conn, "index.json", posts: posts)
   end
 

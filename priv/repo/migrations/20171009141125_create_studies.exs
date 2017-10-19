@@ -8,6 +8,7 @@ defmodule Obs.Repo.Migrations.CreatePost do
       add :file, :string, null: true
       add :image, :string, null: true
       add :type, :string, null: false
+      add :is_home, :boolean, null: false
       add :category_id, references(:indicator_categories, on_delete: :nothing)
 
       timestamps()

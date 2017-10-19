@@ -21,7 +21,7 @@ class Show extends React.Component {
 
     if (loading) {
       return("cargando...")
-    }else if(post.file){
+    }else if(post !== false && post.file ){
       files = <a href={"/uploads/files/" + post.file} target="_blank"> Descargar </a>
     }
 
