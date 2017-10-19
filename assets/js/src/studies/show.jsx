@@ -2,6 +2,7 @@ import { connect } from 'react-redux';
 import React from "react";
 import { Provider } from 'react-redux';
 import {loadPost} from './actions.js';
+import Navbar from './navbar.jsx';
 import {
   BrowserRouter as Router,
   Route,

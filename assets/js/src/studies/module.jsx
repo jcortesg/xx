@@ -4,7 +4,6 @@ import store from './state.js';
 import {loadPosts} from './actions.js';
 import Index from './index.jsx';
 import Show from './show.jsx';
-import Navbar from './navbar.jsx';
 import HomeIndex from './home.jsx';
 import {
   BrowserRouter as Router,

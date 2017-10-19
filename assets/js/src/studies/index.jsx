@@ -2,6 +2,7 @@ import { connect } from 'react-redux';
 import React from "react";
 import { Provider } from 'react-redux';
 import store from './state.js';
+import Navbar from './navbar.jsx';
 import {loadPosts } from './actions.js';
 
 import {
