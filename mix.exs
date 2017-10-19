@@ -43,7 +43,6 @@ defmodule Obs.Mixfile do
       {:edeliver, "~> 1.4.4"},
       {:arc, "~> 0.8.0"},
       {:arc_ecto, "~> 0.7.0"},
-      {:exrm, "~> 1.0"},
       {:distillery, "~> 1.5", warn_missing: true},
       {:cowboy, "~> 1.0"}
     ]
