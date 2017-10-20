@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from 'react-redux';
-import { Field, reduxForm, Fields } from 'redux-form';
+import { Field, formValueSelector, reduxForm, Fields } from 'redux-form';
 import renderField from './../../../components/renderField.jsx';
 import SelectField from '../../components/selectField.jsx';
 import {required} from './../../../utils/validation_field.js';
@@ -14,10 +14,24 @@ const renderNormalField = ({ input, label, type, meta: { touched, error } }) => 
   )
 }
 
+function isStudy(valor) {
+  return valor.type == 2
+}
 
+function isBulletin(valor){
+  return valor.type == 3
+}
 
 let Form = (props) => {
-  const { handleSubmit, load, pristine, submitting, submitAction, categories } = props
+  const { handleSubmit, type,  load, pristine, submitting, submitAction, categories } = props
+  let categories_list =[]
+
+  if(type == "study"){
+    categories_list = categories.filter(isStudy)
+  }else if(type == "bulletin"){
+    categories_list = categories.filter(isBulletin)
+  }
+
   return(
     <form onSubmit={handleSubmit(submitAction)} encType="multipart/form-data">
       <legend>Datos Básicos</legend>
@@ -36,26 +50,26 @@ let Form = (props) => {
       <div className="row form-group">
         <div className="col-md-6">
           <Field
-            name="category_id"
-            type="text"
-            label= "Categoria:"
-            component={SelectField}>
-            <option />
-            {
-              categories.map((item,index)=>{
-                return(<option key={index} value={item.id}>{item.name}</option>)
-              })
-            }
-          </Field>
-        </div>
-        <div className="col-md-6">
-          <Field
             name="type"
             label= "Tipo:"
             component={SelectField}>
             <option></option>
             <option value="study">Estudio</option>
             <option value="bulletin">Boletines</option>
+          </Field>
+        </div>
+        <div className="col-md-6">
+          <Field
+            name="category_id"
+            type="text"
+            label= "Categoria:"
+            component={SelectField}>
+            <option />
+            {
+              categories_list.map((item,index)=>{
+                return(<option key={index} value={item.id}>{item.name}</option>)
+              })
+            }
           </Field>
         </div>
       </div>
@@ -97,9 +111,16 @@ let Form = (props) => {
 }
 
 Form = reduxForm({
-  form: "newPost",
-  fields: ['title', 'category_id', 'content', 'image']
+  form: 'newPost' // a unique identifier for this form
 })(Form)
 
+const selector = formValueSelector('newPost')
+
+Form = connect(state => {
+  const type = selector(state, 'type')
+  return {
+    type
+  }
+})(Form)
 
 export default Form

@@ -7,7 +7,7 @@ defmodule ObsWeb.Api.CategoryController do
   action_fallback ObsWeb.FallbackController
 
   def index(conn, params) do
-    categories = Indicators.list_categories()
+    categories = Indicators.list_categories(params)
     render(conn, "index.json", categories: categories)
   end
 end

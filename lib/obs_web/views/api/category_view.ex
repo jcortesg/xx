@@ -9,7 +9,8 @@ defmodule ObsWeb.Api.CategoryView do
   def render("category.json", %{category: category}) do
     %{
       id: category.id,
-      name: category.name
+      name: category.name,
+      type: category.type
     }
   end
 end

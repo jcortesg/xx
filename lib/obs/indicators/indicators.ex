@@ -8,8 +8,14 @@ defmodule Obs.Indicators do
 
   alias Obs.Indicators.{Battery,Serie, Category}
 
-  def list_categories do
-    Repo.all(Category)
+  def list_categories(params) do
+    filtered_params =
+      params
+      |> Map.take(~w(type))
+      |> Enum.map(fn {k, v} -> {String.to_atom(k), v} end)
+
+    from(Category, where: ^filtered_params)
+    |> Repo.all
   end
 
   def list_batteries do

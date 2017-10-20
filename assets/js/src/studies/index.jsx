@@ -3,7 +3,7 @@ import React from "react";
 import { Provider } from 'react-redux';
 import store from './state.js';
 import Navbar from './navbar.jsx';
-import {loadPosts } from './actions.js';
+import {loadPosts, loadCategories } from './actions.js';
 
 import {
   BrowserRouter as Router,
@@ -15,12 +15,22 @@ class Index extends React.Component {
   componentWillMount() {
     let type = this.props.match.path.replace(/[/]/g, '')
     this.props.dispatch(loadPosts({type: type}));
+    this.props.dispatch(loadCategories());
+  }
+
+  isStudy(valor) {
+    return valor.type == 2
+  }
+
+  isBulletin(valor){
+    return valor.type == 3
   }
 
   render() {
     let mainContent = null;
     let { posts, loading } = this.props;
-    let type = "bulletins"
+    let type = this.props.match.path.replace(/[/]/g, '')
+    let categories = []
 
     if (loading) {
       mainContent = ("Loading");
@@ -30,7 +40,14 @@ class Index extends React.Component {
       mainContent = ('Error');
 
       // If we're not loading, don't have an error and there are repos, show the repos
-    } else if (this.props.repos !== false) {
+    } else if (this.props.posts !== false) {
+
+      if(type == "study"){
+        categories = this.props.categories.filter(this.isStudy)
+      }else if(type == "bulletin"){
+        categories = this.props.categories.filter(this.isBulletin)
+      }
+
       mainContent = posts.map((item, index) => (
           <li className="indicators__list__item" key={index}>
             <Link to={"/"+type + "/" + item.id }>
@@ -45,10 +62,9 @@ class Index extends React.Component {
           </li>
       ))
     }
-
     return(
       <div className="row">
-        <Navbar/>
+        <Navbar categories={categories}/>
         <div className="col-md-9">
           <div className="indicators">
             <ul className="indicators__list">
@@ -63,6 +79,7 @@ class Index extends React.Component {
 function mapStateToProps(state) {
   return {
     posts: state.posts.posts,
+    categories: state.posts.categories,
     loading: state.posts.loading,
     error: false
   }

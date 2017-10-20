@@ -18,3 +18,13 @@ export function loadPost(id){
       })
   }
 }
+
+export function loadCategories(){
+  return (dispatch) =>{
+    dispatch({type: 'LOADING'})
+    api.fetch(`/categories`)
+      .then((res) => {
+        dispatch({type: 'LOAD_CATEGORY', playload: res.data})
+      })
+  }
+}

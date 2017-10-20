@@ -43,7 +43,7 @@ defmodule ObsWeb.Router do
 
   scope "/api", ObsWeb.Api do
     pipe_through :api
-    get "categories/:params", CategoryController, :index
+    get "categories", CategoryController, :index
     resources "/batteries", BatteryController do
       resources "/datasets", DatasetController
     end

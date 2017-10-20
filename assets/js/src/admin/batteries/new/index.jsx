@@ -17,7 +17,7 @@ class New extends React.Component {
   }
 
   componentWillMount() {
-    this.props.dispatch(loadCategories());
+    this.props.dispatch(loadCategories({type: 1}));
   }
 
   saveBattery(values){
@@ -58,7 +58,7 @@ class New extends React.Component {
                <Field
                  name={`category_id`}
                  component={SelectField}
-                 label="Categotia:"
+                 label="Categoria:"
                  validate={required}>
                  <option />
                  {

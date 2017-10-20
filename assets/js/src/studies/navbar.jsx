@@ -8,33 +8,26 @@ import {
   Link
 }from 'react-router-dom';
 
-export default class Application extends React.Component {
+export default class Navbar extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {categories: props.categories}
+  }
 
   render() {
+    var items = this.props.categories.map((item, index) =>
+      <li className="nav-item" key={"menu" + index}>
+        <Link to="#" className="nav-link">
+          {item.name}
+        </Link>
+      </li>
+    )
+
     return(
       <div className="col-md-3">
-        <h4>Indicadores</h4>
+        <h4>Categorías</h4>
         <ul className="nav nav-pills flex-column">
-          <li className="nav-item">
-            <Link to="#" className="nav-link">
-              Industria
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link to="#" className="nav-link">
-              Mercado
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link to="#" className="nav-link">
-              Talento
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link to="#" className="nav-link">
-              Tendencias
-            </Link>
-          </li>
+          { items }
         </ul>
       </div>
     )

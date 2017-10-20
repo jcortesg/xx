@@ -36,8 +36,8 @@ export function saveDataset(batteryId, values){
     })
 }
 
-export function loadCategories(){
-  return (dispatch) => api.fetch(`/categories/0`)
+export function loadCategories(params){
+  return (dispatch) => api.fetch(`/categories`, params)
     .then((res) => {
       dispatch({type: 'LOAD_CATEGORY', playload: res.data})
     })

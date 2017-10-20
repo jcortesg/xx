@@ -36,7 +36,7 @@ export function sendingRequest(sending) {
 export function loadCategories(){
   return (dispatch) =>{
     dispatch(sendingRequest(true))
-    api.fetch(`/categories/0`)
+    api.fetch(`/categories`)
     .then((res) => {
       console.log(res)
       dispatch({type: 'LOAD_CATEGORY', playload: res.data})
