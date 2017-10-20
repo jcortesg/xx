@@ -12,7 +12,7 @@ import {
 
 class HomeIndex extends React.Component {
   componentWillMount() {
-    this.props.dispatch(loadPosts({type: "study"}));
+    this.props.dispatch(loadPosts({is_home: true}));
   }
 
   render() {

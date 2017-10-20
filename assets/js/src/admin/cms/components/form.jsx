@@ -84,6 +84,20 @@ let Form = (props) => {
         </div>
       </div>
       <div className="row form-group">
+        <div className="col-md-12">
+          <div className="form-check form-check-inline">
+            <Field
+              name="is_home"
+              id="is_home"
+              component="input"
+              type="checkbox"/>
+
+            <label className="form-check-label" htmlFor="employed">Mostrar en la pagina de inicio</label>
+          </div>
+        </div>
+      </div>
+
+      <div className="row form-group">
         <div className="col-md-6">
           <label>Imagen:</label>
             <Field

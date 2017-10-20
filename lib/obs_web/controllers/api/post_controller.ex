@@ -10,7 +10,7 @@ defmodule ObsWeb.Api.PostController do
   def index(conn, params) do
     filtered_params =
     params
-    |> Map.take(~w(category_id type))
+    |> Map.take(~w(is_home category_id type))
     |> Enum.map(fn {k, v} -> {String.to_atom(k), v} end)
 
     query = from(Post, where: ^filtered_params)
