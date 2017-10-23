@@ -81,10 +81,23 @@ defmodule Obs.Cms do
       {:error, %Ecto.Changeset{}}
 
   """
-  def update_post(%Post{} = study, attrs) do
-    study
+  def update_post(%Post{} = post, attrs) do
+    post
     |> Post.changeset(attrs)
-    |> Repo.update()
+    |> Repo.update!()
+
+    if attrs["image"]do
+      post
+      |> Post.update_image(attrs)
+      |> Repo.update!
+    end
+
+    if attrs["file"]do
+      post
+      |> Post.upload_file(attrs)
+      |> Repo.update!
+    end
+    {:ok, post |> Repo.preload([:category])}
   end
 
   @doc """

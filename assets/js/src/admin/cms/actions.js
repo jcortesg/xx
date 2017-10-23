@@ -40,6 +40,10 @@ export function sendingRequest(sending) {
   return { type: 'SENDING_REQUEST', sending };
 }
 
+export function resetPost() {
+  return { type: 'RESET_POST' };
+}
+
 export function loadCategories(){
   return (dispatch) =>{
     dispatch(sendingRequest(true))

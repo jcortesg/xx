@@ -3,13 +3,14 @@ import { connect } from 'react-redux';
 import { Provider } from 'react-redux';
 import FormCMS from '../components/form.jsx';
 import { Field, reduxForm, Fields } from 'redux-form';
-import {savePost, loadCategories} from '../actions.js';
+import {savePost, loadCategories, resetPost} from '../actions.js';
 import {
   Link
 }from 'react-router-dom';
 
 class New extends React.Component {
   componentWillMount() {
+    this.props.dispatch(resetPost())
     this.props.dispatch(loadCategories());
   }
 

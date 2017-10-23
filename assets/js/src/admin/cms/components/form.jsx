@@ -133,7 +133,9 @@ const selector = formValueSelector('newPost')
 Form = connect(state => {
   const type = selector(state, 'type')
   let post = state.cms.post
-  post.category_id = post.category.id
+  if(!state.cms.loading){
+    post.category_id = post.category.id
+  }
 
   return {
     initialValues: post,

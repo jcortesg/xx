@@ -19,7 +19,6 @@ class Index extends React.Component {
   }
 
   _onSubmit(values){
-    delete values["image"]
     delete values["file"]
 
     console.log(values)
