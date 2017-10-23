@@ -132,9 +132,14 @@ const selector = formValueSelector('newPost')
 
 Form = connect(state => {
   const type = selector(state, 'type')
+  let post = state.cms.post
+  post.category_id = post.category.id
+
   return {
+    initialValues: post,
     type
   }
+
 })(Form)
 
 export default Form

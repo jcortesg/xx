@@ -18,6 +18,7 @@ defmodule ObsWeb.Api.PostView do
       image: PostImage.url({post.image, %{id: post.id}}),
       category: render_one(post.category, ObsWeb.Api.CategoryView, "category.json"),
       type: post.type,
+      is_home: post.is_home,
       file: post.file}
   end
 end

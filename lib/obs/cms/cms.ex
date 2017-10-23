@@ -81,7 +81,7 @@ defmodule Obs.Cms do
       {:error, %Ecto.Changeset{}}
 
   """
-  def update_study(%Post{} = study, attrs) do
+  def update_post(%Post{} = study, attrs) do
     study
     |> Post.changeset(attrs)
     |> Repo.update()

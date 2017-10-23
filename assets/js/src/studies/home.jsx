@@ -29,12 +29,22 @@ class HomeIndex extends React.Component {
 
       // If we're not loading, don't have an error and there are repos, show the repos
     } else if (this.props.repos !== false) {
-      mainContent = posts.map((item, index) => (
-        <div key={index} className="col-md-3 blog--item">
-          <h4>{item.title}</h4>
-          <img className="img-responsive" src={item.image} />
-        </div>
-      ))
+      mainContent = posts.map((item, index) => {
+        let obj = ""
+        if(index < 4){
+          obj = (
+            <div key={index} className="col-md-3 blog--item">
+              <h4>{item.title}</h4>
+              <img className="img-responsive" src={item.image} />
+            </div>
+
+          )
+        }
+        return(
+          obj
+        )
+
+      })
     }
 
     return(

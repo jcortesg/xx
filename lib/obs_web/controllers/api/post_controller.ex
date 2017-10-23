@@ -36,10 +36,10 @@ defmodule ObsWeb.Api.PostController do
   end
 
   def update(conn, %{"id" => id, "study" => study_params}) do
-    study = Cms.get_study!(id)
+    study = Cms.get_post!(id)
 
-    with {:ok, %Post{} = study} <- Cms.update_study(study, study_params) do
-      render(conn, "show.json", study: study)
+    with {:ok, %Post{} = study} <- Cms.update_post(study, study_params) do
+      render(conn, "show.json", post: study)
     end
   end
 

@@ -17,6 +17,13 @@ export function loadPost(id){
     })
 }
 
+export function updatePost(id, values){
+  return(dispatch) => api.patch(`/posts/`+id, {study: values})
+    .then((res) => {
+      dispatch({type: 'LOAD_POST', playload: res.data})
+    })
+}
+
 export function savePost(values) {
   return (dispatch) => {
     // Show the loading indicator

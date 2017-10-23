@@ -18,6 +18,7 @@ export default class Index extends React.Component {
           <Route exact path="/admin/cms" component={ List } />
           <Route path="/admin/cms/new" component={ New } />
           <Route path="/admin/cms/:id" component={ ShowPost } />
+          <Route path="/admin/cms/:id/edit" component={ ShowPost } />
         </Switch>
       </div>
     )
