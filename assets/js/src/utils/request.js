@@ -1,4 +1,4 @@
-const API = "http://localhost:4002/api";
+const API = "http://0.0.0.0:4002/api";
 
 function headers() {
   const authToken = localStorage.getItem('authToken');

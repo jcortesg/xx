@@ -3,6 +3,8 @@ import React from "react";
 import { Provider } from 'react-redux';
 import {loadPost, loadCategories} from './actions.js';
 import Navbar from './navbar.jsx';
+import PDF from './pdf/pdf.jsx';
+
 import {
   BrowserRouter as Router,
   Route,
@@ -40,7 +42,7 @@ class Show extends React.Component {
     if (loading) {
       return("cargando...")
     }else if(post !== false && post.file ){
-      files = <a href={"/uploads/files/" + post.file} target="_blank"> Descargar </a>
+      files = <PDF url={"/uploads/files/" + post.file} />
     }
 
     return(

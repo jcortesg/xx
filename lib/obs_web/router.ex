@@ -18,7 +18,7 @@ defmodule ObsWeb.Router do
 
     get "/", PageController, :index
     get "/study", PageController, :studies
-    get "/study/id", PageController, :studies
+    get "/study/:id", PageController, :studies
     get "/bulletin", PageController, :studies
     get "/bulletin/:id", PageController, :studies
   end

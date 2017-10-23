@@ -44,6 +44,7 @@ defmodule Obs.Mixfile do
       {:arc, "~> 0.8.0"},
       {:arc_ecto, "~> 0.7.0"},
       {:distillery, "~> 1.5", warn_missing: true},
+      {:cors_plug, "~> 1.2"},
       {:cowboy, "~> 1.0"}
     ]
   end

@@ -41,6 +41,7 @@ defmodule ObsWeb.Endpoint do
     key: "_obs_key",
     signing_salt: "Oeayg69A"
 
+  plug CORSPlug, origin: ["http://0.0.0.0:4002/", "http://localhost:4002/", "http://observatorioti.co/", "http://www.observatorioti.co/"]
   plug ObsWeb.Router
 
   @doc """

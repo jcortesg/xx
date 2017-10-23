@@ -34,10 +34,10 @@
       </div>
       <ul class="logos">
         <li>
-         <div class="logo logo-fedesoft"></div>
+         <div class="logo logo-col"></div>
         </li>
         <li>
-         <div class="logo logo-col"></div>
+         <div class="logo logo-fedesoft"></div>
         </li>
       </ul>
     </footer>
