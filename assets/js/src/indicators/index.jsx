@@ -3,8 +3,10 @@ import React from "react";
 import { Provider } from 'react-redux';
 import {loadBatteries, loadCategories} from './actions.js'
 import Sidebar from './sidebar.jsx'
-
 import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
   Link
 }from 'react-router-dom'
 
@@ -33,10 +35,12 @@ class Index extends React.Component {
     return(
       <div className="row">
       <Sidebar categories={categories.filter((val) => val.type == 1)}/>
+      <div className="col-md-9">
       <div className="indicators">
-        <ul className="indicators__list">
-          {items}
+      <ul className="indicators__list">
+      {items}
         </ul>
+      </div>
       </div>
       </div>
     )

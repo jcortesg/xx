@@ -18,7 +18,6 @@ class Navbar extends React.Component {
   }
 
   change_category(value){
-    console.log(value)
     this.props.dispatch(loadBatteries({category_id: value}));
   }
 
