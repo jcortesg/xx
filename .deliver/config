@@ -32,8 +32,9 @@ pre_erlang_clean_compile() {
   # installing npm dependencies
 
   cd '$BUILD_AT/assets'
+  npm rebuild
   npm install
-
+  npm rebuild node-sass
   # building brunch
   node node_modules/brunch/bin/brunch build
 
