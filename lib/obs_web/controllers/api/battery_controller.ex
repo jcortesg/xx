@@ -3,11 +3,22 @@ defmodule ObsWeb.Api.BatteryController do
 
   alias Obs.Indicators
   alias Obs.Indicators.Battery
+  import Ecto.Query
 
   action_fallback ObsWeb.FallbackController
 
-  def index(conn, _params) do
-    batteries = Indicators.list_batteries()
+  def index(conn, params) do
+    filtered_params =
+      params
+      |> Map.take(~w(category_id))
+      |> Enum.map(fn {k, v} -> {String.to_atom(k), v} end)
+
+    query = from(Battery, where: ^filtered_params)
+    batteries=
+      query
+      |> Obs.Repo.all
+      |> Obs.Repo.preload([:category])
+
     render(conn, "index.json", batteries: batteries)
   end
 

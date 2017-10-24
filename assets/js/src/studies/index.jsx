@@ -14,7 +14,7 @@ import {
 class Index extends React.Component {
   componentWillMount() {
     let type = this.props.match.path.replace(/[/]/g, '')
-    this.props.dispatch(loadPosts({type: type}));
+    this.props.dispatch(loadPosts({type: type }));
     this.props.dispatch(loadCategories());
   }
 

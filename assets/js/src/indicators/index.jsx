@@ -1,7 +1,9 @@
 import { connect } from 'react-redux';
 import React from "react";
 import { Provider } from 'react-redux';
-import {loadBatteries} from './actions.js'
+import {loadBatteries, loadCategories} from './actions.js'
+import Sidebar from './sidebar.jsx'
+
 import {
   Link
 }from 'react-router-dom'
@@ -9,11 +11,12 @@ import {
 class Index extends React.Component {
   componentWillMount() {
     // despachamos la acción al store
-    this.props.dispatch(loadBatteries());
+    this.props.dispatch(loadBatteries({category_id: 16}));
+    this.props.dispatch(loadCategories());
   }
 
   render() {
-    let {batteries, loading} = this.props
+    let {batteries, loading, categories} = this.props
     let items = "loading..."
 
     if(!loading){
@@ -28,10 +31,13 @@ class Index extends React.Component {
     }
 
     return(
+      <div className="row">
+      <Sidebar categories={categories.filter((val) => val.type == 1)}/>
       <div className="indicators">
         <ul className="indicators__list">
           {items}
         </ul>
+      </div>
       </div>
     )
   }
@@ -40,7 +46,8 @@ class Index extends React.Component {
 function mapStateToProps(state) {
   return {
     batteries: state.indicators.batteries,
-    loading: state.indicators.loading
+    loading: state.indicators.loading,
+    categories: state.indicators.categories
   }
 }
 
