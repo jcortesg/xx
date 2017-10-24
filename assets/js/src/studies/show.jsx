@@ -42,12 +42,13 @@ class Show extends React.Component {
     if (loading) {
       return("cargando...")
     }else if(post !== false && post.file ){
-      files = <PDF url={"/uploads/files/" + post.file} />
+      //files = <PDF url={"/uploads/files/" + post.file} />
+      files = <a href={"/uploads/files/" + post.file} > Descargar Archivo </a>
     }
 
     return(
       <div className="row">
-        <Navbar categories={categories}/>
+        <Navbar type={"/"+type} categories={categories}/>
         <div className="col-md-9">
           <div className="indicators">
             <h2>{post.title}</h2>

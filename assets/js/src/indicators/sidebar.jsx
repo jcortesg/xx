@@ -24,7 +24,7 @@ class Navbar extends React.Component {
   render() {
     var items = this.props.categories.map((item, index) =>
       <li className="nav-item" key={"menu" + index}>
-        <Link to="#" className="nav-link" onClick={() => this.change_category(item.id)}>
+        <Link to="/batteries/" className="nav-link" onClick={() => this.change_category(item.id)}>
           {item.name}
         </Link>
       </li>

@@ -64,7 +64,7 @@ class Index extends React.Component {
     }
     return(
       <div className="row">
-        <Navbar categories={categories}/>
+        <Navbar type={type} categories={categories}/>
         <div className="col-md-9">
           <div className="indicators">
             <ul className="indicators__list">

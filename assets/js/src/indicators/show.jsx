@@ -9,6 +9,7 @@ import Sidebar from './sidebar.jsx'
 
 class Show extends React.Component {
   componentWillMount() {
+    console.log("xxx")
     this.props.dispatch({type: 'LOADING' });
     this.props.dispatch(loadCategories());
     this.props.dispatch(
@@ -27,19 +28,14 @@ class Show extends React.Component {
     }
 
     return(
-      <div>
-        <div className="row">
-          <Sidebar categories={categories.filter((val) => val.type == 1)}/>
-          <div className="col-md-9">
-            <h4 className="text-center">
-              {battery.title}
-            </h4>
-            <p>{battery.description}</p>
-            <br/>
-            <div className="datasets">
-              {datasets}
-            </div>
-          </div>
+      <div className="col-md-9">
+        <h4 className="text-center">
+          {battery.title}
+        </h4>
+        <p>{battery.description}</p>
+        <br/>
+        <div className="datasets">
+          {datasets}
         </div>
       </div>
     )

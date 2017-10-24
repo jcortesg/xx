@@ -6,9 +6,12 @@ export function calculeBenchmark(values){
 }
 
 export function loadRatios() {
-  return (dispatch) => api.fetch(`/ratios/`)
-    .then((response) => {
-      dispatch({ type: 'LOAD_RATIOS', playload: response.data });
-    });
+  return (dispatch) =>{
+    dispatch({type: 'LOADING'})
+    api.fetch(`/ratios/`)
+      .then((response) => {
+        dispatch({ type: 'LOAD_RATIOS', playload: response.data });
+      });
+  }
 }
 

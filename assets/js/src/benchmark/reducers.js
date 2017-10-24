@@ -30,9 +30,9 @@ function benchmark(state = initialState, action ) {
   case 'LOADING':
     return Object.assign({}, state, { loading: true });
   case 'LOAD_VALUES':
-    return Object.assign({}, state, { values: action.playload, complete: true });
+    return Object.assign({}, state, { values: action.playload, complete: true, loading: false });
   case 'LOAD_RATIOS':
-    return Object.assign({}, state, { ratios: action.playload, complete: true });
+    return Object.assign({}, state, { ratios: action.playload, complete: true, loading: false });
   default:
     return state;
   }

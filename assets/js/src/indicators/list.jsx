@@ -2,25 +2,13 @@ import { connect } from 'react-redux';
 import React from "react";
 import { Provider } from 'react-redux';
 import {loadBatteries, loadCategories} from './actions.js'
-import Show from './show.jsx';
-import Sidebar from './sidebar.jsx'
-import List from './list.jsx'
 
 import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
   Link
 }from 'react-router-dom'
 
-class Index extends React.Component {
-  componentWillMount() {
-    // despachamos la acción al store
-    this.props.dispatch(loadBatteries({category_id: 16}));
-    this.props.dispatch(loadCategories());
-  }
-
-  render() {
+class List extends React.Component {
+  render(){
     let {batteries, loading, categories} = this.props
     let items = "loading..."
 
@@ -35,15 +23,11 @@ class Index extends React.Component {
       ))
     }
 
-    return(
-      <div className="row">
-        <Sidebar categories={categories.filter((val) => val.type == 1)}/>
-        <div className="col-md-9">
-          <Switch>
-            <Route exact path="/batteries/:id" component={Show}/>
-            <Route exact path="/batteries/" component={List}/>
-          </Switch>
-        </div>
+    return (
+      <div className="indicators">
+      <ul className="indicators__list">
+      {items}
+        </ul>
       </div>
     )
   }
@@ -57,4 +41,5 @@ function mapStateToProps(state) {
   }
 }
 
-export default connect(mapStateToProps)(Index);
+export default connect(mapStateToProps)(List);
+

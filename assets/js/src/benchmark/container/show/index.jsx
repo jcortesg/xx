@@ -15,6 +15,8 @@ class Show extends React.Component {
   }
 
   percentRank(arr, v) {
+    console.log(arr)
+    console.log(v)
     if (typeof arr == 'undefined') return 0;
     for (var i = 0, l = arr.length; i < l; i++) {
       if (v <= arr[i]) {
@@ -23,6 +25,7 @@ class Show extends React.Component {
         if (v !== arr[i-1]) {
           i += (v - arr[i-1]) / (arr[i] - arr[i-1]);
         }
+        console.log(i/l)
         return i / l;
       }
     }
@@ -30,10 +33,14 @@ class Show extends React.Component {
   }
 
   render() {
-    const { values, ratios } = this.props
+    const { values, loading,  ratios } = this.props
     let capital = values.total_assets - (values.current_liabilities + values.nonCurrent_liabilities) -  values.acumulated_utilities
     let total_revenue = this.toDollar(values.total_revenue)
     let net_income = this.toDollar(values.net_income)
+
+    if(loading){
+      return("...cargando...")
+    }
 
     return(
       <div className="container-form">
@@ -63,9 +70,9 @@ class Show extends React.Component {
                     Ingresos
                   </td>
                   <td>
-                    {total_revenue}
+                    {total_revenue} USD
                   </td>
-                  <td>{this.percentRank(ratios.total_revenue, values.total_revenue)}</td>
+                  <td>{this.percentRank(ratios.total_revenue, values.total_revenue)}%</td>
                   <td>0,000</td>
                   <td>0,00</td>
                   <td>0,000</td>
@@ -73,7 +80,7 @@ class Show extends React.Component {
                 </tr>
                 <tr>
                   <td>Ingresos Netos</td>
-                  <td>{net_income}</td>
+                  <td>{net_income} USD</td>
                   <td>{this.percentRank(ratios.net_income, net_income)}</td>
                   <td>0,000</td>
                   <td>0,00</td>
@@ -88,8 +95,8 @@ class Show extends React.Component {
                 </tr>
                 <tr>
                   <td>Crecimiento en Ingresos</td>
-                  <td>{(values.total_revenue/(values.previous_income)-1) *100}</td>
-                  <td>{this.percentRank(ratios.revenue_growth, (values.total_revenue/(values.previous_income)-1)*100)}</td>
+                  <td>{(values.total_revenue/(values.previous_income)-1) *100}%</td>
+                  <td>{this.percentRank(ratios.revenue_growth, (values.total_revenue/(values.previous_income)-1) * 100 )}</td>
                   <td>0,000</td>
                   <td>0,00</td>
                   <td>0,000</td>
@@ -98,8 +105,8 @@ class Show extends React.Component {
 
                 <tr>
                   <td>Crecimiento en Ingresos Netos</td>
-                  <td>{((values.net_income- values.previous_net_income)/values.previous_net_income).toFixed(2)}</td>
-                  <td>0,000</td>
+                  <td>{((values.net_income- values.previous_net_income)/values.previous_net_income).toFixed(2)*100}%</td>
+                  <td>{this.percentRank(ratios.net_income_growth, ((values.net_income- values.previous_net_income)/values.previous_net_income).toFixed(2)*100 )}</td>
                   <td>0,000</td>
                   <td>0,00</td>
                   <td>0,000</td>
@@ -113,8 +120,8 @@ class Show extends React.Component {
                 </tr>
                 <tr>
                   <td>Ingresos netos como porcentaje de los Ingresos </td>
-                  <td>{values.net_income/values.total_revenue}</td>
-                  <td>0,0</td>
+                  <td>{(values.net_income/values.total_revenue) * 100}</td>
+                  <td>{this.percentRank(ratios.net_income_percent, (values.net_income/values.total_revenue)*100)}</td>
                   <td>0</td>
                 </tr>
                 <tr>
@@ -219,7 +226,8 @@ class Show extends React.Component {
 function mapStateToProps(state) {
   return {
     values: state.benchmark.values,
-    ratios: state.benchmark.ratios
+    ratios: state.benchmark.ratios,
+    loading: state.benchmark.loading
   }
 }
 export default connect(mapStateToProps)(Show);

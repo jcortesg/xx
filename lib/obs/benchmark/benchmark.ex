@@ -44,21 +44,21 @@ defmodule Obs.Benchmark do
 
     %{
       total_revenue: percentile_list(total_revenue),
-      net_income: percentile_list(total_revenue),
+      net_income: percentile_list(net_income),
       equity_to_assent: percentile_list(equity_to_assent),
-      general_admin: percentile_list(equity_to_assent),
-      gross_margin: percentile_list(equity_to_assent),
-      gya_op_ryd: percentile_list(equity_to_assent),
-      gya_ryd_ratio: percentile_list(equity_to_assent),
-      net_income_growth: percentile_list(equity_to_assent),
-      net_income_percent: percentile_list(equity_to_assent),
-      non_cash_assent: percentile_list(equity_to_assent),
-      operating_income: percentile_list(equity_to_assent),
-      r_y_d: percentile_list(equity_to_assent)           ,
-      return_on_assent: percentile_list(equity_to_assent),
-      return_on_equety: percentile_list(equity_to_assent),
-      rev_per_employee: percentile_list(equity_to_assent),
-      revenue_growth: percentile_list(equity_to_assent)
+      general_admin: percentile_list(general_admin),
+      gross_margin: percentile_list(gross_margin),
+      gya_op_ryd: percentile_list(gya_op_ryd),
+      gya_ryd_ratio: percentile_list(gya_ryd_ratio),
+      net_income_growth: percentile_list(net_income_growth),
+      net_income_percent: percentile_list(net_income_percent),
+      non_cash_assent: percentile_list(non_cash_assent),
+      operating_income: percentile_list(operating_income),
+      r_y_d: percentile_list(r_y_d)           ,
+      return_on_assent: percentile_list(return_on_assent),
+      return_on_equety: percentile_list(return_on_equety),
+      rev_per_employee: percentile_list(rev_per_employee),
+      revenue_growth: percentile_list(revenue_growth)
     }
   end
 

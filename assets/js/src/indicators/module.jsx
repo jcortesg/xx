@@ -16,10 +16,7 @@ export default class Application extends React.Component {
     return(
       <Provider store={store}>
         <Router>
-          <Switch>
-            <Route exact path="/batteries/:id" component={Show}/>
-            <Route exact path="/batteries/" component={Index}/>
-          </Switch>
+          <Route path="/batteries/" component={Index}/>
         </Router>
       </Provider>
     )
