@@ -50,7 +50,6 @@ defmodule Obs.Cms do
 
   """
   def create_post(attrs \\ %{}) do
-
     {:ok, post } = %Post{}
     |> Post.changeset(attrs)
     |> Repo.insert()
@@ -58,13 +57,14 @@ defmodule Obs.Cms do
     if attrs["image"]do
       post
       |> Post.update_image(attrs)
-      |> Repo.update
+      |> Repo.update!
     end
 
     if attrs["file"]do
+      IO.inspect "file"
       post
       |> Post.upload_file(attrs)
-      |> Repo.update
+      |> Repo.update!
     end
     {:ok, post |> Repo.preload([:category])}
   end

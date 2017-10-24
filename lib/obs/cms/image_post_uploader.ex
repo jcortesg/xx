@@ -11,7 +11,7 @@ defmodule Obs.Cms.PostImage do
 
   # Whitelist file extensions:
   def validate({file, _}) do
-     ~w(.jpg .jpeg .gif .png) |> Enum.member?(Path.extname(file.file_name))
+     ~w(.jpg .jpeg .gif .png .jpeg) |> Enum.member?(Path.extname(file.file_name))
   end
 
   # Define a thumbnail transformation:
