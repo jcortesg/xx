@@ -11,7 +11,7 @@ defmodule Obs.Cms.PostFile do
 
   # Whitelist file extensions:
   def validate({file, _}) do
-     ~w(.jpg .jpeg .gif .png .pdf) |> Enum.member?(Path.extname(file.file_name))
+     ~w(.pdf) |> Enum.member?(Path.extname(file.file_name))
   end
 
   # Define a thumbnail transformation:
@@ -31,7 +31,7 @@ defmodule Obs.Cms.PostFile do
 
   # Provide a default URL if there hasn't been a file uploaded
   def default_url(version, scope) do
-    "/images/post/default_#{version}.png"
+    ""
   end
 
   # Specify custom headers for s3 objects

@@ -14,14 +14,14 @@ class New extends React.Component {
     this.props.dispatch(loadCategories());
   }
 
-  _onSubmit(values){
+  _onSub(values){
     this.props.dispatch(savePost(values))
   }
 
   render(){
     return(
       <div>
-        <FormCMS submitAction={this._onSubmit.bind(this)} categories={this.props.categories}/>
+        <FormCMS submitAction={this._onSub.bind(this)} categories={this.props.categories}/>
       </div>
     )
   }
