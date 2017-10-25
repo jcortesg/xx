@@ -6,8 +6,8 @@
 /tmp/*
 /uploads/*
 
-/config/dev.exs
-/assets/js/src/utils/request.js
+#/config/dev.exs
+#/assets/js/src/utils/request.js
 
 # Generated on crash by the VM
 erl_crash.dump

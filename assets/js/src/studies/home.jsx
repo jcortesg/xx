@@ -35,7 +35,7 @@ class HomeIndex extends React.Component {
           obj = (
             <div key={index} className="col-md-3 blog--item">
               <h4>{item.title}</h4>
-              <img className="img-responsive" src={item.image} />
+              <img className="img-responsive" src={"/uploads/posts/"+ item.id +"/original.png"} />
             </div>
 
           )

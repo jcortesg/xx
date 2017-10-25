@@ -26,12 +26,12 @@ defmodule Obs.Cms.PostImage do
 
   # Override the storage directory:
   def storage_dir(version, {file, scope}) do
-    "uploads/posts/#{scope.id}/"
+    "/root/uploads/posts/#{scope.id}/"
   end
 
   # Provide a default URL if there hasn't been a file uploaded
   def default_url(version, scope) do
-    "/uploads/default_#{version}.png"
+    "/root/uploads/default_#{version}.png"
   end
 
   # Specify custom headers for s3 objects

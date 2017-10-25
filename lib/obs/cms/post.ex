@@ -6,7 +6,7 @@ defmodule Obs.Cms.Post do
 
   schema "posts" do
     field :description, :string
-    field :file, Obs.Cms.PostFile.Type
+    field :file, :string
     field :title, :string
     field :type, :string, default: "study"
     field :is_home, :boolean, default: false
