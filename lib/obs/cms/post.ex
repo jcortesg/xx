@@ -27,12 +27,12 @@ defmodule Obs.Cms.Post do
     ext = attrs["image"]["type"]
     file_name= Ecto.UUID.generate
     {:ok, data} =  Base.decode64(attrs["image"]["binary"])
-    File.write("/uploads/tmp/#{file_name}.#{ext}", data, [:binary])
+    File.write("/root/uploads/tmp/#{file_name}.#{ext}", data, [:binary])
 
     attrs = Map.put(attrs, "image",
     %Plug.Upload{
       filename: "#{file_name}.#{ext}",
-      path: "/uploads/tmp/#{file_name}.#{ext}"}
+      path: "/root/uploads/tmp/#{file_name}.#{ext}"}
     )
 
     post
@@ -43,7 +43,7 @@ defmodule Obs.Cms.Post do
     ext = attrs["file"]["type"]
     file_name= Ecto.UUID.generate
     {:ok, data} =  Base.decode64(attrs["file"]["binary"])
-    File.write("/uploads/files/#{post.id}_#{file_name}.#{ext}", data, [:binary])
+    File.write("/root/uploads/files/#{post.id}_#{file_name}.#{ext}", data, [:binary])
 
     attrs = Map.put(attrs, "file", "#{post.id}_#{file_name}.#{ext}")
 
