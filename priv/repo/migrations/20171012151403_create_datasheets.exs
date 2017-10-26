@@ -32,10 +32,12 @@ defmodule Obs.Repo.Migrations.CreateDatasheets do
       add :price_book, :float
       add :net_profit_margin, :float
       add :free_cash_flow, :float
+      add :category_id, references(:categories, on_delete: :nothing)
       add :company_id, references(:companies, on_delete: :nothing)
 
       timestamps()
     end
     create index(:datasheets, [:company_id])
+    create index(:datasheets, [:category_id])
   end
 end

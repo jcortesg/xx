@@ -35,14 +35,15 @@ defmodule Obs.Benchmark.Datasheet do
     field :total_revenue, :float
 
     belongs_to :company, Obs.Benchmark.Company
-
+    belongs_to :category, Obs.Benchmark.Category
+    has_many :ratios, Obs.Benchmark.Ratios
     timestamps()
   end
 
   @doc false
   def changeset(%Datasheet{} = datasheet, attrs) do
     datasheet
-    |> cast(attrs, [:total_revenue, :company_id, :cost_revenue, :research_development, :marketing_expenses, :selling_general, :total_operating_expenses, :net_income_co_ops, :net_income, :prior_revenue, :prior_net_income, :cash, :short_term_investments, :net_receivables, :inventory, :total_current_assets, :total_assets, :total_current_liabilities, :total_long_term_liabilities, :total_liabilities, :retained_earnings, :employ, :market_cap, :p_e, :roe, :div_yield, :debt_equity, :price_book, :net_profit_margin, :free_cash_flow])
+    |> cast(attrs, [:total_revenue, :category_id, :company_id, :cost_revenue, :research_development, :marketing_expenses, :selling_general, :total_operating_expenses, :net_income_co_ops, :net_income, :prior_revenue, :prior_net_income, :cash, :short_term_investments, :net_receivables, :inventory, :total_current_assets, :total_assets, :total_current_liabilities, :total_long_term_liabilities, :total_liabilities, :retained_earnings, :employ, :market_cap, :p_e, :roe, :div_yield, :debt_equity, :price_book, :net_profit_margin, :free_cash_flow])
     |> cast_assoc(:company)
     |> validate_required([:total_revenue, :cost_revenue, :net_income])
   end

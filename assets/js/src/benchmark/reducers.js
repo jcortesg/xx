@@ -23,7 +23,11 @@ const initialState = {
   },
   complete: false,
   loading: true,
-  ratios: []
+  ratios: {},
+  ratios_services: {},
+  ratios_internet: {},
+  ratios_software: {},
+  ratios_less: {}
 };
 
 function benchmark(state = initialState, action ) {
@@ -33,7 +37,14 @@ function benchmark(state = initialState, action ) {
   case 'LOAD_VALUES':
     return Object.assign({}, state, { values: action.playload, complete: true, loading: false });
   case 'LOAD_RATIOS':
-    return Object.assign({}, state, { ratios: action.playload, complete: true, loading: false });
+    return Object.assign({}, state, {
+      ratios: action.playload.ratios,
+      ratios_services: action.playload.ratios_services,
+      ratios_internet: action.playload.ratios_internet,
+      ratios_software: action.playload.ratios_software,
+      ratios_less: action.playload.ratios_less,
+      complete: true,
+      loading: false });
   default:
     return state;
   }

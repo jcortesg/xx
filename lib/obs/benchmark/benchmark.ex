@@ -23,8 +23,56 @@ defmodule Obs.Benchmark do
   def purgue_ratios do
     Ratios |> Repo.all |> Enum.each(& Repo.delete &1)
   end
-  def percentil_ratios do
-    Repo.all(Ratios)|> Repo.preload([:datasheet]) |> calculate_percentil
+
+  def percentil_ratios(params) do
+    ratios =
+    Repo.all(Ratios)
+    |> Repo.preload([:datasheet])
+    |> calculate_percentil
+
+      q = from u in Ratios,
+      join: d in assoc(u, :datasheet),
+      where: d.category_id in [6,5],
+      preload: [:datasheet]
+
+    ratios_services =
+        Repo.all(q)
+        |> calculate_percentil
+
+    q = from u in Ratios,
+      join: d in assoc(u, :datasheet),
+      where: d.category_id in [1],
+      preload: [:datasheet]
+
+    ratios_internet =
+      Repo.all(q)
+      |> calculate_percentil
+
+    q = from u in Ratios,
+      join: d in assoc(u, :datasheet),
+      where: d.category_id in [1],
+      preload: [:datasheet]
+
+    ratios_software =
+      Repo.all(q)
+      |> calculate_percentil
+
+    q = from u in Ratios,
+      join: d in assoc(u, :datasheet),
+      where: d.total_revenue < 100000.0,
+      preload: [:datasheet]
+
+    ratios_less =
+      Repo.all(q)
+      |> calculate_percentil
+
+    %{
+      ratios: ratios,
+      ratios_services: ratios_services,
+      ratios_internet: ratios_internet,
+      ratios_software: ratios_software,
+      ratios_less: ratios_less
+    }
   end
 
   def calculate_percentil(ratios) do
@@ -45,6 +93,7 @@ defmodule Obs.Benchmark do
     r_y_d = Enum.map(ratios, & if(&1.r_y_d != nil, do: &1.r_y_d * 100))
     gya_op_ryd = Enum.map(ratios, & if(&1.gya_op_ryd != nil, do: &1.gya_op_ryd *100))
     gya_ryd_ratio = Enum.map(ratios, & if(&1.gya_ryd_ratio != nil, do: &1.gya_ryd_ratio *100))
+    assent_revenue = Enum.map(ratios, & if(&1.assent_revenue != nil, do: &1.assent_revenue * 100))
 
     %{
       total_revenue: percentile_list(total_revenue),
@@ -63,7 +112,8 @@ defmodule Obs.Benchmark do
       gya_op_ryd: percentile_list(gya_op_ryd),
       gya_ryd_ratio: percentile_list(gya_ryd_ratio),
       non_cash_assent: percentile_list(non_cash_assent),
-      r_y_d: percentile_list(r_y_d)           ,
+      r_y_d: percentile_list(r_y_d),
+      assent_revenue: percentile_list(assent_revenue)
     }
   end
 

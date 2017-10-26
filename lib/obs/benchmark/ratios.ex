@@ -57,7 +57,7 @@ defmodule Obs.Benchmark.Ratios do
     func_equity_to_assent = &(( share_equity(&1) - &1.retained_earnings)/ &1.total_assets)
     fields_equity_to_assent = [data.total_assets, data.total_liabilities, data.retained_earnings]
 
-    func_non_cash_assent = &(&1.total_assets-&1.cash-&1.short_term_investments/&1.total_revenue)
+    func_non_cash_assent = &((&1.total_assets - &1.cash - &1.short_term_investments) / &1.total_revenue)
     fields_non_cash_assent = [data.total_assets, data.cash, data.short_term_investments, data.total_revenue]
 
     func_assets_revenue = &(&1.total_assets/&1.total_revenue)

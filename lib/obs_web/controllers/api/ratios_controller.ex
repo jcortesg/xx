@@ -3,8 +3,9 @@ defmodule ObsWeb.Api.RatiosController do
 
   alias Obs.Benchmark
 
-  def index(conn, _params) do
-    ratios = Benchmark.percentil_ratios
+  def index(conn, params) do
+    ratios = Benchmark.percentil_ratios(params)
+    IO.inspect ratios
     render conn, "index.json", ratios: ratios
   end
 end
