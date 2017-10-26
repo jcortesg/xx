@@ -18,7 +18,8 @@ const initialState = {
     previous_net_income: 700000000,
     research_market: 150000000,
     total_assets: 2500000000,
-    total_revenue: 5000000000
+    total_revenue: 5000000000,
+    employeers: 125
   },
   complete: false,
   loading: true,
