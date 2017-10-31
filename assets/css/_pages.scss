@@ -149,10 +149,14 @@
     } 
   }
 }
+
+.footer--home{
+  background-color: #d7e6ef; 
+}
+
 footer{
   padding: 100px 0px 10px;
   background-image: url("../images/bg_footer.png");
-  background-color: #d7e6ef;
   color: #fff;
 
   .logos{
@@ -191,5 +195,30 @@ footer{
       border-top: 1px solid #dfdfdf;
       padding: 20px 10px 10px; 
     }
+  }
+}
+.charts{
+  &__indicator--body{
+    display: inline;
+    margin: 10px
+  }
+  &__indicator--icon{
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    margin-right: 5px;
+  }
+
+  &__source{
+    display:block;
+    font-size: 10px;
+  }
+}
+
+.media{
+  margin-bottom: 15px;
+  img{
+    max-width: 150px;
+    max-height: 150px;
   }
 }

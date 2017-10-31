@@ -25,7 +25,7 @@ const Radial = props => {
       data={props.data.series[0].data}
       showLabels
       width={400}
-      height={200} />
+      height={400} />
 
 </div>
 <div className="col-md-4">
@@ -33,7 +33,7 @@ const Radial = props => {
     serie.data.map((item, index) =>
       <ul>
         <li>
-          <div styleHtml="xx"></div><strong>{item.label}:</strong>{item.angle}
+          <div></div><strong>{item.label}:</strong>{item.angle}
         </li>
       </ul>
     )
@@ -50,6 +50,12 @@ const Lineal = props => {
       return(renderSerie(index , serie.data, serie.type, serie.color))
     }
   })
+  let series_name = props.data.series.map((serie, index) =>
+    <p key={index + "name"} className="charts__indicator--body">
+      <span className="charts__indicator--icon" style={{ background: serie.color}}></span>
+      {serie.name}
+    </p>
+  )
 
   return(
     <div>
@@ -63,16 +69,17 @@ const Lineal = props => {
           xDistance={100}>
           <VerticalGridLines />
           <HorizontalGridLines />
-          <XAxis />
-          <YAxis />
+          <XAxis title= ""/>
+          <YAxis title= ""/>
           {s}
         </XYPlot>
-        <em>fuente: {props.data.source}</em>
+        {series_name}
+        <p className="charts__source">fuente: {props.data.source}</p>
       </div>
       <div className="col-md-4">
         {props.data.series.map((serie, index) =>
            serie.data.map((item, index) =>
-             <ul>
+             <ul key={index + "-"}>
                <li>
                <strong>{item.x}:</strong>{item.y}
                </li>

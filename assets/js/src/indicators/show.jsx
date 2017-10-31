@@ -28,7 +28,7 @@ class Show extends React.Component {
     }
 
     return(
-      <div className="col-md-9">
+      <div className="col-md-12">
         <h4 className="text-center">
           {battery.title}
         </h4>

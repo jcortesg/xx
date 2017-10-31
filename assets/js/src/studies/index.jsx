@@ -49,17 +49,20 @@ class Index extends React.Component {
       }
 
       mainContent = posts.map((item, index) => (
-          <li className="indicators__list__item" key={index}>
-            <Link to={"/"+type + "/" + item.id }>
-              <h4>{item.title}</h4>
-            </Link>
-            <p>
-              {item.description}
-            </p>
-            <p className="text-right">
-              <em>Categoría: {item.category.name}</em>
-            </p>
-          </li>
+        <div className="media" key={index}>
+          <img className="mr-3" src={"/uploads/posts/"+ item.id +"/original.png"} />
+          <div className="media-body">
+            <h5 className="mt-0">
+              <Link to={"/"+type + "/" + item.id }>
+                {item.title}
+              </Link>
+            </h5>
+            {item.description}
+            <br/>
+            <small>Categoría: {item.category.name}</small>
+          </div>
+          <hr/>
+        </div>
       ))
     }
     return(

@@ -25,7 +25,7 @@ defmodule ObsWeb.Api.DatasetView do
     %{
       id: serie.id,
       name: serie.name,
-      source: serie.source,
+      color: serie.color,
       type: serie.type,
       data: serie.data
     }

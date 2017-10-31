@@ -52,8 +52,8 @@ config :phoenix, :stacktrace_depth, 20
 config :obs, Obs.Repo,
   adapter: Ecto.Adapters.Postgres,
   username: "postgres",
-  #password: "password",
-  password: "postgres",
+  password: "password",
+  #password: "postgres",
   database: "observatorio_dev",
   hostname: "localhost",
   pool_size: 10

@@ -7,7 +7,7 @@ import SelectField from '../../../components/selectField.jsx';
 const renderSerieField = ({ input, label, type, meta: { touched, error } }) => {
   return(
     <div>
-      <input {...input} type={type} className="form-control" placeholder={label} />
+      <input {...input} step="any" type={type} className="form-control" placeholder={label} />
     </div>
   )
 }
@@ -96,10 +96,10 @@ const renderLineal = ({ fields, meta: { error, submitFailed } }) => {
                 component={SelectField}
                 label="Color">
                 <option />
-                <option value="#c9c9ff">Azul</option>
-                <option value="#d6ffc6">Verde</option>
-                <option value="#ffe2f1">Rosa</option>
-                <option value="#feffb9">Amarillo</option>
+                <option value="#35A7FF">Azul</option>
+                <option value="#6BF178">Verde</option>
+                <option value="#FF5964">Rojo</option>
+                <option value="#FFE74C">Amarillo</option>
               </Field>
             </div>
             <div className="col-sm-2">
@@ -144,7 +144,7 @@ const renderDataField = ({fields, meta: {error, submitFailed}}) => {
               component={renderSerieField}
               label="Valor Y "
               validate={required}
-              normalize={(value) => parseInt(value)}
+              normalize={(value) => parseFloat(value)}
             />
           </div>
           <div className="col-sm-2">
@@ -222,11 +222,11 @@ const renderRadioField = ({fields, meta: {error, submitFailed}}) => {
             <div className="col-sm-3">
               <Field
                 name={`${member}.angle`}
-                type="text"
+                type="number"
                 component={renderSerieField}
                 label="Valor"
                 validate={required}
-                normalize={(value) => parseInt(value)}
+                normalize={(value) => parseFloat(value)}
               />
             </div>
             <div className="col-sm-3">
@@ -236,10 +236,13 @@ const renderRadioField = ({fields, meta: {error, submitFailed}}) => {
                 component={SelectField}
                 label="Color">
                 <option />
-                <option value="#c9c9ff">Azul</option>
-                <option value="#d6ffc6">Verde</option>
+                <option value="#35A7FF">Azul</option>
+                <option value="#6BF178">Verde</option>
+                <option value="#FF5964">Rojo</option>
+                <option value="#FFE74C">Amarillo</option>
+                <option value="#69747C">Nickel</option>
                 <option value="#ffe2f1">Rosa</option>
-                <option value="#feffb9">Amarillo</option>
+                <option value="#A3A3A3">Gris</option>
               </Field>
             </div>
           </div>

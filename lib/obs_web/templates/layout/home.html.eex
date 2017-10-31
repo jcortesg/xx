@@ -47,7 +47,7 @@
     <main role="main">
       <%= render @view_module, @view_template, assigns %>
     </main>
-    <footer class="container-fluid">
+    <footer class="container-fluid footer--home">
       <div class="row">
         <div class="col-md-4">SÍGANOS EN:</div>
         <div class="col-md-4"></div>

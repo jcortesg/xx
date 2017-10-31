@@ -6,10 +6,9 @@ defmodule Obs.Indicators.Serie do
 
   schema "indicators_series" do
     field :data, {:array, :map}
-    field :description, :string
     field :name, :string
-    field :source, :string
     field :type, :string
+    field :color, :string
 
     belongs_to :dataset, Obs.Indicators.Dataset
     timestamps()
@@ -18,7 +17,7 @@ defmodule Obs.Indicators.Serie do
   @doc false
   def changeset(%Serie{} = serie, attrs) do
     serie
-    |> cast(attrs, [:name, :description, :source, :type, :data])
+    |> cast(attrs, [:name, :color, :type, :data])
     |> validate_required([:name, :type, :data])
   end
 end
