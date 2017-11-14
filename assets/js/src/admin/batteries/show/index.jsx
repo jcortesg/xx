@@ -4,7 +4,7 @@ import { loadBattery, saveDataset } from '../actions.js';
 import { Provider } from 'react-redux';
 import renderField from '../../../components/renderField.jsx';
 import DatasetForm from './datasets/form.jsx';
-import Chart from '../../../components/charts.jsx'
+import Chart from '../../../charts/index.jsx'
 import {
   Link
 }from 'react-router-dom';
@@ -69,9 +69,9 @@ class Index extends React.Component {
         <hr/>
         {form}
         <hr/>
-        {battery.datasets.map((item, index) =>{
-          return(<Chart dataset={item}/>)
-         })
+        {battery.datasets.map((item, index) =>
+          <Chart key={index} dataset={item}/>
+         )
         }
       </div>
     )

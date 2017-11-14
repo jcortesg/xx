@@ -17,9 +17,9 @@
       <div class="col-md-6">
         <ul class="list-unstyled feature-list">
           <li>
-            <a>
+            <a href="http://159.203.77.85/">
               <i class="icon fa fa-desktop" aria-hidden="true"></i>
-              <h5> Obsevatorio de empleo</h5>
+              <h5> Observatorio de empleo</h5>
               <p>
                 Herramienta que realiza el seguimiento de la oferta y demanda en
                 el Mercado Laboral TI en tiempo real de los comportamientos en la
@@ -39,7 +39,7 @@
             </a>
           </li>
           <li>
-            <a>
+            <a href="batteries">
               <i class="icon fa fa-area-chart" aria-hidden="true"></i>
               <h5>Indicadores del sector</h5>
               <p>

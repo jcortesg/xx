@@ -13,6 +13,8 @@ import {
   VerticalBarSeriesCanvas
 } from 'react-vis';
 
+let hits
+
 const Radial = props => {
   return(
       <div className="row">
@@ -73,6 +75,9 @@ const Lineal = props => {
           <YAxis title= ""/>
           {s}
         </XYPlot>
+        {hits ?
+         <Hint value={hits}/> :
+         null}
         {series_name}
         <p className="charts__source">fuente: {props.data.source}</p>
       </div>
@@ -91,6 +96,9 @@ const Lineal = props => {
     </div>
   )
 }
+const rememberValue = (val) => {
+  console.log(val.type)
+}
 
 export const renderSerie = (key, data, type, color) =>{
   let serie = [{x: 3, y: 0}]
@@ -102,7 +110,7 @@ export const renderSerie = (key, data, type, color) =>{
     case "BarSeries":
       return (<VerticalBarSeries key={key} data={serie} color={color}/>)
     case "LineSeries":
-      return(<LineSeries key={key} data={serie} color={color}/>)
+      return(<LineSeries onSeriesMouseOver={rememberValue(values)} key={key} data={serie} color={color}/>)
     default:
       return(<LineSeries key={key} data={serie} color={color}/>)
   }

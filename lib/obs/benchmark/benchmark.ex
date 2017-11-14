@@ -32,7 +32,7 @@ defmodule Obs.Benchmark do
 
       q = from u in Ratios,
       join: d in assoc(u, :datasheet),
-      where: d.category_id in [6,5],
+      where: d.category_id in [2,5],
       preload: [:datasheet]
 
     ratios_services =
@@ -50,7 +50,7 @@ defmodule Obs.Benchmark do
 
     q = from u in Ratios,
       join: d in assoc(u, :datasheet),
-      where: d.category_id in [1],
+      where: d.category_id in [2],
       preload: [:datasheet]
 
     ratios_software =
