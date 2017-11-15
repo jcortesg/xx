@@ -9,7 +9,12 @@ export default class Charts extends React.Component {
       case "Table":
         return(<Table data={this.props.dataset} />)
       default:
-        return (<RenderChart data={this.props.dataset} height={this.props.height}/>)
+        return (
+					<RenderChart 
+						data={this.props.dataset}
+						options={this.props.options}
+						height={this.props.height}/>
+						)
     }
   }
 }

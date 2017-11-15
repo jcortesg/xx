@@ -30,11 +30,12 @@ class Show extends React.Component {
       datasets = battery.datasets.map((item, index) =>(
 			<div className="col-md-6">        
 				<div className="card">
-				<div className="title-block">				
-					<h1 className="text-center">{item.title}</h1>
-				</div>
          <div class="content-block">					
-						<Chart key={index} dataset={item} height="300"/>
+						<Chart key={index} 
+							dataset={item}
+							height="300px"
+							options= {{"legend":{"position":"bottom","maxLines":3}}}
+							/>
 					</div>
 				</div>
 			</div>

@@ -9,8 +9,7 @@ export default class RendeChart extends React.Component {
     id: "" + props.data.id,
 		height: this.props.height,
 		type: "BarChart",
-    options: {
-    },
+    options: this.props.options,
     rows: [],
     columns:[]
     }
@@ -37,12 +36,16 @@ export default class RendeChart extends React.Component {
     item.data.map((item, index) =>{
      serie = serie.concat([[item.x, item.y]])
     })
+		
+		let options = Object.assign(this.state.options, {
+					"title": this.props.data.title,
+					"seriesType": (serie.type == "BarSeries") ? "bars" : "line"
+    })
+
     this.setState(
       {
         type: 'ComboChart',
-        options: {
-					"seriesType":"bars"
-				},
+        options: options,
         rows: serie,
         columns: [
           {
@@ -63,15 +66,15 @@ export default class RendeChart extends React.Component {
     data.map((item, index) =>{
       serie = serie.concat([[item.label, item.angle]])
     })
+		let options = Object.assign(this.state.options, {
+						"title": this.props.data.title,
+						"pieHole":0.4,
+						"is3D":true
+		})
    this.setState(
       {
         type: 'PieChart',
-        options:
-          {
-            "title": this.props.data.title,
-            "pieHole":0.4,
-            "is3D":true
-          },
+        options: options,
         rows: serie,
         columns: [
           {
@@ -88,7 +91,6 @@ export default class RendeChart extends React.Component {
   }
 
   render(){
-    console.log(this.state)
     return(
       <Chart
         chartType={this.state.type}
