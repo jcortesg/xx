@@ -158,6 +158,9 @@ footer{
   padding: 100px 0px 10px;
   background-image: url("../images/bg_footer.png");
   color: #fff;
+	 h5{
+			color: #fff;
+		}
 
   .logos{
     margin-top: 40px;
@@ -186,6 +189,13 @@ footer{
       }
     }
   }
+	.social{
+		a{ color: #fff}
+		i{
+			font-size: 35px;
+			margin: 20px 10px;
+		}
+	}
 }
 
 .indicators{

@@ -49,7 +49,19 @@
     </main>
     <footer class="container-fluid footer--home">
       <div class="row">
-        <div class="col-md-4">SÍGANOS EN:</div>
+        <div class="col-md-4">SÍGANOS EN:
+          <div class="social">
+            <a href="https://www.facebook.com/fedesoftcol" target="_BLANK">
+							<i class="fa fa-facebook-official" aria-hidden="true"></i>
+						</a>
+						<a href="https://twitter.com/fedesoftcol" target="_BLANK">
+							<i class="fa fa-twitter-square" aria-hidden="true"></i>
+						</a>
+						<a href="https://www.linkedin.com/company/fedesoft?trk=hb_tab_compy_id_1346370" target="_BLANK">
+							<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+						</a>
+          </div>
+        </div>
         <div class="col-md-4"></div>
         <div class="col-md-4">
           <address>
