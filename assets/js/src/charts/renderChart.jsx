@@ -7,7 +7,8 @@ export default class RendeChart extends React.Component {
     super(props);
     this.state = {
     id: "" + props.data.id,
-    type: "BarChart",
+		height: this.props.height,
+		type: "BarChart",
     options: {
     },
     rows: [],
@@ -96,7 +97,7 @@ export default class RendeChart extends React.Component {
         options={this.state.options}
         graph_id={this.state.id }
         width={'100%'}
-        height={'400px'}
+        height={'300px'}
         legend_toggle
       />
     )

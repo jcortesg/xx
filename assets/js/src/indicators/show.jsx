@@ -26,6 +26,30 @@ class Show extends React.Component {
       ))
     }
 
+		if(battery.id == 45){
+      datasets = battery.datasets.map((item, index) =>(
+			<div className="col-md-6">        
+				<div className="card">
+				<div className="title-block">				
+					<h1 className="text-center">{item.title}</h1>
+				</div>
+         <div class="content-block">					
+						<Chart key={index} dataset={item} height="300"/>
+					</div>
+				</div>
+			</div>
+      ))
+		return(
+			<div>
+				<h3 className="text-center">Principales indicadores </h3>
+				<br/>
+				<div className="row">
+					{datasets}
+				</div>	
+			</div>
+		)
+		}
+    
     return(
       <div className="col-md-12">
         <h4 className="text-center">

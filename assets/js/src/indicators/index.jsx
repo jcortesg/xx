@@ -14,9 +14,12 @@ import {
 }from 'react-router-dom'
 
 class Index extends React.Component {
-  componentWillMount() {
+
+	componentWillMount() {
     // despachamos la acción al store
-    this.props.dispatch(loadBatteries({category_id: 16}));
+    this.props.dispatch(loadBatteries(
+			{ category_id: 16 }
+		));
     this.props.dispatch(loadCategories());
   }
 
@@ -34,7 +37,7 @@ class Index extends React.Component {
         </li>
       ))
     }
-
+		
     return(
       <div className="row">
         <Sidebar categories={categories.filter((val) => val.type == 1)}/>
@@ -50,7 +53,7 @@ class Index extends React.Component {
 }
 
 function mapStateToProps(state) {
-  return {
+	return {
     batteries: state.indicators.batteries,
     loading: state.indicators.loading,
     categories: state.indicators.categories

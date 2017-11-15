@@ -222,3 +222,23 @@ footer{
     max-height: 150px;
   }
 }
+
+.card{
+      transition: -webkit-transform .3s,box-shadow .3s,opacity .3s;
+			box-shadow: 0 3px 8px 0 rgba(0,0,0,.1);
+			-webkit-box-shadow: 0 3px 8px 0 rgba(0,0,0,.1);
+			transition: all .4s ease-in-out 0s;
+			margin-bottom: 10px;
+	.content-block{
+		padding: 5px;
+	}
+	.title-block{
+		padding: 15px;
+		padding-buttom: 5px;
+		h1{
+			font-size: 14px;
+			font-weight: 700;
+			line-height: 1.2;
+		}
+	}
+}
