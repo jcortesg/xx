@@ -4,12 +4,11 @@ import { Provider } from 'react-redux';
 import {loadBattery} from './actions.js';
 import {loadBatteries, loadCategories} from './actions.js'
 import Dataset from './datasets/dataset.jsx';
-import Chart from '../components/charts.jsx';
+import Chart from '../charts/index.jsx';
 import Sidebar from './sidebar.jsx'
 
 class Show extends React.Component {
   componentWillMount() {
-    console.log("xxx")
     this.props.dispatch({type: 'LOADING' });
     this.props.dispatch(loadCategories());
     this.props.dispatch(

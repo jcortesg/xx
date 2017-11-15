@@ -1,6 +1,7 @@
 exports.config = {
   // See http://brunch.io/#documentation for docs.
-  files: {
+
+	files: {
     javascripts: {
       joinTo: "js/app.js",
 
@@ -73,5 +74,12 @@ exports.config = {
       Popper: 'popper.js',
       bootstrap: 'bootstrap'
     }
-  }
+  },
+  overrides: {
+		production: {
+			optimize: true,
+			sourceMaps: false,
+			plugins: {autoReload: {enabled: false}}
+		}
+	}
 };

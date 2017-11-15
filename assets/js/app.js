@@ -39,8 +39,9 @@ var Indicators = {
 };
 
 var Admin = {
-  run: function run() {
-    ReactDOM.render(<AdminModule/>, document.getElementById("admin"))
+	run: function run() {
+		console.log(process.env);
+		ReactDOM.render(<AdminModule/>, document.getElementById("admin"))
   }
 }
 
