@@ -22,7 +22,7 @@ class Show extends React.Component {
 
     if(!loading){
       datasets = battery.datasets.map((item, index) =>(
-        <Chart key={index} dataset={item}/>
+        <Chart key={index} dataset={item} options={{}}/>
       ))
     }
 

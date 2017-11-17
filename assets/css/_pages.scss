@@ -295,3 +295,42 @@ footer{
 		}	
 	}
 }
+
+.score{
+  &__counter{
+    display: block;
+    height: 300px;
+    max-width: 400px;
+    width: 100%;
+    margin: 30px auto;
+    border-left: solid;
+    border-bottom: solid;
+    background: url('/images/bg-arrow.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .point{
+    position: absolute;
+    background: #d10c88;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    opacity: 0.6
+  }
+
+  &__session{
+    width: 50%;
+    height: 50%;
+    float: left;
+    padding: 10px;
+    
+    &--right{
+      border-right: 1px solid #dfdfdf;
+    }
+   
+    &--top{
+      border-top: 1px solid #dfdfdf;
+    }
+  }
+}

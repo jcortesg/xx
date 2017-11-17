@@ -3,6 +3,17 @@ import React from "react";
 import {calculeBenchmark, loadRatios} from "../action.js";
 
 class Show extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+    tab: ''
+    }
+    this.selectTab = this.selectTab.bind(this)
+  }
+
+  selectTab(value){
+    this.setState({tab: value})
+  }
 
   componentWillMount() {
     this.props.dispatch(loadRatios());
@@ -51,44 +62,8 @@ class Show extends React.Component {
     if(loading){
       return("...cargando...")
     }
-
-    let nav = (
-      <div className="benchmark__tabs">
-        <ul>
-          <li>
-						<a href="#">
-							<i class="fa fa-industry" aria-hidden="true"></i>            
-							Comparación de la industria
-						</a>
-          </li>
-          <li>
-						<a href="#">
-							<i class="fa fa-check-circle" aria-hidden="true"></i>
-							Calificacion de la Empresa
-						</a>
-          </li>
-          <li>
-						<a href="#">
-							<i class="fa fa-commenting" aria-hidden="true"></i>            
-							Comentarios
-						</a>
-          </li>
-        </ul>
-      </div>
-    )
-    
-    return(
-      <div className="benchmark container-form">
-        <h3 className="text-center">
-          Benckmark financiero para la Industria de Software
-          <br/>
-          Fedesoft
-        </h3>
-				<br/>
-        {nav}
-        <div className="row">
-          <div className="col-md-12">
-            <table className="table">
+    let table = (
+          <table className="table">
               <thead>
                 <tr>
                   <th></th>
@@ -292,6 +267,103 @@ class Show extends React.Component {
                 </tr>
               </tbody>
             </table>
+            )
+
+  let nav = (
+      <div className="benchmark__tabs">
+        <ul>
+          <li>
+            <a href="#" onClick={(value) => {this.selectTab("table")}}>
+							<i class="fa fa-industry" aria-hidden="true"></i>            
+							Comparación de la industria
+						</a>
+          </li>
+          <li>
+						<a href="#" onClick={(value) =>{this.selectTab("quality")}}>
+              <i class="fa fa-check-circle" aria-hidden="true"></i>
+							Calificación de la Empresa
+						</a>
+          </li>
+          <li>
+						<a href="#" onClick={(value) =>{this.selectTab("comments")}}>
+              <i class="fa fa-commenting" aria-hidden="true"></i>            
+							Comentarios
+						</a>
+          </li>
+        </ul>
+      </div>
+    )
+  let comments = (
+  <div>
+    <h5>Comentarios adicionales:</h5>
+    <ul>
+      <li>
+      Existen tasas óptimas de crecimiento a nivel internacional para asegurar el crecimiento sin
+      afectar las utilidades de la compañía. Esta tasa fue definida como un rango entre el 8 y 12%
+      anual, con utilidades del 10% anual. El crecimiento en ingresos netos de la media internacional
+      fue del 52%. La empresa ha tenido un crecimiento por por debajo de la media
+      internacional de los ingresos (tasa de crecimiento de los ingresos) y la empresa ha tenido un
+      crecimiento por debajo de la media internacional de los ingresos netos (tasa de
+      crecimiento de los ingresos netos).
+    </li>
+    </ul>
+  </div>
+
+  )
+  let quality = (
+  <div>
+    <div className="score">
+      <div className="score__counter">
+        <div className="point"></div>
+          <div className="score__session score__session--right">Escalables</div>
+          <div className="score__session ">Tractoras</div>
+          <div className="score__session score__session--right score__session--top">Emergentes</div>
+          <div className="score__session score__session--top">Gacelas</div>
+        </div>
+      </div>
+    <p> 
+      <strong>Tractora:</strong> Las empresas de software tractoras se caracterizan por contar un nivel de ventas
+      anual mayor a los 18.000 millones de pesos, un Revenue por empleado mayor a los 89 millones
+      de pesos. Estas cuentan con productos, servicios y procesos maduros. Las empresas bajo esta
+      categoría son los modelos a seguir de la industria a nivel nacional
+    </p>
+    <p>
+      <strong>Gacelas:</strong> Las Gacelas de nuestra industria son empresas que han contado con crecimientos
+      extraordinarios (por encima del 15% anual). Son por lo general empresas jóvenes (menos de 12
+      años en la industria). Por su nivel de ventas, todavía no se consideran empresas tractoras, pero
+      su dinámica empresarial hace que se asemejen mucho a estas
+    </p>
+    <p>
+      <strong>Escalables: </strong>Las empresas Escalables se caracterizan por contar con niveles de ventas
+      importantes, y con crecimiento constantes y bajos. Estas son empresas que tienen un potencial
+      alto de crecimiento pero no lo hacen por la aversión al riesgo que tienen
+    </p>
+    <p><strong>Emergentes:</strong></p>
+  </div>
+  )
+  let content_tab = table
+
+   switch(this.state.tab){
+    case "comments":
+      content_tab = comments
+      break;
+    case "quality":
+      content_tab = quality
+      break;
+   }
+   console.log(this.state.tab)
+    return(
+      <div className="benchmark container-form">
+        <h3 className="text-center">
+          Benckmark financiero para la Industria de Software
+          <br/>
+          Fedesoft
+        </h3>
+				<br/>
+        {nav}
+        <div className="row">
+          <div className="col-md-12">
+            {content_tab}
           </div>
         </div>
       </div>
