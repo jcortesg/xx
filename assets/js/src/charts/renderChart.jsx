@@ -36,10 +36,10 @@ export default class RendeChart extends React.Component {
     item.data.map((item, index) =>{
      serie = serie.concat([[item.x, item.y]])
     })
-		
+    console.log(item.type)		
 		let options = Object.assign(this.state.options, {
 					"title": this.props.data.title,
-					"seriesType": (serie.type == "BarSeries") ? "bars" : "line"
+					"seriesType": (item.type == "BarSeries") ? "bars" : "line"
     })
 
     this.setState(

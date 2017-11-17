@@ -32,7 +32,7 @@ class Show extends React.Component {
     let capital = values.total_assets - (values.current_liabilities + values.nonCurrent_liabilities) -  values.acumulated_utilities
     let total_revenue = Math.round(this.toDollar(values.total_revenue))
     let net_income = Math.round(this.toDollar(values.net_income))
-    let revenue_growth = ((values.total_revenue/(values.previous_income))-1) *100
+    let revenue_growth = Math.round(((values.total_revenue/(values.previous_income))-1) *100)
     let net_income_percent= Math.round((net_income/total_revenue) * 100)
     let net_income_growth = Math.round(((values.net_income - values.previous_net_income)/values.previous_net_income)*100)
     let operating_income = Math.round(((values.total_revenue - values.cost_revenue - values.operating_expenses - values.administrative_expenses - values.research_market)/ values.total_revenue)*100)
@@ -40,7 +40,7 @@ class Show extends React.Component {
     let return_on_assent = Math.round(values.net_income/values.total_assets * 100)
     let non_cash_assent = Math.round(values.total_assets /values.total_revenue *100)
     let equity_to_assent = Math.round((capital + values.acumulated_utilities ) /values.total_assets *100)
-    let rev_per_employee = (values.total_revenue/ values.employeers)/1000
+    let rev_per_employee = Math.round((values.total_revenue/ values.employeers)/1000)
     let gross_margin = Math.round(((values.total_revenue - values.cost_revenue)/values.total_revenue) *100)
     let general_admin = Math.round(values.administrative_expenses/ values.total_revenue *100)
     let r_y_d = Math.round(values.research_market/values.total_revenue *100)
@@ -52,13 +52,40 @@ class Show extends React.Component {
       return("...cargando...")
     }
 
+    let nav = (
+      <div className="benchmark__tabs">
+        <ul>
+          <li>
+						<a href="#">
+							<i class="fa fa-industry" aria-hidden="true"></i>            
+							Comparación de la industria
+						</a>
+          </li>
+          <li>
+						<a href="#">
+							<i class="fa fa-check-circle" aria-hidden="true"></i>
+							Calificacion de la Empresa
+						</a>
+          </li>
+          <li>
+						<a href="#">
+							<i class="fa fa-commenting" aria-hidden="true"></i>            
+							Comentarios
+						</a>
+          </li>
+        </ul>
+      </div>
+    )
+    
     return(
-      <div className="container-form">
+      <div className="benchmark container-form">
         <h3 className="text-center">
           Benckmark financiero para la Industria de Software
           <br/>
           Fedesoft
         </h3>
+				<br/>
+        {nav}
         <div className="row">
           <div className="col-md-12">
             <table className="table">
@@ -161,7 +188,7 @@ class Show extends React.Component {
                   <td>{this.percentRank(ratios.return_on_assent, return_on_assent)*100}%</td>
                   <td>{this.percentRank(ratios_less.return_on_assent, return_on_assent)*100}%</td>
                   <td>{this.percentRank(ratios_services.return_on_assent, return_on_assent)*100}%</td>
-                  <td>{this.percentRank(ratios_internet.return_on_assent, return_on_assent)*100}%</td>
+                  <td>{(this.percentRank(ratios_internet.return_on_assent, return_on_assent)*100).toFixed(0)}%</td>
                   <td>{this.percentRank(ratios_software.return_on_assent, return_on_assent)*100}%</td>
                 </tr>
 

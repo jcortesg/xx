@@ -156,7 +156,9 @@
 
 footer{
   padding: 100px 0px 10px;
-  background-image: url("../images/bg_footer.png");
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-image: url("../images/bg_footer.png");
   color: #fff;
 	 h5{
 			color: #fff;
@@ -250,5 +252,46 @@ footer{
 			font-weight: 700;
 			line-height: 1.2;
 		}
+	}
+}
+
+.benchmark{
+	.table{
+		border: 1px solid #e6eaee;
+		border-radius: 4px;		
+		thead{
+			border: 1px solid #e6eaee;
+			background-color: #f5f8fa;
+			color: #7f8fa4;
+			font-size: 16px;
+		}
+	}
+	&__tabs{
+		margin: 15px 0px 0px;	
+		ul{
+			display: flex;
+			flex-direction: row;
+			text-align: center;
+			justify-content: center;
+			margin-bottom: 0px;	
+			li{
+				flex-direction: column;
+				max-width: 200px;	
+				padding: 0px 10px;				
+				display: inline;
+				border-bottom: 2px solid #f9AA00;
+			}	
+		}
+		a{
+			color: #2A2E5D;
+			display: block;
+			padding-right: .5rem;
+			padding-left: .5rem;
+		}
+		i{
+			display: block;
+			font-size: 20px;
+			margin-bottom: 5px;
+		}	
 	}
 }
