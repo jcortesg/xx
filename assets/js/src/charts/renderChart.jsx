@@ -38,7 +38,8 @@ export default class RendeChart extends React.Component {
     })
     console.log(item.type)		
 		let options = Object.assign(this.state.options, {
-					"title": this.props.data.title,
+          "title": this.props.data.title,
+          "legend":{"position":"bottom","maxLines":3},
 					"seriesType": (item.type == "BarSeries") ? "bars" : "line"
     })
 

@@ -58,6 +58,17 @@ class Show extends React.Component {
     let gya_ryd_ratio =  Math.round( values.operating_expenses/values.research_market *100)
     let gya_op_ryd = Math.round((values.operating_expenses + values.administrative_expenses)/values.research_market *100)
     let assent_revenue = Math.round((values.total_assets/ values.total_revenue)*100)
+    
+    let score_type ="xx"
+
+    switch(true){
+      case total_revenue > 18000000/3000:
+        score_type = "Tractora"
+        break;
+      case 18000000/3000 < total_revenue > 3000.000:
+        score_type = "Gacela"
+        break;
+    }
 
     if(loading){
       return("...cargando...")
@@ -312,6 +323,13 @@ class Show extends React.Component {
   )
   let quality = (
   <div>
+    {score_type} 
+
+    revenue: {total_revenue * 1000 }
+    <br/>
+    rev empleados: {rev_per_employee}
+    <br/>
+    crecimiento: {revenue_growth}
     <div className="score">
       <div className="score__counter">
         <div className="point"></div>
