@@ -4,6 +4,7 @@ import {calculeBenchmark} from "../action.js";
 import StepOne from './step_one.jsx';
 import StepTwo from './step_two.jsx';
 import StepThree from './step_three.jsx';
+import Show from "../show/index.jsx"
 
 import {
   BrowserRouter as Router,
@@ -38,8 +39,9 @@ class Form extends React.Component {
   render(){
     const { page } = this.state
     if (this.props.complete){
+      console.log("Show")
       return (
-        <Redirect to={"/benchmark/calcule"}/>
+       <Show/ > 
       )
     }
     return(

@@ -7,10 +7,10 @@ export function calculeBenchmark(values){
 
 export function loadRatios() {
   return (dispatch) =>{
-    dispatch({type: 'LOADING'})
+    dispatch({type: 'LOADING_R'})
     api.fetch(`/ratios/`)
       .then((response) => {
-        dispatch({ type: 'LOAD_RATIOS', playload: response.data });
+        dispatch({ type: 'LOADED_RATIOS', playload: response.data });
       });
   }
 }
