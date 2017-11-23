@@ -29,6 +29,13 @@ export function deleteBattery(batteryId){
     })
 }
 
+export function deleteDataset(batteryId, id){
+  return (dispatch) => api.delete(`/batteries/${batteryId}/datasets/${id}`)
+    .then((res) => {
+      window.location.replace(`/admin/batteries/${batteryId}`)
+    })
+}
+
 export function saveDataset(batteryId, values){
   return (dispatch) => api.post(`/batteries/${batteryId}/datasets`, { dataset: values })
     .then((res) => {

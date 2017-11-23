@@ -34,7 +34,7 @@ defmodule ObsWeb.Api.DatasetController do
     end
   end
 
-  def delete(conn, %{"id" => id}) do
+  def delete(conn, %{"battery_id" => _battery_id,"id" => id}) do
     dataset = Indicators.get_dataset!(id)
     with {:ok, %Dataset{}} <- Indicators.delete_dataset(dataset) do
       send_resp(conn, :no_content, "")

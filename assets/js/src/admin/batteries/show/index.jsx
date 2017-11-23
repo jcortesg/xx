@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import React from "react";
-import { loadBattery, saveDataset } from '../actions.js';
+import { loadBattery, saveDataset, deleteDataset } from '../actions.js';
 import { Provider } from 'react-redux';
 import renderField from '../../../components/renderField.jsx';
 import DatasetForm from './datasets/form.jsx';
@@ -13,7 +13,8 @@ class Index extends React.Component {
   constructor(props) {
     super(props);
     this.state = {activeForm: false, charts: []}
-  }
+    this.deleteBattery = this.deleteBattery.bind(this)
+}
 
   componentWillMount() {
     const id = this.props.match.params.id;
@@ -30,6 +31,11 @@ class Index extends React.Component {
       }
     }
     this.props.dispatch(saveDataset(id, values));
+  }
+
+  deleteBattery(id){
+    const batteryId = this.props.match.params.id;
+    this.props.dispatch(deleteDataset(batteryId, id));
   }
 
   activeForm(){
@@ -70,7 +76,11 @@ class Index extends React.Component {
         {form}
         <hr/>
         {battery.datasets.map((item, index) =>
-          <Chart key={index} dataset={item}/>
+          <div>
+            <a class="text-danger" onClick={() => this.deleteBattery(item.id)}>Eliminar</a>
+            <Chart key={index} options={{}} dataset={item}/>
+            <hr/>
+          </div>
          )
         }
       </div>
