@@ -53,6 +53,12 @@ class StepThree extends React.Component {
                 component={renderField}
                 label="Utilidades Acumuladas"
               />
+              <Field
+                name="employeers"
+                type="number"
+                component={renderField}
+                label="Empleados de la compañia"
+              />
             </div>
           </div>
           <div className="actions">
