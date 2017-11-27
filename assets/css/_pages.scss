@@ -159,6 +159,7 @@ footer{
 	background-repeat: no-repeat;
 	background-position: bottom;
 	background-image: url("../images/bg_footer.png");
+  background-size: cover;
   color: #fff;
 	 h5{
 			color: #fff;
@@ -298,6 +299,7 @@ footer{
 
 .score{
   &__counter{
+    position: relative;
     display: block;
     height: 300px;
     max-width: 400px;
