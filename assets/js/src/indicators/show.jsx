@@ -26,7 +26,7 @@ class Show extends React.Component {
       ))
     }
 
-		if(battery.id == 45){
+		if(battery.id == 50){
       datasets = battery.datasets.map((item, index) =>(
 			<div className="col-md-6">        
 				<div className="card">
