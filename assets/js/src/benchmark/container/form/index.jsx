@@ -47,7 +47,7 @@ class Form extends React.Component {
     return(
       <div className="container-form">
         <h3 className="text-center">
-          Benckmark financiero para la Industria de Software
+          Benchmark financiero para la Industria de Software
           <br/>
           Modelo Internacional
         </h3>

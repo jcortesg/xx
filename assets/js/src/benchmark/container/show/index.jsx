@@ -45,7 +45,13 @@ class Show extends React.Component {
     if(loading){
      return("Calculando..")
     }
-    
+
+    let formatter = new Intl.NumberFormat('en-US', {
+      style: 'currency',
+      currency: 'USD',
+      minimumFractionDigits: 0,
+    });
+
     let capital = values.total_assets - (values.current_liabilities + values.nonCurrent_liabilities) -  values.acumulated_utilities
     let total_revenue = Math.round(this.toDollar(values.total_revenue))
     let net_income = Math.round(this.toDollar(values.net_income))
@@ -86,7 +92,7 @@ class Show extends React.Component {
                     Ingresos USD
                   </td>
                   <td>
-                    {total_revenue}
+                    {formatter.format(total_revenue * 1000)}
                   </td>
                   <td>{this.percentRank(ratios.total_revenue, total_revenue)*100}%</td>
                   <td>{this.percentRank(ratios_less.total_revenue, total_revenue)*100}%</td>
@@ -96,7 +102,7 @@ class Show extends React.Component {
                 </tr>
                 <tr>
                   <td>Ingresos Netos USD</td>
-                  <td>{net_income}</td>
+                  <td>{formatter.format(net_income * 1000)}</td>
                   <td>{this.percentRank(ratios.net_income, net_income) * 100}%</td>
                   <td>{this.percentRank(ratios_less.net_income, net_income) * 100}%</td>
                   <td>{this.percentRank(ratios_services.net_income, net_income) * 100}%</td>
@@ -288,6 +294,12 @@ class Show extends React.Component {
 							Calificación de la Empresa
 						</a>
           </li>
+          <li>
+						<a href="#" onClick={(value) =>{this.selectTab("other")}}>
+              <i class="fa fa-area-chart " aria-hidden="true"></i>
+							Más información de indicadores Int
+						</a>
+          </li>
         </ul>
       </div>
     )
@@ -310,7 +322,7 @@ class Show extends React.Component {
   )
   let content_tab = table
   let score_type ="Emergente"
-  var position = { top: '220px', left: '20%'}
+  var position = { top: '80px', left: '20%'}
   
   let type = (
     <p><strong>Emergentes:</strong></p>
@@ -342,7 +354,7 @@ class Show extends React.Component {
         break;
       case rev_per_employee * 3000 > 50000000:
         score_type = "Escalable"
-        position = { top: '80px', left: '20%'}
+        position = { top: '220px', left: '20%'}
         type = (
           <p>
             <strong>Escalables: </strong>Las empresas Escalables se caracterizan por contar con niveles de ventas
@@ -368,9 +380,58 @@ class Show extends React.Component {
 	}
   let quality = (
   <div>
-    <strong>Rev x empleado: </strong>{rev_per_employee * 3000}
     <br/>
-    <strong>Tasa de crecimiento: </strong>{revenue_growth}%
+    <br/>
+    <div className="row">
+      <div className="col-md-6">
+        <h3>Metricas Generales</h3>
+        <table className="table">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Ingresos <br/> (1.380 Millones)</th>
+              <th>Revenue/ Empleado <br/> (89 Millomes)</th>
+              <th>Tasa de Crecimiento <br/> anual (%)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td> Tractoras </td>
+              <td>> 18.000M</td>
+              <td>> 89M</td>
+              <td>5% ></td>
+            </tr>
+            <tr>
+              <td> Gacelas </td>
+              <td>{"18.000M < X < 3.000M"}</td>
+              <td>>60M</td>
+              <td>  >15%</td>
+            </tr>
+            <tr>
+              <td> Escalables</td>
+              <td>{"18.000M < X < 1.000M"}</td>
+              <td>>50M</td>
+              <td>5% =></td>
+            </tr>
+            <tr>
+              <td> Emerhentes</td>
+              <td>{"< 10.000M"}</td>
+              <td> {"<50M "}</td>
+              <td>5% =></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div className="col-md-6">
+        <h3>Metricas de su Empresa</h3>
+        <strong>Ingresos: </strong> {formatter.format(total_revenue * 3000)}
+        <br/>
+        <strong>Revenue por empleado: </strong>{formatter.format(rev_per_employee * 3000)}
+        <br/>
+        <strong>Tasa de crecimiento: </strong>{revenue_growth}%
+      </div>
+    
+    </div>
     <div className="score">
       <div className="score__counter">
         <div className="point" style={position}></div>
@@ -380,28 +441,198 @@ class Show extends React.Component {
           <div className="score__session score__session--top">Gacelas</div>
         </div>
       </div>
+      <h4>Su empresa es: </h4>
       {type}
       <h4>Comentarios adicionales</h4>
       {txt_comments.map((item, index) => <li key={index}> {item} </li> )}
+    
+      <h4>Definiciones:</h4>
+          <p> 
+            <strong>Tractora:</strong> Las empresas de software tractoras se caracterizan por contar un nivel de ventas
+            anual mayor a los 18.000 millones de pesos, un Revenue por empleado mayor a los 89 millones
+            de pesos. Estas cuentan con productos, servicios y procesos maduros. Las empresas bajo esta
+            categoría son los modelos a seguir de la industria a nivel nacional
+          </p>
+          <p>
+            <strong>Gacelas:</strong> Las Gacelas de nuestra industria son empresas que han contado con crecimientos
+            extraordinarios (por encima del 15% anual). Son por lo general empresas jóvenes (menos de 12
+            años en la industria). Por su nivel de ventas, todavía no se consideran empresas tractoras, pero
+            su dinámica empresarial hace que se asemejen mucho a estas
+          </p>
+          <p>
+            <strong>Escalables: </strong>Las empresas Escalables se caracterizan por contar con niveles de ventas
+            importantes, y con crecimiento constantes y bajos. Estas son empresas que tienen un potencial
+            alto de crecimiento pero no lo hacen por la aversión al riesgo que tienen
+          </p>
     </div>
   )
 
+  let other = (
+  <div className="row">
+    <div className="col-md-6">
+      <h4>Algunos Indicadores de las compañías con ventas menores a los USD 100 millones</h4>
+      <table className="table">
+        <thead>
+          <tr>
+            <th>Indicadores</th>
+            <th>Mediana</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Ingreso</td>
+            <td>USD 34.6 millones</td>
+          </tr>
+          <tr>
+            <td>Ingreso Neto</td>
+            <td>USD -6.2 millones</td>
+          </tr>
+          <tr>
+            <td>Crecimiento Ingreso</td>
+            <td>2%</td>
+          </tr>
+          <tr>
+            <td>Crecimiento Ingreso Neto</td>
+            <td>-7%</td>
+          </tr>
+          <tr>
+            <td>Retorno de la Inversión</td>
+            <td>-20%</td>
+          </tr>
+          <tr>
+            <td>Patrimonio como % Activos</td>
+            <td>60%</td>
+          </tr>
+          <tr>
+            <td>Ingreso por empleado</td>
+            <td>USD 211 mil</td>
+          </tr>
+          <tr>
+            <td>I+D como % Ingreso</td>
+            <td>12%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div className="col-md-6">
+      <h4>
+        Algunos Indicadores compañías de la categoría de Software
+      </h4>
+      <table className="table">
+        <thead>
+          <tr>
+            <th>Indicadores</th>
+            <th>Mediana</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Ingreso</td>
+            <td>USD 247.2 millones</td>
+          </tr>
+          <tr>
+            <td>Ingreso Neto</td>
+            <td>USD -4.2 millones</td>
+          </tr>
+          <tr>
+            <td>Crecimiento Ingreso</td>
+            <td>10%</td>
+          </tr>
+          <tr>
+            <td>Crecimiento Ingreso Neto</td>
+            <td>-10%</td>
+          </tr>
+          <tr>
+            <td>Retorno de la Inversión</td>
+            <td>0%</td>
+          </tr>
+          <tr>
+            <td>Patrimonio como % Activos</td>
+            <td>53%</td>
+          </tr>
+          <tr>
+            <td>Ingreso por empleado</td>
+            <td>USD 244 mil</td>
+          </tr>
+          <tr>
+            <td>I+D como % Ingreso</td>
+            <td>18%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div className="col-md-6">
+      <h4>
+        Algunos Indicadores de las compañías de Software y Servicios 
+      </h4>
+      <table className="table">
+        <thead>
+          <tr>
+            <th>Indicadores</th>
+            <th>Mediana</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Ingreso</td>
+            <td>USD 426 millones</td>
+          </tr>
+          <tr>
+            <td>Ingreso Neto</td>
+            <td>USD 7.3 millones</td>
+          </tr>
+          <tr>
+            <td>Crecimiento Ingreso</td>
+            <td>9%</td>
+          </tr>
+          <tr>
+            <td>Crecimiento Ingreso Neto</td>
+            <td>2%</td>
+          </tr>
+          <tr>
+            <td>Retorno de la Inversión</td>
+            <td>5%</td>
+          </tr>
+          <tr>
+            <td>Patrimonio como % Activos</td>
+            <td>47%</td>
+          </tr>
+          <tr>
+            <td>Ingreso por empleado</td>
+            <td>USD 220 mil</td>
+          </tr>
+          <tr>
+            <td>I+D como % Ingreso</td>
+            <td>12%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  )
+  
   switch(this.state.tab){
     case "quality":
       content_tab = quality
       break;
+    case "other":
+      content_tab = other
+      break;
    }
+    
     return(
       <div className="benchmark container-form">
         <h3 className="text-center">
-          Benckmark financiero para la Industria de Software
+          Benchmark financiero para la Industria de Software
           <br/>
-          Fedesoft
+          Observatorio TI
         </h3>
 				<br/>
         {nav}
         <div className="row">
           <div className="col-md-12">
+            <br/>
+            <br/>
             {content_tab}
           </div>
         </div>
