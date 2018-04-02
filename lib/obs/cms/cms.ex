@@ -112,7 +112,7 @@ defmodule Obs.Cms do
       {:error, %Ecto.Changeset{}}
 
   """
-  def delete_study(%Post{} = study) do
+  def delete_post(%Post{} = study) do
     Repo.delete(study)
   end
 

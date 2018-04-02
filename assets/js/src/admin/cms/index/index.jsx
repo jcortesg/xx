@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import React from "react";
-import { loadPosts } from '../actions.js'
+import { loadPosts, dropPost } from '../actions.js'
 import {
   Link
 }from 'react-router-dom';
@@ -9,6 +9,9 @@ class Index extends React.Component {
   componentWillMount() {
     // despachamos la acción al store
     this.props.dispatch(loadPosts());
+  }
+  deletePost(id){
+    this.props.dispatch(dropPost(id))
   }
 
   render(){
@@ -34,6 +37,11 @@ class Index extends React.Component {
           <td>{item.description}</td>
           <td>{item.category.name}</td>
           <td>{item.type}</td>
+          <td>
+            <button onClick={() => this.deletePost(item.id)} className="btn btn-sm btn-danger">
+              Eliminar
+            </button>
+          </td>
         </tr>
       ))
     }
@@ -53,6 +61,7 @@ class Index extends React.Component {
       <th>Descripción</th>
       <th>Categoría</th>
       <th>Type</th>
+      <th></th>
       </tr>
       </thead>
       <tbody>

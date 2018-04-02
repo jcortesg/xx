@@ -17,6 +17,16 @@ export function loadPost(id){
     })
 }
 
+export function dropPost(postId){
+  return(dispatch) =>{ 
+    dispatch(sendingRequest(true))
+    api.delete(`/posts/${postId}`)
+    .then((res) => {
+      dispatch(loadPosts())
+    }).catch((err) => (console.log(err)));
+  }
+}
+
 export function updatePost(id, values){
   return(dispatch) => api.patch(`/posts/`+id, {study: values})
     .then((res) => {
@@ -54,3 +64,5 @@ export function loadCategories(){
     })
   }
 }
+
+

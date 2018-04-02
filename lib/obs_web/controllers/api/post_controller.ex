@@ -44,8 +44,8 @@ defmodule ObsWeb.Api.PostController do
   end
 
   def delete(conn, %{"id" => id}) do
-    study = Cms.get_study!(id)
-    with {:ok, %Post{}} <- Cms.delete_study(study) do
+    study = Cms.get_post!(id)
+    with {:ok, %Post{}} <- Cms.delete_post(study) do
       send_resp(conn, :no_content, "")
     end
   end
